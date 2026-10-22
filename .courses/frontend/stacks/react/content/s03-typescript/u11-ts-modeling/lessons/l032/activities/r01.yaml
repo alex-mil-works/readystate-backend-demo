@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "Чем `name?: string` отличается от `name: string | null`?"
+options:
+  - id: a
+    text: Первое — ключ может отсутствовать, второе — ключ есть и значение может
+      быть null
+    correct: true
+  - id: b
+    text: Это синонимы
+  - id: c
+    text: Оба запрещают отсутствие ключа
+  - id: d
+    text: "`null` в типе стирается и становится optional"
+explain: Отсутствие ключа и явное null — разные данные для UI и для JSON.
+hints:
+  - title: Чтение
+    markdown: "`user.name` у optional даёт `string | undefined`. У `| null` ключ
+      ожидается, значение может быть null."

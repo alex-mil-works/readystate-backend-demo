@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Что оптимизировать раньше, чем разбрасывать useCallback?
+options:
+  - id: a
+    text: Поднять ли state так высоко, что рендерится всё приложение
+    correct: true
+  - id: b
+    text: Заменить все div на memo
+  - id: c
+    text: Хранить JSX в ref
+  - id: d
+    text: Убрать keys
+explain: Редкий рендер родителя дешевле ручной стабилизации каждого колбэка.

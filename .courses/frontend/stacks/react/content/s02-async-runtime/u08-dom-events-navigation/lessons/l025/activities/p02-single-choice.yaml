@@ -1,0 +1,17 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: |
+  Куда класть фильтр списка, чтобы он пережил копирование ссылки и кнопку «назад»?
+options:
+  - id: a
+    text: В URL (path или query), а экран строить из него и на `popstate`
+    correct: true
+  - id: b
+    text: Только в объект `state` у `pushState`
+  - id: c
+    text: В локальную переменную модуля
+  - id: d
+    text: В `document.title`
+explain: |
+  `state` не попадает в скопированный URL. Переменная не восстановится, когда запись истории снова станет активной.

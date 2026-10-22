@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: DNS в этой цепочке отвечает на вопрос…
+options:
+  - id: a
+    text: какой адрес у этого имени
+    correct: true
+  - id: b
+    text: какой статус HTTP вернёт сервер
+  - id: c
+    text: можно ли читать ответ другого сайта
+  - id: d
+    text: какой заголовок Cache-Control поставить
+explain: Без адреса некуда открывать TCP.
+hints:
+  - title: Порт
+    markdown: https://host и https://host:8443 — разные origin, даже если DNS один.

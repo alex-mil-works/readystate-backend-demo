@@ -1,0 +1,19 @@
+id: L021-js-timers-microtasks-rendering
+order: 21
+title: Timers, queueMicrotask и rendering
+titleEn: Timers, queueMicrotask & Rendering
+essence: >-
+  Таймер — не часы. Ноль и «через кадр» — разные очереди, а отрисовка стоит между задачами, не внутри стека.
+depth: mechanism
+required: true
+
+insights:
+  - insights/01-timer-clamps.md
+  - insights/02-paint-slot.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-predict-output.yaml
+  - activities/p03-single-choice.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

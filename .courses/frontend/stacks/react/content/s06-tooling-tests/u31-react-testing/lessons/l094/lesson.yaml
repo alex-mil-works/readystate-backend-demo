@@ -1,0 +1,17 @@
+id: L094-test-e2e-playwright
+order: 94
+title: "E2E: браузерный сценарий и хрупкость"
+titleEn: E2E Flows and Flakiness
+essence: "Сквозной тест идёт через настоящий браузер только там, где юнит не
+  достаёт: адрес, форма, сохранение. Ждут условие, не sleep."
+depth: tradeoff
+required: true
+insights:
+  - insights/01-boundary.md
+  - insights/02-flake.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

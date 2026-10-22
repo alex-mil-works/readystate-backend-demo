@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: // возврат на https://app.example/callback?code=…
+question: Куда этот код не копируют?
+choices:
+  - id: a
+    text: В аналитику, логи вкладки и сторонние скрипты
+    correct: true
+  - id: b
+    text: В обработчик того же приложения, который меняет его на сессию
+  - id: c
+    text: На сервер по уже открытому https
+  - id: d
+    text: В память на время обмена
+explain: Код в адресе — одноразовый секрет обмена, не событие маркетинга.

@@ -1,0 +1,21 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Поле `role` переименовали в `User`. Что ломается раньше при `Pick`, чем
+  при ручной копии полей?
+options:
+  - id: a
+    text: "Ничего не «ломается тихо»: Pick ссылается на ключи User и подсветит
+      старое имя"
+    correct: true
+  - id: b
+    text: Pick копирует поля строками и не замечает переименование
+  - id: c
+    text: Utility types не проверяются компилятором
+  - id: d
+    text: Сломается только runtime
+explain: Ключ в Pick должен существовать в исходном типе.
+hints:
+  - title: Патч
+    markdown: "Тело PATCH часто `Partial<User>`, но `id` лучше оставить
+      обязательным: `Partial<User> & { id: string }`."

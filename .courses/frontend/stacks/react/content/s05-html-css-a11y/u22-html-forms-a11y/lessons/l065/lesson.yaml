@@ -1,0 +1,17 @@
+id: L065-html-native-forms
+order: 65
+title: Нативные поля и валидация
+titleEn: Native Controls and Validation
+essence: Форма — это form, подпись, настоящий input и кнопка submit. Встроенные
+  ограничения срабатывают до вашего скрипта.
+depth: application
+required: true
+insights:
+  - insights/01-controls.md
+  - insights/02-constraints.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

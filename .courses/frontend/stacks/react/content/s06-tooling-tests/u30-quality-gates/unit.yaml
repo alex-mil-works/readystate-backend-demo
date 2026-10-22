@@ -1,0 +1,9 @@
+id: U30
+stageId: S06
+title: Линт, формат и ворота качества
+titleEn: Lint, Format, and Quality Gates
+lessons:
+  - lessons/l089
+  - lessons/l090
+  - lessons/l091
+activities: activities

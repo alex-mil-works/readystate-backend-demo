@@ -1,0 +1,15 @@
+# U06 — manifest юнита (порядок уроков).
+# Тела: lessons/*/
+# Repeat-pool: activities/
+
+id: U06
+stageId: S02
+title: Promises и async control flow
+titleEn: Promises & Async Control Flow
+
+lessons:
+  - lessons/l017
+  - lessons/l018
+  - lessons/l019
+
+activities: activities

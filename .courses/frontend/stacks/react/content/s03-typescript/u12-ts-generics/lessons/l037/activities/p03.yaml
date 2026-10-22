@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Как получить тип значения, которое резолвит `async function load()`?
+options:
+  - id: a
+    text: "`Awaited<ReturnType<typeof load>>`"
+    correct: true
+  - id: b
+    text: "`Parameters<typeof load>`"
+  - id: c
+    text: "`Pick<typeof load, 'id'>`"
+  - id: d
+    text: "`Partial<Promise<load>>`"
+explain: "`ReturnType` у async-функции — это Promise. `Awaited` достаёт значение."

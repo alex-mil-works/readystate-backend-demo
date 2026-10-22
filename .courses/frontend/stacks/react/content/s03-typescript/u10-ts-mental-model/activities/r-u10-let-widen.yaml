@@ -1,0 +1,23 @@
+id: r-u10-let-widen
+kind: single_choice
+phase: revision
+prompt: Почему `let status = 'open'` принимает потом `'closed'`?
+options:
+  - id: a
+    text: Тип расширен до `string`
+    correct: true
+  - id: b
+    text: Оба литерала вывелись в union сами
+  - id: c
+    text: "`let` это `any`"
+  - id: d
+    text: Второе присваивание игнорируется
+explain: Переприсваиваемый binding не держит литерал.
+hints:
+  - title: Узко
+    markdown: Нужен явный `'open' | 'closed'`.
+tags:
+  - inference
+reinforces:
+  - L030-ts-inference-annotations
+source: original

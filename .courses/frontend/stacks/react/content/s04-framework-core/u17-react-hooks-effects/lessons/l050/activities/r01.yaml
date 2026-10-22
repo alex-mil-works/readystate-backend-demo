@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Два поля формы независимы. Как их хранить?
+options:
+  - id: a
+    text: Два useState, если нет общего инварианта
+    correct: true
+  - id: b
+    text: Один useState и эффект, который копирует одно поле в другое
+  - id: c
+    text: Хук внутри map по каждому символу
+  - id: d
+    text: Только ref, иначе не рендерится
+explain: Общий объект оправдан, когда поля обновляют вместе и валидируют как форму.
+hints:
+  - title: Порядок
+    markdown: Ранний return до хука — та же ошибка, что и if вокруг useState.

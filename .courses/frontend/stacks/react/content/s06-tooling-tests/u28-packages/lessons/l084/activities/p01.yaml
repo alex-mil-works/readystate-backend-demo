@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Импорт работает локально, хотя пакета нет в dependencies. Чем это пахнет
+  на npm?
+options:
+  - id: a
+    text: "Фантомной зависимостью: пакет поднялся из чужого дерева"
+    correct: true
+  - id: b
+    text: Так SemVer и задуман
+  - id: c
+    text: pnpm всегда так делает и это правильно
+  - id: d
+    text: Это peerDependency по определению
+explain: На строгой установке импорт сломается. Пакет нужно объявить.

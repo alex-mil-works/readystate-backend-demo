@@ -1,0 +1,18 @@
+id: p01
+kind: predict_output
+phase: practice
+code: ".card { width: 200px; padding: 20px; border: 2px solid; box-sizing:
+  content-box; }"
+question: Какова внешняя ширина контента вместе с padding и border?
+choices:
+  - id: a
+    text: "244px: 200 + 20 + 20 + 2 + 2"
+    correct: true
+  - id: b
+    text: 200px
+  - id: c
+    text: 220px без рамки
+  - id: d
+    text: Зависит от margin, он входит в width
+explain: content-box не включает padding и border в width. Margin в width не
+  входит никогда.

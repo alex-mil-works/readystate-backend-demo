@@ -1,0 +1,24 @@
+id: r-u06-async-returns-promise
+kind: single_choice
+phase: revision
+tags: [async, await]
+reinforces: ['L018-js-async-await-errors']
+source: original
+prompt: |
+  Чему равно выражение `async function f(){ return 1; } ; f()` в ту же миллисекунду?
+options:
+  - id: a
+    text: Промису, который выполнится со значением `1`
+    correct: true
+  - id: b
+    text: Числу `1`
+  - id: c
+    text: '`undefined`'
+  - id: d
+    text: Синхронному throw
+explain: |
+  `async` всегда возвращает промис. Значение `return` становится его value, но не подменяет сам возврат.
+hints:
+  - title: async
+    markdown: |
+      Вызывающий получает Promise сразу. `await` нужен тому, кто хочет число, а не контейнер.

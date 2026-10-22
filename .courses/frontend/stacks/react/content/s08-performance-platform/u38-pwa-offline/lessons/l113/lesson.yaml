@@ -1,0 +1,17 @@
+id: L113-pwa-service-worker
+order: 113
+title: Service Worker и жизнь кэша
+titleEn: Service Workers and the Cache Lifecycle
+essence: Service Worker — отдельный прокси со своим циклом. Он может отдать кэш
+  мимо сети и так же легко запереть пользователя на старой версии.
+depth: mechanism
+required: true
+insights:
+  - insights/01-proxy.md
+  - insights/02-version.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

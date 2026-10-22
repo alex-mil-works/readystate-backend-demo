@@ -1,0 +1,15 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: |
+  Объясните вслух: когда `fetch` отклоняет промис и как отменять запрос.
+rubric: |
+  Ожидаемые пункты (30–60 сек):
+  - rejection на сети, CORS, abort — не на 4xx/5xx
+  - response.ok и второй промис json()
+  - AbortController / AbortError
+  - новый controller на следующий запрос
+sampleAnswer: |
+  fetch выполняется, даже если сервер ответил 404 или 500. Промис падает, когда ответа нет: сеть, CORS или abort.
+  Статус проверяют через ok. json читает тело отдельным промисом.
+  Отмена — это AbortController и signal. Исключение будет с именем AbortError. Проигнорировать then недостаточно: запрос жив, а для следующего вызова нужен новый controller.

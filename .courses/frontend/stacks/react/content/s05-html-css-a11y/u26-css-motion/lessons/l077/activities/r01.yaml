@@ -1,0 +1,15 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "Почему transition: all опасен?"
+options:
+  - id: a
+    text: Анимируется любое изменившееся свойство, включая дорогие
+    correct: true
+  - id: b
+    text: Он отменяет hover
+  - id: c
+    text: Он не видит opacity
+  - id: d
+    text: Он требует user-scalable=no
+explain: Явный список свойств предсказуем.

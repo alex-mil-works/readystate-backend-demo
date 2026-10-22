@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Какое свойство само придёт к вложенному span от родителя?
+options:
+  - id: a
+    text: color
+    correct: true
+  - id: b
+    text: margin
+  - id: c
+    text: padding
+  - id: d
+    text: border
+explain: Текст наследуется. Отступы и рамка — нет.

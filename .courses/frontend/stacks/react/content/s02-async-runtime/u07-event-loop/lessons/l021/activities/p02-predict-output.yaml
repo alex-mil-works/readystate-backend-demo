@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |
+  queueMicrotask(() => console.log('micro'));
+  Promise.resolve().then(() => console.log('then'));
+  setTimeout(() => console.log('timer'), 0);
+  console.log('sync');
+question: Какой порядок логов?
+choices:
+  - id: a
+    text: sync, micro, then, timer
+    correct: true
+  - id: b
+    text: micro, then, sync, timer
+  - id: c
+    text: sync, timer, micro, then
+  - id: d
+    text: timer, sync, micro, then
+explain: |
+  `sync` — стек. `queueMicrotask` встал в очередь раньше `then`, оба раньше таймера.

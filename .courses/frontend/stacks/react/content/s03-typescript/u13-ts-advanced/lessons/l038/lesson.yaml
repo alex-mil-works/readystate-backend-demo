@@ -1,0 +1,17 @@
+id: L038-ts-structural-excess
+order: 38
+title: Structural typing и excess properties
+titleEn: Structural Typing and Excess Properties
+essence: TypeScript сравнивает форму, не имя типа. Лишние поля запрещены у
+  свежего литерала и разрешены у уже присвоенной переменной.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-structural.md
+  - insights/02-fresh-literal.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

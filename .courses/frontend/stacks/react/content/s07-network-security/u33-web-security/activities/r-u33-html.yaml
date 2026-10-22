@@ -1,0 +1,23 @@
+id: r-u33-html
+kind: single_choice
+phase: revision
+prompt: Строку имени от пользователя вставляют…
+options:
+  - id: a
+    text: как текст, не как HTML
+    correct: true
+  - id: b
+    text: через innerHTML
+  - id: c
+    text: в src скрипта
+  - id: d
+    text: в публичный кэш как разметку
+explain: CSP сужает источники скрипта и не заменяет эту границу.
+hints:
+  - title: Источник скрипта
+    markdown: Чужой скрипт в вашей странице видит DOM и хранилище этого источника.
+tags:
+  - security
+reinforces:
+  - L099-sec-xss-csp
+source: original

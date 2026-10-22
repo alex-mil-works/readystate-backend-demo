@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  .card { transform: translateZ(0); }
+  .card .menu { position: absolute; z-index: 9999; }
+  .modal { position: fixed; z-index: 2; }
+question: Почему меню карточки может оказаться под модалкой, несмотря на 9999?
+choices:
+  - id: a
+    text: transform у карточки создал свой контекст, 9999 сравнивается только внутри
+      него
+    correct: true
+  - id: b
+    text: z-index всегда глобальный, значит пример невозможен
+  - id: c
+    text: fixed не участвует в наложении
+  - id: d
+    text: 9999 меньше 2
+explain: Контекст запирает потомков. Модалка — сосед предка, не сосед меню.

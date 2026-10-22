@@ -1,0 +1,16 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: justify-content двигает детей…
+options:
+  - id: a
+    text: вдоль главной оси
+    correct: true
+  - id: b
+    text: только поперёк, как align-items
+  - id: c
+    text: по z-index
+  - id: d
+    text: внутри padding каждого ребёнка
+explain: align-items — поперечная ось. При column они меняются местами
+  относительно экрана.

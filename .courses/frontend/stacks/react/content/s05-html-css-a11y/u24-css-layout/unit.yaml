@@ -1,0 +1,9 @@
+id: U24
+stageId: S05
+title: Раскладка и адаптив
+titleEn: Layout and Responsive Design
+lessons:
+  - lessons/l071
+  - lessons/l072
+  - lessons/l073
+activities: activities

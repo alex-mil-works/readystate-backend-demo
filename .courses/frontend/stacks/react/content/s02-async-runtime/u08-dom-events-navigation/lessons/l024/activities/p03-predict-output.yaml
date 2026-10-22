@@ -1,0 +1,23 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |
+  button.addEventListener('click', () => console.log('a'));
+  button.addEventListener('click', (event) => {
+    event.stopPropagation();
+    console.log('b');
+  });
+  button.addEventListener('click', () => console.log('c'));
+question: Что напечатается при клике, если на родителе тоже есть слушатель?
+choices:
+  - id: a
+    text: a b c — родитель не увидит событие
+    correct: true
+  - id: b
+    text: Только b
+  - id: c
+    text: a b — c тоже оборван
+  - id: d
+    text: a b c и родитель тоже
+explain: |
+  `stopPropagation` не трогает остальные слушатели той же кнопки. Родитель уже не получит bubble. Чтобы оборвать `c`, нужен `stopImmediatePropagation`.

@@ -1,0 +1,28 @@
+id: r-s07-u33-u34-bridge
+kind: single_choice
+phase: revision
+prompt: Токен доступа лежит в localStorage, на странице исполняют чужие данные
+  как HTML. Чем это плохо вместе?
+options:
+  - id: a
+    text: скрипт вашего источника прочитает и токен, и страницу
+    correct: true
+  - id: b
+    text: HttpOnly на localStorage это закроет
+  - id: c
+    text: CSP заменяет границу текста сам по себе
+  - id: d
+    text: CORS запретит ваш собственный скрипт
+explain: Сессию, которую нельзя читать скрипту, не кладут в хранилище страницы.
+hints:
+  - title: U33 → U34
+    markdown: Текст не становится разметкой. Пропуск, который нельзя светить
+      скрипту, живёт в HttpOnly-cookie, и тогда помнят про межсайтовый запрос.
+tags:
+  - network
+  - security
+reinforces:
+  - L099-sec-xss-csp
+  - L102-auth-jwt
+  - L101-auth-cookie-csrf
+source: original

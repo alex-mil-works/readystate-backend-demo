@@ -1,0 +1,17 @@
+id: L045-react-props-flow
+order: 45
+title: Props, однонаправленный поток и composition
+titleEn: Props, One-Way Data Flow, and Composition
+essence: Props — вход от родителя. Данные текут вниз. Поведение собирают
+  композицией, а не наследованием компонентов.
+depth: application
+required: true
+insights:
+  - insights/01-one-way.md
+  - insights/02-composition.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

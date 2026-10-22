@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Заголовок визуально маленький, но это название раздела. Какой элемент взять?
+options:
+  - id: a
+    text: Нужный уровень h1–h6 и размер через CSS
+    correct: true
+  - id: b
+    text: div с мелким шрифтом
+  - id: c
+    text: span внутри кнопки
+  - id: d
+    text: footer
+explain: Уровень — про структуру. Кегль — про оформление.
+hints:
+  - title: Один main
+    markdown: Шапка и подвал снаружи. Основное содержимое — один main.

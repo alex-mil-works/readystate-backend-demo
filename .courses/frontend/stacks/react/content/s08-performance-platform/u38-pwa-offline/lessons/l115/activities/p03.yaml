@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  прогресс только в IndexedDB этого профиля
+  человек открыл тот же сайт на телефоне
+question: Что он увидит без серверной синхронизации?
+choices:
+  - id: a
+    text: Пустой или другой локальный прогресс, это другой браузер
+    correct: true
+  - id: b
+    text: Ту же базу автоматически
+  - id: c
+    text: Cache API скопирует IndexedDB по USB
+  - id: d
+    text: DNS перенесёт данные
+explain: Локальное хранилище не аккаунт.

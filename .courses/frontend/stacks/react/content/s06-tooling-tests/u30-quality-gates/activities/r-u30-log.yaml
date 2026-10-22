@@ -1,0 +1,24 @@
+id: r-u30-log
+kind: single_choice
+phase: revision
+prompt: Сборка упала. Где искать причину?
+options:
+  - id: a
+    text: В сообщении про конкретный модуль ниже общей строки failed
+    correct: true
+  - id: b
+    text: Только в слове failed
+  - id: c
+    text: В количестве пробелов
+  - id: d
+    text: В номере PR
+explain: Обёртка ошибки не называет экспорт.
+hints:
+  - title: Контур
+    markdown: Обход pre-commit не чинит файл. CI обязан повторить ту же команду.
+tags:
+  - quality
+reinforces:
+  - L091-qa-sourcemaps-env
+  - L090-qa-check-loop
+source: original

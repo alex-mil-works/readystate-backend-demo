@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: "Макет: фиксированное меню и резиновый контент. Чем описать страницу?"
+options:
+  - id: a
+    text: "grid-template-columns: 240px 1fr"
+    correct: true
+  - id: b
+    text: один flex без переноса на всю страницу и надежда на float
+  - id: c
+    text: table для раскладки
+  - id: d
+    text: только inline
+explain: Две колонки разного закона ширины — дорожки grid.

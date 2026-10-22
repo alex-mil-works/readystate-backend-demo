@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Нужен тип `Ok | Fail`. Чем его описать?
+options:
+  - id: a
+    text: "`type Status = Ok | Fail`"
+    correct: true
+  - id: b
+    text: Только `interface Status extends Ok, Fail`
+  - id: c
+    text: Два `interface` с одним именем
+  - id: d
+    text: "`enum` без значений"
+explain: Union — это `type`. Слияние interface здесь не замена.

@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Почему `if (ready) { const [n, setN] = useState(0); }` ломает компонент?
+options:
+  - id: a
+    text: Число вызовов хуков меняется между рендерами, слоты путаются
+    correct: true
+  - id: b
+    text: useState нельзя писать в функции
+  - id: c
+    text: ready всегда false в React
+  - id: d
+    text: Так начальное значение становится props
+explain: Хуки вызывают на верхнем уровне компонента, в постоянном порядке.

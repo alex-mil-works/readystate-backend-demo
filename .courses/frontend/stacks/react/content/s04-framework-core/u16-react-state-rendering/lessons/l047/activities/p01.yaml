@@ -1,0 +1,21 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |-
+  const [n, setN] = useState(0);
+  function onClick() {
+    setN(n + 1);
+    setN(n + 1);
+  }
+question: Чему будет равен `n` на следующем рендере после одного клика?
+choices:
+  - id: a
+    text: "1: оба вызова закрыли снимок 0"
+    correct: true
+  - id: b
+    text: "2"
+  - id: c
+    text: "0: setState синхронно запрещён"
+  - id: d
+    text: undefined
+explain: Оба обновления заменяют state на `0 + 1`. Это не цепочка.

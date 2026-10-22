@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Два файла называют класс title. Что сделает CSS Module?
+options:
+  - id: a
+    text: Выдаст разные конечные классы, стили не смешаются
+    correct: true
+  - id: b
+    text: Склеит их в один глобальный title
+  - id: c
+    text: Удалит оба
+  - id: d
+    text: Превратит title в id
+explain: Локальное имя — хеш файла. Глобальный класс так не изолирован.

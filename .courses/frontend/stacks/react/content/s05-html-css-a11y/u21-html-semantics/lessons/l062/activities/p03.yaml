@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: На странице два меню. Как их различить?
+options:
+  - id: a
+    text: Два `nav` с разными aria-label
+    correct: true
+  - id: b
+    text: Оба без подписи, скринридер сам поймёт
+  - id: c
+    text: Второе меню сделать div
+  - id: d
+    text: Поставить два main
+explain: Одинаковые landmarks без имени сливаются в один список.

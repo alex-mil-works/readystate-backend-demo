@@ -1,0 +1,23 @@
+id: r-u26-all
+kind: single_choice
+phase: revision
+prompt: "Почему не transition: all?"
+options:
+  - id: a
+    text: Анимируется любое свойство, в том числе дорогое
+    correct: true
+  - id: b
+    text: all не видит opacity
+  - id: c
+    text: так отключается hover
+  - id: d
+    text: all равен prefers-reduced-motion
+explain: "Пишите список: opacity, transform."
+hints:
+  - title: Кадры
+    markdown: Две точки — transition. Сценарий спиннера — keyframes.
+tags:
+  - css
+reinforces:
+  - L077-css-transitions
+source: original

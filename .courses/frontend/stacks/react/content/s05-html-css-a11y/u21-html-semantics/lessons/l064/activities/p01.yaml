@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Зачем `lang="ru"` на корне документа?
+options:
+  - id: a
+    text: Скринридер выбирает произношение, переводчик и поиск видят язык
+    correct: true
+  - id: b
+    text: Так подключается CSS
+  - id: c
+    text: Без lang запрещены заголовки
+  - id: d
+    text: Это замена title
+explain: Язык — свойство документа, не оформления.

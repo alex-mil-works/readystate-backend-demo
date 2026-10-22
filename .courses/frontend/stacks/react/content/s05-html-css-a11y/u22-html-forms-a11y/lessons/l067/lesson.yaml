@@ -1,0 +1,17 @@
+id: L067-html-aria-when
+order: 67
+title: ARIA, когда нативного HTML мало
+titleEn: ARIA When Native HTML Is Not Enough
+essence: Сначала нативный элемент. ARIA добавляет роль и состояние виджету,
+  которого в HTML нет, и не чинит div, забывший клавиатуру.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-first-rule.md
+  - insights/02-state.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

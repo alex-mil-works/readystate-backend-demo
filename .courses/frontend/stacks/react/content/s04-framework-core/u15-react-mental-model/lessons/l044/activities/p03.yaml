@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Почему в теле компонента не ищут узел через `document.getElementById`?
+options:
+  - id: a
+    text: Рендер должен вернуть описание, а не командовать текущим DOM
+    correct: true
+  - id: b
+    text: getElementById запрещён спецификацией HTML
+  - id: c
+    text: Так нельзя прочитать props
+  - id: d
+    text: JSX не умеет возвращать элемент
+explain: Императивный поиск узла во время рендера расходится с деревом, которое
+  React ещё только считает.

@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Иконка должна стоять в строке текста, но с заданным размером 1rem. Какой
+  display ближе?
+options:
+  - id: a
+    text: inline-block или flex у строки
+    correct: true
+  - id: b
+    text: block, чтобы остаться в строке
+  - id: c
+    text: none
+  - id: d
+    text: только visibility
+explain: inline игнорирует width. inline-block принимает размер и сидит в строке.

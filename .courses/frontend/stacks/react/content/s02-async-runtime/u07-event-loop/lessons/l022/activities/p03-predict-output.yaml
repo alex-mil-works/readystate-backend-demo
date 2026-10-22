@@ -1,0 +1,22 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |
+  console.log('start');
+  setTimeout(() => console.log('click-like'), 0);
+  const t = Date.now();
+  while (Date.now() - t < 30) {}
+  console.log('end');
+question: Какой порядок, если таймер уже должен был сработать по часам?
+choices:
+  - id: a
+    text: start, end, click-like
+    correct: true
+  - id: b
+    text: start, click-like, end
+  - id: c
+    text: click-like, start, end
+  - id: d
+    text: start, end — таймер отменяется циклом
+explain: |
+  Цикл держит стек. Колбэк таймера не вклинивается в `while`. Он пойдёт task'ом после `end`.

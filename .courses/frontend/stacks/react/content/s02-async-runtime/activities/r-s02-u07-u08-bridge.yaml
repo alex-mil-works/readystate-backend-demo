@@ -1,0 +1,24 @@
+id: r-s02-u07-u08-bridge
+kind: single_choice
+phase: revision
+tags: [long-task, events]
+reinforces: ['L022-js-long-tasks-raf', 'L024-js-events-delegation']
+source: original
+prompt: |
+  Пока идёт синхронный цикл, пользователь кликнул кнопку. Когда выполнится слушатель `click`?
+options:
+  - id: a
+    text: После возврата из цикла — клик это task, она не вклинивается в стек
+    correct: true
+  - id: b
+    text: Сразу, события обходят event loop
+  - id: c
+    text: В ближайшей микрозадаче, наравне с `then`
+  - id: d
+    text: Клик теряется, если цикл длиннее 16 мс
+explain: |
+  Слушатель DOM не вытесняет текущую функцию. Long task задерживает и жест, и всплытие.
+hints:
+  - title: U07 → U08
+    markdown: |
+      Событие попадает в очередь tasks. Пока стек занят, неважны ни bubble, ни делегирование — слушатель ещё не вызван.

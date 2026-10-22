@@ -1,0 +1,26 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |
+  async function load(url) {
+    const res = await fetch(url);
+    return res.json();
+  }
+  load('/missing').then(
+    (data) => console.log('ok', data),
+    () => console.log('fail'),
+  );
+question: |
+  Сервер вернул 404 и JSON `{ "error": "nope" }`. Что увидит `then`?
+choices:
+  - id: a
+    text: '`ok` и объект `{ error: "nope" }` — 404 не отклоняет fetch'
+    correct: true
+  - id: b
+    text: '`fail`, потому что статус не 200'
+  - id: c
+    text: '`ok null`'
+  - id: d
+    text: Синхронный throw на `res.json`
+explain: |
+  `await fetch` получает Response. `res.json()` читает тело и тоже выполняется. Ветку ошибки статуса этот код не проверяет.

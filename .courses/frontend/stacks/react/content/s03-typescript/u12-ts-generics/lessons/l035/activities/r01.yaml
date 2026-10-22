@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Список уроков и список id оба хотят функцию «первый элемент». Как не
+  потерять тип элемента?
+options:
+  - id: a
+    text: Одна generic-функция `first<T>`, а не `any[] -> any`
+    correct: true
+  - id: b
+    text: Две копии с `as any`
+  - id: c
+    text: Возврат `object`
+  - id: d
+    text: Constraint `T extends never`
+explain: Один параметр типа обслуживает разные массивы и сохраняет элемент.
+hints:
+  - title: undefined
+    markdown: Индекс `0` может отсутствовать. Честный возврат — `T | undefined`,
+      если нет гарантии непустого массива.

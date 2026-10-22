@@ -1,0 +1,24 @@
+id: r-u08-pushstate-silent
+kind: single_choice
+phase: revision
+tags: [history]
+reinforces: ['L025-js-history-navigation']
+source: original
+prompt: |
+  Срабатывает ли `popstate` на `history.pushState`?
+options:
+  - id: a
+    text: Нет. Он приходит на назад и вперёд
+    correct: true
+  - id: b
+    text: Да, синхронно в том же вызове
+  - id: c
+    text: Да, но только если изменился path, не query
+  - id: d
+    text: Да, и документ при этом перезапрашивается
+explain: |
+  `pushState` добавляет запись и меняет URL молча. `popstate` — реакция на путешествие по уже лежащим записям.
+hints:
+  - title: URL vs state
+    markdown: |
+      Скопированная ссылка несёт только URL. Объект `state` остаётся в истории вкладки.

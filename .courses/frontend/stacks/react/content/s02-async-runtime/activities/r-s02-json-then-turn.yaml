@@ -1,0 +1,25 @@
+id: r-s02-json-then-turn
+kind: single_choice
+phase: revision
+tags: [fetch, microtask]
+reinforces: ['L020-js-event-loop-tasks', 'L026-js-fetch-abort']
+source: original
+prompt: |
+  `await response.json()` после уже полученного `Response`. Куда девается разбор тела относительно текущего стека?
+options:
+  - id: a
+    text: Чтение тела — отдельный промис, продолжение функции пойдёт микрозадачей
+    correct: true
+  - id: b
+    text: '`json()` синхронно возвращает объект'
+  - id: c
+    text: Разбор всегда ждёт ближайший кадр rAF
+  - id: d
+    text: '`json()` отклоняет промис, если статус 404'
+explain: |
+  Даже готовый ответ не превращает `json()` в синхронный вызов. 404 на этом шаге сам по себе промис не роняет.
+hints:
+  - title: Два ожидания
+    markdown: |
+      Сначала промис `fetch` (ответ или сбой сети), потом промис `json()` (байты тела).
+      Оба продолжения — микрозадачи, не «просто следующая строка».

@@ -1,0 +1,17 @@
+id: L088-mod-bundlers
+order: 88
+title: "Бандлеры: зачем их несколько"
+titleEn: Bundlers and Why There Are Several
+essence: Бандлер соединяет граф в файлы для браузера. Транспилятор только
+  переписывает синтаксис. Разные инструменты оптимизируют разную работу.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-job.md
+  - insights/02-which.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

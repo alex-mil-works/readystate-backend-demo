@@ -1,0 +1,23 @@
+id: r-u27-revert
+kind: single_choice
+phase: revision
+prompt: Коммит уже в общем main. Как убрать его эффект?
+options:
+  - id: a
+    text: Новым revert-коммитом
+    correct: true
+  - id: b
+    text: reset --hard и тихим force-push
+  - id: c
+    text: Удалить .git
+  - id: d
+    text: Поменять только сообщение старого коммита у всех
+explain: На общей истории идут вперёд.
+hints:
+  - title: Reflog
+    markdown: Локальный журнал указателей помогает найти хеш после своего reset.
+tags:
+  - git
+reinforces:
+  - L082-git-reflog-restore
+source: original

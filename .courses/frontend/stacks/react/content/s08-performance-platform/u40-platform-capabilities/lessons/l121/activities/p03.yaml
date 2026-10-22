@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  if ('PaymentRequest' in window) showPay();
+  else showTransfer();
+question: Зачем ветка else?
+choices:
+  - id: a
+    text: Сценарий жив, даже если диалога нет
+    correct: true
+  - id: b
+    text: Она включает passkey
+  - id: c
+    text: Она пишет номер карты в localStorage
+  - id: d
+    text: Она обязана быть пустой
+explain: Обнаружение возможности и запасной путь — пара.

@@ -1,0 +1,17 @@
+id: L073-css-responsive
+order: 73
+title: Адаптив, media queries и единицы
+titleEn: Responsive Design, Media Queries, and Units
+essence: Сначала узкий экран, потом min-width. Текст масштабируют rem, вьюпорт
+  не запирают запретом зума.
+depth: application
+required: true
+insights:
+  - insights/01-mobile-first.md
+  - insights/02-units.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

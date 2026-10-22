@@ -1,0 +1,24 @@
+id: r-u19-loop
+kind: single_choice
+phase: revision
+prompt: Эффект без массива зависимостей вызывает setState. Что дальше?
+options:
+  - id: a
+    text: Рендер и эффект крутятся снова
+    correct: true
+  - id: b
+    text: Он равен componentDidMount
+  - id: c
+    text: React выполнит его один раз
+  - id: d
+    text: setState в эффекте игнорируется
+explain: Нет условия, при котором эффект перестаёт планировать рендер.
+hints:
+  - title: Зеркало
+    markdown: Не копируйте props в state эффектом. Сброс черновика — часто новый key.
+tags:
+  - react
+  - effects
+reinforces:
+  - L057-react-effect-pitfalls
+source: original

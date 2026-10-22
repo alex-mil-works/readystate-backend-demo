@@ -1,0 +1,24 @@
+id: r-u06-settle-once
+kind: single_choice
+phase: revision
+tags: [promise, settle]
+reinforces: ['L017-js-promise-states']
+source: original
+prompt: |
+  Executor вызвал `resolve(1)`, затем `resolve(2)`. Какое value у промиса?
+options:
+  - id: a
+    text: '`1` — повторный settle игнорируется'
+    correct: true
+  - id: b
+    text: '`2`'
+  - id: c
+    text: Промис становится rejected
+  - id: d
+    text: Массив `[1, 2]`
+explain: |
+  Исход фиксируется один раз. Второй `resolve` не переписывает value.
+hints:
+  - title: Один исход
+    markdown: |
+      pending меняется на fulfilled или rejected один раз. Дальнейшие `resolve` / `reject` в том же executor пустые.

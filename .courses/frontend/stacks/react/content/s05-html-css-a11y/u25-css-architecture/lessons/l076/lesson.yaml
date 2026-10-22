@@ -1,0 +1,17 @@
+id: L076-css-tooling-boundaries
+order: 76
+title: Препроцессоры, CSS-in-JS и границы системы
+titleEn: Preprocessors, CSS-in-JS, and System Boundaries
+essence: Инструмент не должен плодить новые цвета. Токены общие, компонент не
+  красит чужие внутренности, рантайм стилей имеет цену.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-tokens.md
+  - insights/02-runtime.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

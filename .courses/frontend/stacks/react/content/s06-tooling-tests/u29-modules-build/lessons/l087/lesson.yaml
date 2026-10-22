@@ -1,0 +1,17 @@
+id: L087-mod-vite
+order: 87
+title: "Vite: дев-сервер и прод-сборка"
+titleEn: Vite Dev Server and Production Build
+essence: В разработке Vite отдаёт модули браузеру почти как есть. Прод-сборку
+  делает отдельным шагом и не повторяет её на каждый сейв.
+depth: application
+required: true
+insights:
+  - insights/01-dev.md
+  - insights/02-build.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

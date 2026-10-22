@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Файл `app.8f3a.js` меняется только когда меняется хеш в имени. Как его
+  кэшировать?
+options:
+  - id: a
+    text: Надолго и как неизменный
+    correct: true
+  - id: b
+    text: Никогда, как и HTML
+  - id: c
+    text: Только в cookie
+  - id: d
+    text: Как публичный профиль пользователя
+explain: Новая сборка — новое имя. Старое имя можно держать в кэше.

@@ -1,0 +1,9 @@
+id: U15
+stageId: S04
+title: Ментальная модель React
+titleEn: React Mental Model
+lessons:
+  - lessons/l044
+  - lessons/l045
+  - lessons/l046
+activities: activities

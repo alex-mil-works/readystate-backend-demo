@@ -1,0 +1,16 @@
+id: p02
+kind: predict_output
+phase: practice
+code: ".board { display: grid; grid-template-columns: 1fr 1fr; }"
+question: Сколько колонок и как делится свободная ширина?
+choices:
+  - id: a
+    text: Две равные доли свободного места
+    correct: true
+  - id: b
+    text: Одна колонка на весь экран
+  - id: c
+    text: Две колонки по содержимому, fr игнорируется
+  - id: d
+    text: Четыре, потому что fr удваивается
+explain: Каждый 1fr получает одинаковую долю после gap.

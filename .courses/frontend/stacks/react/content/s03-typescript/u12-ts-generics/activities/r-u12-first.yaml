@@ -1,0 +1,23 @@
+id: r-u12-first
+kind: single_choice
+phase: revision
+prompt: Что вернёт честный `first<T>` для пустого массива строк?
+options:
+  - id: a
+    text: "`undefined`, тип результата `string | undefined`"
+    correct: true
+  - id: b
+    text: Пустую строку
+  - id: c
+    text: "`any`"
+  - id: d
+    text: Ошибку компиляции на пустом массиве всегда
+explain: Индекс 0 может отсутствовать.
+hints:
+  - title: Связь
+    markdown: "`T` запоминает элемент. `any[]` эту связь рвёт."
+tags:
+  - generics
+reinforces:
+  - L035-ts-generics-constraints
+source: original

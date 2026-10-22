@@ -1,0 +1,24 @@
+id: r-u33-star
+kind: single_choice
+phase: revision
+prompt: Почему нельзя совместить звёздочку origin и учётные данные?
+options:
+  - id: a
+    text: браузер не отдаст cookie «всем сайтам сразу»
+    correct: true
+  - id: b
+    text: звёздочка как раз включает все сессии
+  - id: c
+    text: так запрещён GET
+  - id: d
+    text: это требование DNS
+explain: Для cookie называют конкретный источник.
+hints:
+  - title: Не браузер
+    markdown: Другой HTTP-клиент CORS не соблюдает. Сервер проверяет права сам.
+tags:
+  - security
+reinforces:
+  - L098-sec-origin-cors
+  - L100-sec-https-supply
+source: original

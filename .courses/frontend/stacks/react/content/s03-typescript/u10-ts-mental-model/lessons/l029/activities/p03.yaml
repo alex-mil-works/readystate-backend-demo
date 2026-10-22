@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Ответ API привели к `User` через `as`. Что это гарантирует?
+options:
+  - id: a
+    text: Ничего в runtime — это утверждение для компилятора
+    correct: true
+  - id: b
+    text: Поля `User` точно есть в JSON
+  - id: c
+    text: Лишние поля сервер отбросит
+  - id: d
+    text: "`as` равен `JSON.parse` с валидацией"
+explain: Assertion не читает данные. Проверка формы — отдельный код.

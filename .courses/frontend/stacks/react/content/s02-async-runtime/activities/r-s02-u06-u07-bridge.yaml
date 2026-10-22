@@ -1,0 +1,24 @@
+id: r-s02-u06-u07-bridge
+kind: single_choice
+phase: revision
+tags: [promise, microtask]
+reinforces: ['L017-js-promise-states', 'L020-js-event-loop-tasks']
+source: original
+prompt: |
+  Почему колбэк `then` не выполняется «внутри» `resolve`, даже если промис уже fulfilled?
+options:
+  - id: a
+    text: '`then` ставит микрозадачу и ждёт, пока опустеет текущий стек'
+    correct: true
+  - id: b
+    text: '`then` синхронен для уже fulfilled промиса'
+  - id: c
+    text: '`resolve` всегда ждёт ближайший `setTimeout`'
+  - id: d
+    text: Микрозадачи идут после всех таймеров
+explain: |
+  Даже `Promise.resolve(1).then(...)` не зовёт колбэк в той же строке. Это мост между цепочкой промисов и очередью микрозадач.
+hints:
+  - title: U06 → U07
+    markdown: |
+      Промис хранит value. Доставка в `then` — отдельный поворот event loop, раньше таймеров и раньше кадра.

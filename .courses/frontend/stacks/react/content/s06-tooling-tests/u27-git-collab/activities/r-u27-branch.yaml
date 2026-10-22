@@ -1,0 +1,24 @@
+id: r-u27-branch
+kind: single_choice
+phase: revision
+prompt: Ветка в Git — это…
+options:
+  - id: a
+    text: Указатель на коммит
+    correct: true
+  - id: b
+    text: Полная копия диска
+  - id: c
+    text: Только сообщение без дерева
+  - id: d
+    text: Удалённый PR
+explain: Коммит — снимок. Ветка на него показывает.
+hints:
+  - title: Rebase
+    markdown: Rebase меняет хеши. Опубликованную ветку, которую уже забрали, так не
+      переписывают.
+tags:
+  - git
+reinforces:
+  - L080-git-commits-branches
+source: original

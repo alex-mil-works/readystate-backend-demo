@@ -1,0 +1,15 @@
+id: r-u22-required
+kind: single_choice
+phase: revision
+prompt: Пустой input required внутри form. Что сделает браузер на submit без JS?
+options:
+  - id: a
+    text: Остановит отправку
+    correct: true
+  - id: b
+    text: Отправит пустоту
+  - id: c
+    text: Удалит label
+  - id: d
+    text: Поставит tabindex 1
+explain: required останавливает отправку до вашего скрипта.

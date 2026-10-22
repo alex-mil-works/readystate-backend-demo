@@ -1,0 +1,18 @@
+id: L042-ts-react-state-hooks
+order: 42
+title: State, refs, reducers и custom hooks
+titleEn: State, Refs, Reducers, and Custom Hooks
+essence: "`useState` хранит снимок данных. `useRef` для DOM начинается с `null`.
+  Редьюсер сужают union действия. Хук возвращает кортеж или объект с явными
+  типами."
+depth: application
+required: true
+insights:
+  - insights/01-state-ref.md
+  - insights/02-reducer-hook.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,24 @@
+id: r-u17-hook
+kind: single_choice
+phase: revision
+prompt: Два компонента вызвали useToggle. Их boolean…
+options:
+  - id: a
+    text: независимы
+    correct: true
+  - id: b
+    text: всегда равны
+  - id: c
+    text: живут в одном Context
+  - id: d
+    text: сбрасываются при любом рендере соседа
+explain: Каждый вызов хука — свои слоты.
+hints:
+  - title: Имя
+    markdown: Функция с useState называется use*. Обычная утилита хуки не вызывает.
+tags:
+  - react
+  - hooks
+reinforces:
+  - L052-react-custom-hooks
+source: original

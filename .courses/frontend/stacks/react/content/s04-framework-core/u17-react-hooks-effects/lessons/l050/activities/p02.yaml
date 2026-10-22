@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  const [n, setN] = useState(0);
+  function addTwice() {
+    setN((prev) => prev + 1);
+    setN((prev) => prev + 1);
+  }
+question: С какого значения стартовал счётчик 0. Сколько станет после `addTwice`?
+choices:
+  - id: a
+    text: "2"
+    correct: true
+  - id: b
+    text: "1"
+  - id: c
+    text: "0"
+  - id: d
+    text: undefined
+explain: Каждый updater видит уже увеличенное предыдущее значение.

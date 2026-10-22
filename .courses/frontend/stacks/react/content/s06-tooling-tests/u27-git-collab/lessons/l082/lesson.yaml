@@ -1,0 +1,17 @@
+id: L082-git-reflog-restore
+order: 82
+title: Reflog, reset, revert и восстановление
+titleEn: Reflog, Reset, Revert, and Recovery
+essence: Reflog помнит, где была ветка. Reset двигает указатель. Revert
+  добавляет коммит, который отменяет уже опубликованное.
+depth: debug
+required: true
+insights:
+  - insights/01-reflog.md
+  - insights/02-reset-revert.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

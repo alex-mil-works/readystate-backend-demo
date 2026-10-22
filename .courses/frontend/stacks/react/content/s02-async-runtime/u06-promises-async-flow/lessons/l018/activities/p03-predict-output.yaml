@@ -1,0 +1,25 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |
+  async function format() {
+    const n = Promise.resolve(1.5);
+    return n.toFixed(1);
+  }
+  format().then(
+    (v) => console.log('ok', v),
+    () => console.log('fail'),
+  );
+question: Что будет в логе?
+choices:
+  - id: a
+    text: '`fail`'
+    correct: true
+  - id: b
+    text: '`ok 1.5`'
+  - id: c
+    text: '`ok [object Promise]`'
+  - id: d
+    text: Синхронный TypeError, промис `format()` не создаётся
+explain: |
+  `n` — промис, у него нет `toFixed`. Throw внутри async отклоняет возвращённый промис, снаружи это `fail`, не синхронный вылет.

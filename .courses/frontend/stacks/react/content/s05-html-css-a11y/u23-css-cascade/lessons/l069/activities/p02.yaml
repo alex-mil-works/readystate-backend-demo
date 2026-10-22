@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Зачем почти всем ставить border-box?
+options:
+  - id: a
+    text: Процент и пиксели ширины уже включают padding и border
+    correct: true
+  - id: b
+    text: Так отключается каскад
+  - id: c
+    text: Margin начинает входить в width
+  - id: d
+    text: Overflow становится hidden
+explain: Иначе два блока по 50% с паддингом не встают в ряд.

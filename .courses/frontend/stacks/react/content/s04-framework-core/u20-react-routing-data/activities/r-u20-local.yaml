@@ -1,0 +1,25 @@
+id: r-u20-local
+kind: single_choice
+phase: revision
+prompt: Черновик одного поля нужен только этой форме. Где ему место?
+options:
+  - id: a
+    text: В локальном state формы
+    correct: true
+  - id: b
+    text: В корневом store сразу
+  - id: c
+    text: В pathname
+  - id: d
+    text: В глобальном ref, который читает JSX
+explain: Пока владелец один, store и Context не нужны.
+hints:
+  - title: Делёж
+    markdown: В URL кладут то, чем делятся. В кэш — ответ API. В Context — редкую
+      зависимость дерева.
+tags:
+  - react
+reinforces:
+  - L061-react-state-placement
+  - L059-react-routing-url
+source: original

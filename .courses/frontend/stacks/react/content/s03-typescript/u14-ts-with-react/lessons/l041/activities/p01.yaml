@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Куда положить тип children, если компонент его принимает?
+options:
+  - id: a
+    text: "В явный props: `children?: React.ReactNode`"
+    correct: true
+  - id: b
+    text: "Никуда: `React.FC` всегда добавляет children сам, это и есть контракт"
+  - id: c
+    text: Только `React.ReactElement` без null
+  - id: d
+    text: "`children: any`"
+explain: Явный props не обещает children тем, кто его не рендерит. `ReactNode`
+  покрывает строку и `null`.

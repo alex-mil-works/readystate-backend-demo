@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Где у Vite-приложения точка входа графа?
+options:
+  - id: a
+    text: Скрипт, на который ссылается index.html
+    correct: true
+  - id: b
+    text: Любой файл в src по алфавиту
+  - id: c
+    text: Только package.json scripts
+  - id: d
+    text: Первый тест
+explain: HTML говорит, какой модуль корень.

@@ -1,0 +1,24 @@
+id: r-u35-sse
+kind: single_choice
+phase: revision
+prompt: Сервер шлёт ленту, клиент почти молчит. Что ближе?
+options:
+  - id: a
+    text: SSE или редкий опрос
+    correct: true
+  - id: b
+    text: обязательный свой протокол поверх сокета
+  - id: c
+    text: только POST без ответа
+  - id: d
+    text: фрагмент URL
+explain: Сохранение с кнопки остаётся обычным запросом со статусом.
+hints:
+  - title: Реконнект
+    markdown: У событий браузер умеет переподключиться. У сокета это часть вашего
+      протокола.
+tags:
+  - realtime
+reinforces:
+  - L104-rt-ws-sse
+source: original

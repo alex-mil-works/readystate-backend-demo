@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  useEffect(() => {
+    setN(n + 1);
+  });
+question: Что сделает этот эффект?
+choices:
+  - id: a
+    text: Будет обновлять state после каждого рендера и не остановится
+    correct: true
+  - id: b
+    text: Сработает один раз, как componentDidMount
+  - id: c
+    text: Не скомпилируется
+  - id: d
+    text: Сработает только по клику
+explain: Нет массива зависимостей — эффект после каждого рендера. setState
+  планирует следующий.

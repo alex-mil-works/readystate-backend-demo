@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Зачем `Flags<T> = { [K in keyof T]: boolean }`?"
+options:
+  - id: a
+    text: Те же ключи, что у T, но каждое поле — boolean
+    correct: true
+  - id: b
+    text: Удалить все ключи
+  - id: c
+    text: Превратить T в массив
+  - id: d
+    text: Сделать все поля `any`
+explain: Mapped type сохраняет имена и заменяет тип значения.

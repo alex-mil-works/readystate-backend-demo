@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Как вы опишете props кнопки с колбэком и необязательными children?
+rubric: |-
+  Ожидаемые пункты:
+  - отдельный type props
+  - колбэк с аргументом
+  - children как ReactNode, не any
+  - событие через ChangeEvent/MouseEvent элемента
+sampleAnswer: Я завожу type ButtonProps с label, onPress от строки и
+  необязательным children типа ReactNode. Компонент — обычная функция этих
+  props. Для input беру ChangeEvent от HTMLInputElement, чтобы value был строкой
+  без any.

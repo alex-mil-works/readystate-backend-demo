@@ -1,0 +1,9 @@
+id: U35
+stageId: S07
+title: Потоки и восстановление
+titleEn: Streams and Recovery
+lessons:
+  - lessons/l104
+  - lessons/l105
+  - lessons/l106
+activities: activities

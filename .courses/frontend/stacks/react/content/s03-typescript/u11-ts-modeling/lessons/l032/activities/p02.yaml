@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  type User = { id: string; name?: string };
+  function label(user: User) {
+    return user.name ?? user.id;
+  }
+question: "Чему равен `label({ id: '1' })` по типам и по смыслу выражения?"
+choices:
+  - id: a
+    text: "`string`: `name` может отсутствовать, тогда берётся `id`"
+    correct: true
+  - id: b
+    text: "Ошибка: `name` обязателен"
+  - id: c
+    text: "`string | undefined` без `??` в результате функции"
+  - id: d
+    text: "`null`"
+explain: Опциональное поле — `string | undefined` при чтении. `??` подставляет `id`.

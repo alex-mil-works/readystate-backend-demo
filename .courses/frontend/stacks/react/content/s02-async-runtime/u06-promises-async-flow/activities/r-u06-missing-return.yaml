@@ -1,0 +1,24 @@
+id: r-u06-missing-return
+kind: single_choice
+phase: revision
+tags: [promise, then]
+reinforces: ['L017-js-promise-states']
+source: original
+prompt: |
+  В `then` с фигурными скобками вычислили значение и не написали `return`. Что увидит следующий `then`?
+options:
+  - id: a
+    text: '`undefined`'
+    correct: true
+  - id: b
+    text: Последнее выражение блока
+  - id: c
+    text: Исходное value предыдущего промиса
+  - id: d
+    text: Rejection
+explain: |
+  Блок без `return` возвращает `undefined`. Следующий шаг цепочки получает именно его.
+hints:
+  - title: return
+    markdown: |
+      Стрелка без блока возвращает выражение сама. Блок `{ ... }` — только через `return`.

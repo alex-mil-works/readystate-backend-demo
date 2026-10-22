@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Зачем TLS, если TCP уже соединил машины?
+options:
+  - id: a
+    text: Чтобы проверить имя сервера и закрыть канал от чтения по пути
+    correct: true
+  - id: b
+    text: Чтобы заменить DNS
+  - id: c
+    text: Чтобы закэшировать HTML навсегда
+  - id: d
+    text: TCP уже шифрует любой порт
+explain: TCP доставляет байты. Кто на том конце и не читает ли кто посередине —
+  вопрос TLS.

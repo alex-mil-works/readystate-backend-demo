@@ -1,0 +1,26 @@
+id: r-u17-click
+kind: single_choice
+phase: revision
+prompt: Куда класть fetch по кнопке «Сохранить»?
+options:
+  - id: a
+    text: В обработчик submit
+    correct: true
+  - id: b
+    text: В эффект без зависимостей
+  - id: c
+    text: В тело рендера
+  - id: d
+    text: В key кнопки
+explain: Событие — не синхронизация. Эффект легко отправит форму ещё раз.
+hints:
+  - title: Эффект
+    markdown: Эффект оставляют подписке, таймеру и данным, которые должны совпасть с
+      экраном после рендера.
+tags:
+  - react
+  - effects
+reinforces:
+  - L051-react-effects-cleanup
+  - L050-react-state-hooks
+source: original

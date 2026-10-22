@@ -1,0 +1,17 @@
+id: L092-test-unit-vitest
+order: 92
+title: "Юнит-тесты логики: Vitest и Jest"
+titleEn: Unit Tests of Logic with Vitest and Jest
+essence: Юнит проверяет чистую функцию или модуль без браузера. Мокают границу,
+  не каждую строку внутри. Тест детерминирован.
+depth: application
+required: true
+insights:
+  - insights/01-what.md
+  - insights/02-boundary.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,19 @@
+id: L022-js-long-tasks-raf
+order: 22
+title: Long Tasks, requestAnimationFrame и отзывчивость
+titleEn: Long Tasks, rAF & Responsiveness
+essence: >-
+  Пока стек занят дольше кадра, ввод и отрисовка стоят. rAF не режет синхронную работу — отдать поток можно только вернувшись из задачи.
+depth: application
+required: true
+
+insights:
+  - insights/01-long-tasks.md
+  - insights/02-yielding.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-single-choice.yaml
+  - activities/p03-predict-output.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

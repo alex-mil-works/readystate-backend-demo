@@ -1,0 +1,18 @@
+id: L112-render-meta-react
+order: 112
+title: Next, Astro и границы вокруг React
+titleEn: Next, Astro, and the Boundary around React
+essence: Next и режим фреймворка у роутера — продукты поверх React. Astro
+  уменьшает клиентский JS островами. Модель компонентов от выбора сборки не
+  меняется.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-next.md
+  - insights/02-astro.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

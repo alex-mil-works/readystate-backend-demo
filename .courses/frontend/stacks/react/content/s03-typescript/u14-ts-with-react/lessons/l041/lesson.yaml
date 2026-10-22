@@ -1,0 +1,17 @@
+id: L041-ts-react-props
+order: 41
+title: Типизация props, children и events
+titleEn: Typing Props, Children, and Events
+essence: Props — явный объектный тип. Children и колбэки входят в него сами.
+  `React.FC` не нужен, чтобы тип был честным.
+depth: application
+required: true
+insights:
+  - insights/01-props-object.md
+  - insights/02-events.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

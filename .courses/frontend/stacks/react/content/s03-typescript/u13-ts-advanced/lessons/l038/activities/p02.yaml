@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: "Почему `draw({ x: 1, y: 2, z: 9 })` — ошибка, а переменная с теми же
+  полями — нет?"
+options:
+  - id: a
+    text: Свежий литерал проверяют на лишние ключи, чтобы поймать опечатку
+    correct: true
+  - id: b
+    text: Литерал становится `any`
+  - id: c
+    text: Переменная проходит nominal check по имени `dot`
+  - id: d
+    text: Ошибка будет и там, и там
+explain: Excess property check применяется к свежему литералу в типизированной позиции.

@@ -1,0 +1,25 @@
+id: r-s06-u27-u28-bridge
+kind: single_choice
+phase: revision
+prompt: Локфайл изменился в ветке фичи. Как с ним обращаться в Git?
+options:
+  - id: a
+    text: Коммитить вместе с причиной обновления и смотреть diff как код
+    correct: true
+  - id: b
+    text: Не коммитить никогда
+  - id: c
+    text: Force-push main, чтобы лок подтянулся сам
+  - id: d
+    text: Класть его только в reflog
+explain: Лок — часть снимка. Иначе у ревьюера другое дерево.
+hints:
+  - title: U27 → U28
+    markdown: Ветка несёт и код, и точное дерево зависимостей. CI поставит этот лок,
+      не latest.
+tags:
+  - tooling
+reinforces:
+  - L080-git-commits-branches
+  - L085-pkg-lock-supply
+source: original

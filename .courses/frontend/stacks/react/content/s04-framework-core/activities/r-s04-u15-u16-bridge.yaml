@@ -1,0 +1,26 @@
+id: r-s04-u15-u16-bridge
+kind: single_choice
+phase: revision
+prompt: Кнопка должна показывать число кликов. Где ошибка, если текст меняют
+  через textContent, а рядом ещё есть useState?
+options:
+  - id: a
+    text: "Два источника: следующий рендер затрёт ручной DOM снимком state"
+    correct: true
+  - id: b
+    text: useState не переживает клик
+  - id: c
+    text: textContent и есть декларативный UI
+  - id: d
+    text: Нужен key на кнопке
+explain: Описание от state побеждает. Императивная правка того же текста лишняя.
+hints:
+  - title: U15 → U16
+    markdown: Рендер возвращает описание. setState планирует следующий снимок, а не
+      правит текущий DOM руками.
+tags:
+  - react
+reinforces:
+  - L046-react-declarative-ui
+  - L047-react-state-snapshot
+source: original

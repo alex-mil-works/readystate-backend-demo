@@ -1,0 +1,26 @@
+id: r-s03-u10-u11-bridge
+kind: single_choice
+phase: revision
+prompt: Функция принимает `string | number` и сразу вызывает `trim`. Что не так
+  на стыке «границы» и «сужения»?
+options:
+  - id: a
+    text: Метод строки недоступен, пока вариант number не отсеян
+    correct: true
+  - id: b
+    text: Union в runtime сам выбирает trim
+  - id: c
+    text: "`unknown` здесь уже сужен"
+  - id: d
+    text: Достаточно `as string` как валидации
+explain: Сначала narrowing, потом метод одной стороны union.
+hints:
+  - title: U10 → U11
+    markdown: Тип на границе честный, только если внутри его сужают, а не замазывают
+      `as`.
+tags:
+  - typescript
+reinforces:
+  - L031-ts-any-unknown-never
+  - L034-ts-unions-narrowing
+source: original

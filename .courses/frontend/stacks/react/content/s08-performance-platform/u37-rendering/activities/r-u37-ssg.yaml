@@ -1,0 +1,23 @@
+id: r-u37-ssg
+kind: single_choice
+phase: revision
+prompt: Какой контент честно собирать заранее?
+options:
+  - id: a
+    text: Одинаковый для всех и не сиюсекундный
+    correct: true
+  - id: b
+    text: Личную корзину каждой секунды
+  - id: c
+    text: Только ответы WebSocket
+  - id: d
+    text: Секрет клиента
+explain: Остров гидратирует виджет, не всю статью.
+hints:
+  - title: Окно
+    markdown: Редкая пересборка — осознанная задержка свежести, не «живые данные».
+tags:
+  - render
+reinforces:
+  - L111-render-ssg-islands
+source: original

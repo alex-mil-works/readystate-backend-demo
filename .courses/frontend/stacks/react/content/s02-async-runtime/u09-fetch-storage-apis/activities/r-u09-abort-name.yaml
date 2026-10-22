@@ -1,0 +1,24 @@
+id: r-u09-abort-name
+kind: single_choice
+phase: revision
+tags: [fetch, abort]
+reinforces: ['L026-js-fetch-abort']
+source: original
+prompt: |
+  Как узнать, что `fetch` упал из-за `controller.abort()`?
+options:
+  - id: a
+    text: '`error.name === "AbortError"`'
+    correct: true
+  - id: b
+    text: '`response.status === 0` в ветке `then`'
+  - id: c
+    text: Промис остаётся pending
+  - id: d
+    text: Приходит статус 499
+explain: |
+  Отмена отклоняет промис. Имя DOMException — `AbortError`.
+hints:
+  - title: Новый controller
+    markdown: |
+      Сработавший signal не используют повторно. Следующий запрос создаёт свой `AbortController`.

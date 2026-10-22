@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: |
+  Что происходит при втором `resolve` внутри того же executor?
+options:
+  - id: a
+    text: Промис переходит в fulfilled с новым значением
+  - id: b
+    text: Первый исход сохраняется, повторный settle игнорируется
+    correct: true
+  - id: c
+    text: Промис становится rejected
+  - id: d
+    text: Бросается синхронный TypeError
+explain: |
+  Settled-промис не меняет состояние. Лишний `resolve` или `reject` после первого отбрасывается.

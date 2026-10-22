@@ -1,0 +1,23 @@
+id: r-u15-element
+kind: single_choice
+phase: revision
+prompt: JSX-кнопка в переменной — это уже DOM-узел?
+options:
+  - id: a
+    text: Нет, это описание элемента
+    correct: true
+  - id: b
+    text: Да, браузер вставил её синхронно
+  - id: c
+    text: Да, если компонент с большой буквы
+  - id: d
+    text: Только при strict mode
+explain: Элемент — данные. Узел появляется, когда React применяет описание.
+hints:
+  - title: Компонент
+    markdown: Функция возвращает описание. Вызов `<Save />` сам по себе DOM не создаёт.
+tags:
+  - react
+reinforces:
+  - L044-react-elements-jsx
+source: original

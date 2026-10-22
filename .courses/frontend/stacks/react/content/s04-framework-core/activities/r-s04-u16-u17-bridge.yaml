@@ -1,0 +1,25 @@
+id: r-s04-u16-u17-bridge
+kind: single_choice
+phase: revision
+prompt: Полное имя считают эффектом из first и last и кладут в state. Что нарушено?
+options:
+  - id: a
+    text: Это derived value, его место в рендере, не в догоняющем эффекте
+    correct: true
+  - id: b
+    text: Эффект обязан копировать любой props
+  - id: c
+    text: useState не видит строки
+  - id: d
+    text: Нужен random key
+explain: Эффект здесь прячет обычное вычисление и добавляет кадр со старым именем.
+hints:
+  - title: U16 → U17
+    markdown: Иммутабельный источник остаётся в state. Проекцию не синхронизируют
+      вторым setState.
+tags:
+  - react
+reinforces:
+  - L049-react-immutable-derived
+  - L051-react-effects-cleanup
+source: original

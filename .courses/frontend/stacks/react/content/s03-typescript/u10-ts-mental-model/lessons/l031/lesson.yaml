@@ -1,0 +1,17 @@
+id: L031-ts-any-unknown-never
+order: 31
+title: "`any`, `unknown`, `never` и пустые значения"
+titleEn: any, unknown, never, and Empty Values
+essence: "`any` выключает проверку. `unknown` заставляет сузить. `never` —
+  ветка, которой не бывает. `void` — про игнорируемый результат."
+depth: mechanism
+required: true
+insights:
+  - insights/01-any-unknown.md
+  - insights/02-never-void-null.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

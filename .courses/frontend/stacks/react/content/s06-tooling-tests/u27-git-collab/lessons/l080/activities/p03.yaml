@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Ветку уже смотрят двое коллег. Что безопаснее для подтягивания свежего main?
+options:
+  - id: a
+    text: merge, если не хотите переписывать уже опубликованные хеши
+    correct: true
+  - id: b
+    text: rebase и force-push без предупреждения
+  - id: c
+    text: удалить .git
+  - id: d
+    text: коммит в чужой reflog
+explain: Rebase опубликованной ветки ломает тем, кто на неё опирался.

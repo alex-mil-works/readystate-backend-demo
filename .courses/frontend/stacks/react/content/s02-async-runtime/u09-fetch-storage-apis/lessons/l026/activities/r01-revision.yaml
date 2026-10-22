@@ -1,0 +1,29 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Экран закрыли, а `fetch` ещё в полёте. Почему недостаточно не вызывать `setState` в `then`?
+options:
+  - id: a
+    text: Запрос всё равно доработает и потратит сеть; гонка останется, если запись всё же случится
+    correct: true
+  - id: b
+    text: '`then` после unmount бросает исключение само'
+  - id: c
+    text: Браузер отменяет fetch, когда компонент размонтировался
+  - id: d
+    text: '`response.json()` синхронно читает тело, гонки нет'
+explain: |
+  Игнор результата не отменяет запрос. `AbortController` останавливает работу и даёт понятный `AbortError`.
+hints:
+  - title: Статус и rejection
+    markdown: |
+      `fetch` падает на сети и abort. `404` и `500` приходят как `Response`.
+
+      ```js
+      if (!res.ok) throw new Error(String(res.status));
+      ```
+  - title: Новый signal
+    markdown: |
+      После `abort()` signal уже сработал. Следующий запрос — новый `AbortController`.
+      `res.json()` — отдельный промис поверх уже полученного ответа.

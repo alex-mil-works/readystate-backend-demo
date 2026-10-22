@@ -1,0 +1,17 @@
+id: p03
+kind: predict_output
+phase: practice
+code: "приложение: вложенные маршруты, формы, почти нет «статей для всех»"
+question: Какое сравнение честное?
+choices:
+  - id: a
+    text: Это ближе к приложению на React Router или Next, чем к чистому контентному
+      острову
+    correct: true
+  - id: b
+    text: Astro обязателен для любых форм
+  - id: c
+    text: React больше не нужен
+  - id: d
+    text: SSR запрещён
+explain: Форма продукта важнее имени в вакансии.

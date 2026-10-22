@@ -1,0 +1,23 @@
+id: r-u28-peer
+kind: single_choice
+phase: revision
+prompt: UI-кит не должен тащить вторую копию React. Какое поле манифеста?
+options:
+  - id: a
+    text: peerDependencies
+    correct: true
+  - id: b
+    text: description
+  - id: c
+    text: только scripts
+  - id: d
+    text: git revert
+explain: Хозяин приложения ставит одну React.
+hints:
+  - title: Каретка
+    markdown: ^18.2.0 не включает 19.0.0. Мажор — возможная ломка API.
+tags:
+  - packages
+reinforces:
+  - L083-pkg-manifest-semver
+source: original

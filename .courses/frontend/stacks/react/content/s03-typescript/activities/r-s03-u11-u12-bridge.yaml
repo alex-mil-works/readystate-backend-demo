@@ -1,0 +1,25 @@
+id: r-s03-u11-u12-bridge
+kind: single_choice
+phase: revision
+prompt: Одна функция читает поле у пользователя и у урока. Как не скатиться в `any`?
+options:
+  - id: a
+    text: Generic с constraint на форму, которую реально читают
+    correct: true
+  - id: b
+    text: Два `as any`
+  - id: c
+    text: Вернуть `object`
+  - id: d
+    text: Перегрузку из десяти `Function`
+explain: Параметр типа сохраняет аргумент, constraint ограничивает чтение.
+hints:
+  - title: U11 → U12
+    markdown: "Объектная форма из прошлого юнита становится constraint `T extends {
+      id: string }`."
+tags:
+  - typescript
+reinforces:
+  - L032-ts-object-types
+  - L035-ts-generics-constraints
+source: original

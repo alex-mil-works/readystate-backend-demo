@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Список уроков сортируют, у каждой строки свой черновик в state. Какой
+  key выбрать?
+options:
+  - id: a
+    text: Стабильный id урока
+    correct: true
+  - id: b
+    text: Индекс в уже отсортированном массиве
+  - id: c
+    text: Math.random() на каждом рендере
+  - id: d
+    text: Длину названия
+explain: Id не меняется от порядка. Индекс после сортировки указывает на другую
+  сущность.

@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Чем `ReactNode` отличается от `ReactElement` в children?
+options:
+  - id: a
+    text: "`ReactNode` шире: текст, фрагмент, null; `ReactElement` — узел
+      createElement"
+    correct: true
+  - id: b
+    text: Это синонимы
+  - id: c
+    text: "`ReactNode` запрещает строку"
+  - id: d
+    text: "`ReactElement` включает `undefined` от забытого return"
+explain: Для слота children почти всегда нужен `ReactNode`.
+hints:
+  - title: Без FC
+    markdown: Возврат компонента выводится. FC прятал children и хуже стыкуется с
+      generics. Пишите функцию и type props.

@@ -1,0 +1,24 @@
+id: r-u25-repeat
+kind: single_choice
+phase: revision
+prompt: Пятнадцать утилит скопированы в шесть карточек. Что сделать?
+options:
+  - id: a
+    text: Собрать один компонент
+    correct: true
+  - id: b
+    text: Ещё раз скопировать и чуть поменять числа
+  - id: c
+    text: Запретить токены
+  - id: d
+    text: Поставить role=button на карточку без клавиатуры
+explain: "@apply на все варианты возвращает обычный CSS без шкалы в разметке."
+hints:
+  - title: BEM
+    markdown: Блок, элемент и модификатор держат имя рядом с компонентом.
+tags:
+  - css
+reinforces:
+  - L075-css-tailwind
+  - L074-css-bem-modules
+source: original

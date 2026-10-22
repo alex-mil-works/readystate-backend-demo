@@ -1,0 +1,17 @@
+id: L030-ts-inference-annotations
+order: 30
+title: Inference, annotations и ответ компилятора
+titleEn: Inference, Annotations, and Compiler Feedback
+essence: Вывод типов закрывает локальные переменные. Аннотации нужны на
+  границах. `let` расширяет литерал до широкого типа.
+depth: application
+required: true
+insights:
+  - insights/01-infer-boundaries.md
+  - insights/02-widening.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

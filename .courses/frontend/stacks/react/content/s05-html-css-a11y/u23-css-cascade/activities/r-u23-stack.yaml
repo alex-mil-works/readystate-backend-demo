@@ -1,0 +1,25 @@
+id: r-u23-stack
+kind: single_choice
+phase: revision
+prompt: Меню с z-index 9999 внутри карточки с transform под модалкой. Почему?
+options:
+  - id: a
+    text: Контекст наложения карточки не пускает меню спорить снаружи
+    correct: true
+  - id: b
+    text: 9999 всегда выше любого соседа в документе
+  - id: c
+    text: fixed игнорирует z-index
+  - id: d
+    text: из-за наследования margin
+explain: Большое число не выпрыгивает из контекста.
+hints:
+  - title: important
+    markdown: Им перекрикивают запутанную специфичность. В своём CSS лучше упростить
+      селектор.
+tags:
+  - css
+reinforces:
+  - L070-css-display-stacking
+  - L068-css-cascade-specificity
+source: original

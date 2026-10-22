@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Чем ref отличается от state?
+options:
+  - id: a
+    text: Изменение ref не рендерит, изменение state рендерит
+    correct: true
+  - id: b
+    text: ref нельзя повесить на input
+  - id: c
+    text: state не переживает рендер
+  - id: d
+    text: ref доступен только в эффекте с пустыми зависимостями
+explain: Оба переживают рендер. Разница в том, кто запускает следующий.
+hints:
+  - title: "null"
+    markdown: До commit current у DOM-ref — null. Вызов focus без проверки упадёт на
+      первом кадре.

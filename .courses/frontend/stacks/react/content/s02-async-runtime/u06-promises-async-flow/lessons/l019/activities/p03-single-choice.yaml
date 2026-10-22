@@ -1,0 +1,17 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: |
+  Нужен итог по каждому запросу, включая неуспешные. Что выбрать?
+options:
+  - id: a
+    text: '`Promise.allSettled`'
+    correct: true
+  - id: b
+    text: '`Promise.all`'
+  - id: c
+    text: '`Promise.race`'
+  - id: d
+    text: '`Promise.any`'
+explain: |
+  `allSettled` дожидается каждого и отдаёт status. `all` оборвёт результат на первой ошибке, `any` ищет первый успех.

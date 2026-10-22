@@ -1,0 +1,30 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Зачем `return` внутри `then`, если следующий шаг должен увидеть результат?
+options:
+  - id: a
+    text: Без `return` следующий `then` получит `undefined`, даже если внутри что-то посчитали
+    correct: true
+  - id: b
+    text: '`return` нужен только чтобы перевести промис в rejected'
+  - id: c
+    text: Блок `then` автоматически возвращает последнее выражение
+  - id: d
+    text: '`return` мутирует исходный промис'
+explain: |
+  Колбэк с фигурными скобками отдаёт значение только через `return`. Иначе дальше идёт `undefined`.
+hints:
+  - title: Новый промис
+    markdown: |
+      Каждый `then` создаёт новый промис. Исходный остаётся со своим value.
+
+      ```js
+      const p = Promise.resolve(1);
+      const q = p.then((n) => n + 1);
+      ```
+  - title: Flatten
+    markdown: |
+      `return 2` и `return Promise.resolve(2)` для следующего `then` дают одно и то же value: `2`.
+      Забытый `return` внутри блока — частая причина пустого следующего шага.

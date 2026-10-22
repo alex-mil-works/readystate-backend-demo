@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Зачем писать бюджет размера первого скрипта до релиза фичи?
+options:
+  - id: a
+    text: Чтобы рост чанка был виден в ревью, а не после жалоб
+    correct: true
+  - id: b
+    text: Бюджет заменяет измерение LCP
+  - id: c
+    text: Без него Git не пушит
+  - id: d
+    text: Он отключает tree-shaking
+explain: Число в CI спорит раньше, чем ощущение «и так сойдёт».

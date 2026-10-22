@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Эффект копирует `first + last` в `fullName` state. Какой симптом типичен?
+options:
+  - id: a
+    text: Лишний рендер и окно, где полное имя ещё старое
+    correct: true
+  - id: b
+    text: spread начинает мутировать props
+  - id: c
+    text: filter перестаёт быть чистой функцией
+  - id: d
+    text: key списка становится обязательным random
+explain: Догоняющий эффект всегда на шаг позади источника.
+hints:
+  - title: Источник
+    markdown: В state кладут ввод и загруженные данные. Проекцию считают в рендере,
+      пока она дешёвая.

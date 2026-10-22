@@ -1,0 +1,24 @@
+id: r-u13-kind
+kind: single_choice
+phase: revision
+prompt: Что даёт общее поле `kind` у union состояний?
+options:
+  - id: a
+    text: В ветке switch остальные поля сужаются до этого варианта
+    correct: true
+  - id: b
+    text: Поле kind проверяет JSON в runtime само
+  - id: c
+    text: Union становится intersection
+  - id: d
+    text: satisfies больше не нужен никогда
+explain: Дискриминант делает ветки исчерпываемыми.
+hints:
+  - title: satisfies
+    markdown: Аннотация расширяет переменную. satisfies проверяет выражение и
+      оставляет узкие ключи.
+tags:
+  - unions
+reinforces:
+  - L039-ts-discriminated-satisfies
+source: original

@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Кто является границей проверки подписи?
+options:
+  - id: a
+    text: Сервер на входящем запросе
+    correct: true
+  - id: b
+    text: Только код во фронтенде
+  - id: c
+    text: DNS
+  - id: d
+    text: Prettier
+explain: Клиент может солгать сам себе. Ресурс отдаёт сервер.

@@ -1,0 +1,26 @@
+id: r-s04-u17-u18-bridge
+kind: single_choice
+phase: revision
+prompt: Submit формы включает флаг, а эффект по флагу вызывает fetch. Какой шов лишний?
+options:
+  - id: a
+    text: "Событие уже есть: запрос должен стартовать в onSubmit"
+    correct: true
+  - id: b
+    text: Controlled input нельзя отправить без эффекта
+  - id: c
+    text: preventDefault заменяет обработчик
+  - id: d
+    text: Ref формы сам сериализует поля в state
+explain: Флаг легко оставить true и отправить форму снова. Клик или submit
+  происходят один раз.
+hints:
+  - title: U17 → U18
+    markdown: Эффект синхронизирует внешний мир. Отправка формы — событие
+      controlled-полей.
+tags:
+  - react
+reinforces:
+  - L051-react-effects-cleanup
+  - L053-react-controlled-inputs
+source: original

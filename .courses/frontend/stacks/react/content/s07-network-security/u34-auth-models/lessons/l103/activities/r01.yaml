@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Зачем адрес возврата регистрируют заранее?
+options:
+  - id: a
+    text: Чтобы ответ провайдера нельзя было увести на чужой URL
+    correct: true
+  - id: b
+    text: Чтобы не нужен был HTTPS
+  - id: c
+    text: Чтобы положить секрет в репозиторий
+  - id: d
+    text: Чтобы заменить cookie
+explain: Совпадение должно быть точным, не «любой путь нашего домена», если так
+  не задумано.
+hints:
+  - title: OIDC
+    markdown: OAuth отвечает «что можно делать». OIDC добавляет «кто это».

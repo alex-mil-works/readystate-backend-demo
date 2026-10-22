@@ -1,0 +1,9 @@
+id: U36
+stageId: S08
+title: Диагностика скорости
+titleEn: Performance Diagnostics
+lessons:
+  - lessons/l107
+  - lessons/l108
+  - lessons/l109
+activities: activities

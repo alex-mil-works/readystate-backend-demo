@@ -1,0 +1,24 @@
+id: r-u19-stale
+kind: single_choice
+phase: revision
+prompt: useCallback с пустыми зависимостями замкнул id. id сменился. Клик отправит…
+options:
+  - id: a
+    text: старый id
+    correct: true
+  - id: b
+    text: новый id всегда
+  - id: c
+    text: оба id
+  - id: d
+    text: ничего, callback обновляется сам
+explain: Стабильная ссылка не обновляет снимок. id нужен в зависимостях.
+hints:
+  - title: Порядок
+    markdown: Профайлер, граница state, честные зависимости, и только потом memo.
+tags:
+  - react
+reinforces:
+  - L056-react-memo-stability
+  - L057-react-effect-pitfalls
+source: original

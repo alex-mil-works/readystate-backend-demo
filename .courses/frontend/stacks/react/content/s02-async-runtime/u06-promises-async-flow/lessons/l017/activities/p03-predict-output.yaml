@@ -1,0 +1,20 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |
+  Promise.resolve(1)
+    .then((n) => Promise.resolve(n + 1))
+    .then((n) => console.log(n));
+question: Что напечатает последний `then`?
+choices:
+  - id: a
+    text: '2'
+    correct: true
+  - id: b
+    text: Promise { 2 }
+  - id: c
+    text: '1'
+  - id: d
+    text: undefined
+explain: |
+  Возвращённый промис разворачивается. Следующий `then` получает число `2`, а не объект Promise.

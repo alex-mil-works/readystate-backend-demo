@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Форма-черновик должна сброситься, когда сменился id урока. Что чище
+  вечного эффекта копирования?
+options:
+  - id: a
+    text: key={lessonId} на форме, чтобы state родился заново
+    correct: true
+  - id: b
+    text: Пустые зависимости у эффекта
+  - id: c
+    text: Мутировать props.lesson
+  - id: d
+    text: Хранить черновик только в ref и читать его в JSX
+explain: Новый key — новая личность компонента и чистый начальный state.
+hints:
+  - title: Дыра в зависимостях
+    markdown: Пустой массив при чтении props — устаревшее значение, не оптимизация.

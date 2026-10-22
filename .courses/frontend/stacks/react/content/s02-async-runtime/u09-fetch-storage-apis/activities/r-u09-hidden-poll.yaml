@@ -1,0 +1,24 @@
+id: r-u09-hidden-poll
+kind: single_choice
+phase: revision
+tags: [visibility, permissions]
+reinforces: ['L028-js-capability-apis']
+source: original
+prompt: |
+  `document.hidden` стал истинным. Что следует сделать с поллингом?
+options:
+  - id: a
+    text: Остановить его и один раз обновиться, когда вкладка снова видима
+    correct: true
+  - id: b
+    text: Ничего — браузер сам abort'ит `fetch` скрытой вкладки
+  - id: c
+    text: Перейти на `permissions.query` вместо таймера
+  - id: d
+    text: Вызвать `Notification.requestPermission`
+explain: |
+  Visibility — сигнал вашему коду. Сеть сама не отменяется, диалог разрешений тут ни при чём.
+hints:
+  - title: Не диалог
+    markdown: |
+      `permissions.query` только читает состояние. Скрытая вкладка — событие `visibilitychange`, не запрос разрешения.

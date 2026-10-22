@@ -1,0 +1,17 @@
+id: L075-css-tailwind
+order: 75
+title: Tailwind и цена utility-first
+titleEn: Tailwind and Utility-First Trade-offs
+essence: Утилиты ускоряют экран и прижимают значения к шкале. Они не заменяют
+  семантику и раздувают разметку, если нет своих блоков.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-scale.md
+  - insights/02-noise.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

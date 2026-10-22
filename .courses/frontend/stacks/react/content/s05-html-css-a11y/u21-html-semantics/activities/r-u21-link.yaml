@@ -1,0 +1,24 @@
+id: r-u21-link
+kind: single_choice
+phase: revision
+prompt: «Дальше» открывает URL урока. Какой элемент?
+options:
+  - id: a
+    text: Ссылка с href
+    correct: true
+  - id: b
+    text: div с курсором pointer
+  - id: c
+    text: button type=submit в чужой форме
+  - id: d
+    text: таблица
+explain: Команда без перехода — кнопка.
+hints:
+  - title: Alt
+    markdown: Декоративной картинке — пустой alt. Содержательной — текст смысла, не
+      имя файла.
+tags:
+  - html
+reinforces:
+  - L063-html-links-media
+source: original

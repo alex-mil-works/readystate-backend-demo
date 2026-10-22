@@ -1,0 +1,17 @@
+id: L103-auth-oauth
+order: 103
+title: OAuth, OIDC и роль фронтенда
+titleEn: OAuth, OIDC, and the Frontend Role
+essence: OAuth делегирует доступ, OIDC добавляет личность. Публичный клиент не
+  хранит секрет. Возврат на сайт сверяют с заранее известным адресом.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-delegation.md
+  - insights/02-public.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

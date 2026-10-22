@@ -1,0 +1,23 @@
+id: r-u36-cls
+kind: single_choice
+phase: revision
+prompt: Картинка без размера сдвигает текст. Что страдает?
+options:
+  - id: a
+    text: CLS
+    correct: true
+  - id: b
+    text: Только сертификат
+  - id: c
+    text: Только INP
+  - id: d
+    text: Локфайл
+explain: INP — про задержку после действия. LCP — про появление главного.
+hints:
+  - title: Поле
+    markdown: Один лабораторный балл не заменяет распределение реальных визитов.
+tags:
+  - perf
+reinforces:
+  - L107-perf-cwv
+source: original

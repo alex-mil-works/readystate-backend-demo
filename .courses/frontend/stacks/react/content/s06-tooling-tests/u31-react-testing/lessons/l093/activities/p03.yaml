@@ -1,0 +1,19 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  render(<Counter />);
+  await user.click(screen.getByRole('button', { name: 'Ещё' }));
+  expect(screen.getByText('1')).toBeInTheDocument();
+question: Что доказано?
+choices:
+  - id: a
+    text: Клик по кнопке с этим именем показывает текст 1
+    correct: true
+  - id: b
+    text: Что useState вызван один раз
+  - id: c
+    text: Что прод-роут открывается в Chrome
+  - id: d
+    text: Что CSS-класс зелёный
+explain: Доказательство — видимый результат, не устройство хука.

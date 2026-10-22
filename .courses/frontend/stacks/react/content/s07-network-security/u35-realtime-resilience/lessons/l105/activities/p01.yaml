@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Какой ответ имеет смысл повторить?
+options:
+  - id: a
+    text: Обрыв сети или 503
+    correct: true
+  - id: b
+    text: 422 с ошибками полей
+  - id: c
+    text: 400 из-за пустого имени
+  - id: d
+    text: Любой статус подряд без паузы
+explain: Ошибка данных та же и на второй попытке.

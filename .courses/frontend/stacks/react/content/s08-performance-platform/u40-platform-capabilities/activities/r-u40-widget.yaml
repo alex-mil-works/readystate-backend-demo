@@ -1,0 +1,24 @@
+id: r-u40-widget
+kind: single_choice
+phase: revision
+prompt: Весь экран урока не переписывают на custom elements, потому что…
+options:
+  - id: a
+    text: изоляция стилей уже решается модулем, а тень усложняет границу с React
+    correct: true
+  - id: b
+    text: браузер запретил свои теги
+  - id: c
+    text: слоты не существуют
+  - id: d
+    text: так требует бюджет LCP
+explain: Свой тег уместен на крае виджета для чужих страниц.
+hints:
+  - title: Диалог
+    markdown: Системный запрос после отказа не повторяют пачкой.
+tags:
+  - platform
+reinforces:
+  - L119-web-components
+  - L120-device-permissions
+source: original

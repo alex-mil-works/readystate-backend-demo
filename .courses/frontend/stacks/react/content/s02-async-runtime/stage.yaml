@@ -1,0 +1,11 @@
+id: S02
+title: Async JS и runtime браузера
+titleEn: Async JS & Browser Runtime
+
+units:
+  - u06-promises-async-flow
+  - u07-event-loop
+  - u08-dom-events-navigation
+  - u09-fetch-storage-apis
+
+activities: activities

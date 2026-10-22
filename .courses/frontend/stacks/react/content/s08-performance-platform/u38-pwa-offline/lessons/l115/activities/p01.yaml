@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Куда положить локальный прогресс уроков структурированными записями?
+options:
+  - id: a
+    text: В IndexedDB
+    correct: true
+  - id: b
+    text: В Cache API как таблицу пользователей
+  - id: c
+    text: В один гигантский localStorage на главном потоке
+  - id: d
+    text: В имя кэша воркера строкой на каждый клик
+explain: Ответы сети — в Cache API. Записи прогресса — в базу браузера.

@@ -1,0 +1,21 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: В union состояний экрана нет общего тега, только разные поля. Почему
+  switch неудобен?
+options:
+  - id: a
+    text: Нечем исчерпывающе отличить вариант, сужение размазывается по `in` и
+      optional
+    correct: true
+  - id: b
+    text: Union без тега компилятор запрещает
+  - id: c
+    text: Достаточно имени type
+  - id: d
+    text: "`satisfies` добавляет тег сам"
+explain: Дискриминант — договорённость модели, не магия языка.
+hints:
+  - title: default
+    markdown: Ветка default с присваиванием в `never` покажет, что в union появился
+      новый `kind`, который вы не обработали.

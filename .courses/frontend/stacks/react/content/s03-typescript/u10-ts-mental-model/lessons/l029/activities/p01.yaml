@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Что остаётся в бандле после компиляции TypeScript?
+options:
+  - id: a
+    text: JavaScript без аннотаций типов
+    correct: true
+  - id: b
+    text: Те же проверки типов, но внутри V8
+  - id: c
+    text: JSON-схема каждой функции
+  - id: d
+    text: Типы только для `interface`, `type` остаётся
+explain: Типы стираются. Runtime — обычный JavaScript.

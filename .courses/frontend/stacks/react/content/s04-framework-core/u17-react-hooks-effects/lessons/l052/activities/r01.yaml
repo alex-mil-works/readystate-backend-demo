@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Хук `useDocumentTitle(title)` ставит title и в cleanup возвращает
+  старый. Куда его вызывать?
+options:
+  - id: a
+    text: С верхнего уровня компонента, рядом с другими хуками
+    correct: true
+  - id: b
+    text: Внутри обработчика клика
+  - id: c
+    text: В условии после раннего return
+  - id: d
+    text: В обычном map без компонента
+explain: Иначе слоты и линтер зависимостей не работают.
+hints:
+  - title: Не синглтон
+    markdown: Общий онлайн-статус двух панелей не появится из двух useOnline, если
+      внутри у каждого свой useState. Шарят владельца или store.

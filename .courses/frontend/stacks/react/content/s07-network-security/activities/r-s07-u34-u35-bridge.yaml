@@ -1,0 +1,29 @@
+id: r-s07-u34-u35-bridge
+kind: single_choice
+phase: revision
+prompt: Сокет оборвался с 401, а клиент сразу шлёт ту же команду оплаты ещё раз.
+  Что пропущено?
+options:
+  - id: a
+    text: сначала восстановить сессию, повтор платежа без ключа идемпотентности
+      опасен
+    correct: true
+  - id: b
+    text: 401 всегда лечится вторым POST
+  - id: c
+    text: WebSocket делает POST идемпотентным
+  - id: d
+    text: надо показать стек и перезаписать версию
+explain: Временный обрыв повторяют. Ошибку входа и повтор денег не смешивают.
+hints:
+  - title: U34 → U35
+    markdown: 401 — обновить вход. Повтор — у обрыва и 503, с паузой. Платёж узнают
+      по ключу, иначе это второе списание.
+tags:
+  - network
+  - security
+reinforces:
+  - L102-auth-jwt
+  - L105-rt-retry-cancel
+  - L106-rt-error-recovery
+source: original

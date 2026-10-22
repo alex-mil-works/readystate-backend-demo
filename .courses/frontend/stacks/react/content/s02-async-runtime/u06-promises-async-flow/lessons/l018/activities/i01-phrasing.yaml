@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: |
+  Объясните вслух: чем rejection отличается от throw и что на самом деле делает `async/await`.
+rubric: |
+  Ожидаемые пункты (30–60 сек):
+  - async всегда возвращает промис
+  - throw в async становится rejection
+  - await пробрасывает rejection в try/catch только внутри функции
+  - забытый await и try без await
+sampleAnswer: |
+  async-функция сразу возвращает промис. return упаковывает значение, throw отклоняет промис — вызывающий от этого синхронно не падает.
+  await распаковывает value или бросает reason в локальный try/catch. Без await в руках остаётся промис, и try вокруг голого вызова rejection не поймает.

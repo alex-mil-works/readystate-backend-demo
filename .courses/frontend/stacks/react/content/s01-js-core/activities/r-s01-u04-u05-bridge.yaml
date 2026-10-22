@@ -1,0 +1,24 @@
+id: r-s01-u04-u05-bridge
+kind: single_choice
+phase: revision
+tags: [this, class, modules]
+reinforces: ['L012-js-this-binding', 'L016-js-classes-modules']
+source: original
+prompt: |
+  Метод класса и функция, объявленная в ES-модуле, по-разному получают `this`. Что верно?
+options:
+  - id: a
+    text: Метод класса берёт `this` из вызова (`obj.method()`); код модуля всегда в strict mode, голый вызов даёт `undefined`
+    correct: true
+  - id: b
+    text: Оба всегда получают `globalThis`
+  - id: c
+    text: '`class` отключает strict mode внутри методов'
+  - id: d
+    text: ESM и class берут `this` так же, как динамический `require` в CommonJS
+explain: |
+  U04: `this` зависит от способа вызова. U05: методы `class` получают `this` в момент вызова; тело ES-модуля всегда в strict mode, поэтому голый вызов даёт `undefined`.
+hints:
+  - title: U04 → U05
+    markdown: |
+      `user.greet()` ставит `this = user`. Тот же метод, вынутый в переменную, в strict/ESM теряет объект. Модуль не «чинит» `this` сам по себе.

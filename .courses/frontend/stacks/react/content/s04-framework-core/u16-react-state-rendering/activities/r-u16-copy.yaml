@@ -1,0 +1,24 @@
+id: r-u16-copy
+kind: single_choice
+phase: revision
+prompt: Как обновить имя в объекте state?
+options:
+  - id: a
+    text: Передать новый объект, не мутировать старый
+    correct: true
+  - id: b
+    text: Присвоить поле и вернуть тот же объект
+  - id: c
+    text: push в тот же массив пользователя
+  - id: d
+    text: Поменять key и мутировать
+explain: Новая ссылка отделяет следующий снимок от прошлого.
+hints:
+  - title: Derived
+    markdown: Полное имя и фильтр считают в рендере, не вторым state через эффект.
+tags:
+  - react
+  - state
+reinforces:
+  - L049-react-immutable-derived
+source: original

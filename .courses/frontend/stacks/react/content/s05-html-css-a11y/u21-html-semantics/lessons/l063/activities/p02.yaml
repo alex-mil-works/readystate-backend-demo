@@ -1,0 +1,17 @@
+id: p02
+kind: predict_output
+phase: practice
+code: <img src="/logo.svg" alt="">
+question: Как скринридер обойдётся с этой картинкой?
+choices:
+  - id: a
+    text: "Пропустит: пустой alt значит декоративная"
+    correct: true
+  - id: b
+    text: Прочитает путь /logo.svg
+  - id: c
+    text: Скажет «изображение» и остановится навсегда
+  - id: d
+    text: Требует caption всегда
+explain: Пустой alt убирает картинку из доступного имени. Содержательной
+  картинке нужен текст.

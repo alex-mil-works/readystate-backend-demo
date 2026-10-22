@@ -1,0 +1,24 @@
+id: r-u20-context
+kind: single_choice
+phase: revision
+prompt: Куда положить тему, которая нужна глубоко и меняется редко?
+options:
+  - id: a
+    text: В Context
+    correct: true
+  - id: b
+    text: В тот же Context, что и каждый символ поиска
+  - id: c
+    text: Только прокинуть props через все слои, Context нельзя
+  - id: d
+    text: В URL query на каждый кадр анимации
+explain: Редкое широкое значение — Context. Частый поиск там будит всех потребителей.
+hints:
+  - title: Кэш
+    markdown: Ответ сервера со статусом и отменой не смешивают с флагом модалки.
+tags:
+  - react
+  - state
+reinforces:
+  - L061-react-state-placement
+source: original

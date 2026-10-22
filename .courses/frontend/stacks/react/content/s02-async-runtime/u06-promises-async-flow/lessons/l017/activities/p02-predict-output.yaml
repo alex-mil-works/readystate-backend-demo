@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |
+  const p = Promise.resolve(1);
+  const q = p.then((n) => n + 1);
+  q.then((n) => console.log(n));
+  console.log(p === q);
+question: Что произойдёт?
+choices:
+  - id: a
+    text: Сначала `false`, затем `2`
+    correct: true
+  - id: b
+    text: Сначала `true`, затем `1`
+  - id: c
+    text: Сначала `false`, затем `1`
+  - id: d
+    text: Синхронно `2`, затем `false`
+explain: |
+  `then` возвращает новый промис, поэтому `p === q` ложно и печатается сразу. Колбэк — микрозадача, `2` появится после текущего стека.

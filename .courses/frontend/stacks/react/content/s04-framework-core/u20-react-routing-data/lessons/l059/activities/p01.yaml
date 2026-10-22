@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Открытый урок должен переживать обновление страницы. Где его хранить?
+options:
+  - id: a
+    text: В пути URL, который читает роутер
+    correct: true
+  - id: b
+    text: Только в useState корня
+  - id: c
+    text: В ref, чтобы не рендерить
+  - id: d
+    text: В заголовке документа
+explain: Локальный state умирает вместе со страницей и не попадает в ссылку.

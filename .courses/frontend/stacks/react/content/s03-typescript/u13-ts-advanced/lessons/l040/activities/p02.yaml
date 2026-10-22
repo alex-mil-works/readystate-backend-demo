@@ -1,0 +1,23 @@
+id: p02
+kind: predict_output
+phase: practice
+code: >-
+  function parseUser(raw: unknown): { id: string } {
+    if (typeof raw === 'object' && raw !== null && 'id' in raw && typeof raw.id === 'string') {
+      return { id: raw.id };
+    }
+    throw new Error('invalid user');
+  }
+question: "Что вернёт вызов с `{ id: 4 }`?"
+choices:
+  - id: a
+    text: "Бросит ошибку: `id` не строка"
+    correct: true
+  - id: b
+    text: "Объект `{ id: 4 }` типа `{ id: string }`"
+  - id: c
+    text: "`undefined`"
+  - id: d
+    text: Соберётся только если написать `as`
+explain: Проверка `typeof raw.id === 'string'` отсекает число. Это runtime, не
+  стираемый тип.

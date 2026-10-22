@@ -1,0 +1,17 @@
+id: L044-react-elements-jsx
+order: 44
+title: React elements, JSX и components
+titleEn: React Elements, JSX, and Components
+essence: JSX — это вызов, который описывает элемент. Компонент возвращает
+  описание UI, а не DOM-узел.
+depth: mechanism
+required: true
+insights:
+  - insights/01-element.md
+  - insights/02-component.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

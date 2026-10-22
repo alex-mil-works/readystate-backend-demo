@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Почему `onPress: Function` в props хуже `(id: string) => void`?"
+options:
+  - id: a
+    text: Вызывающий код не проверит аргумент
+    correct: true
+  - id: b
+    text: "`Function` уже включает id"
+  - id: c
+    text: Стрелочная форма не компилируется в TSX
+  - id: d
+    text: React принимает только `Function`
+explain: Узкий колбэк — часть публичного API компонента.

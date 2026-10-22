@@ -1,0 +1,15 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Почему анимацию сдвига делают transform, а не top, и что такое layout
+  thrashing?
+rubric: |-
+  Ожидаемые пункты:
+  - top и width запускают layout
+  - transform и opacity ближе к композиту
+  - чтение offsetHeight после записи стиля синхронно считает геометрию
+  - will-change не на всё дерево
+sampleAnswer: Сдвиг через top пересчитывает положение соседей. Transform двигает
+  уже собранный слой. Если в цикле записать height и сразу прочитать
+  offsetHeight, браузер на каждой итерации делает layout. Геометрию я читаю
+  пачкой до записей. will-change оставляю тому, что действительно анимируется.

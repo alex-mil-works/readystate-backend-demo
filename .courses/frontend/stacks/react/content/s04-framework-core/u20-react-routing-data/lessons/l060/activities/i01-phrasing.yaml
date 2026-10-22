@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Как загрузить урок по id из URL и не показать чужой ответ?
+rubric: |-
+  Ожидаемые пункты:
+  - эффект зависит от id
+  - явные pending, error, data
+  - AbortController в cleanup
+  - поздний ответ не пишет state другого id
+sampleAnswer: Эффект смотрит на id из адреса. Пока запрос идёт, статус pending,
+  при отказе — ошибка, после разбора тела — данные. В cleanup я вызываю abort.
+  Без этого медленный ответ предыдущего урока успеет попасть в setState уже
+  другого экрана.

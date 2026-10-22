@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: https://app.example.com/lesson#notes
+question: Какая часть точно останется в браузере?
+choices:
+  - id: a
+    text: "#notes"
+    correct: true
+  - id: b
+    text: /lesson
+  - id: c
+    text: example.com
+  - id: d
+    text: https
+explain: Путь уйдёт в запросе. Фрагмент нет.

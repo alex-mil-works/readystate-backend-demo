@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Зачем сессионной cookie флаг HttpOnly?
+options:
+  - id: a
+    text: Скрипт страницы не прочитает её, даже если выполнится в том же источнике
+    correct: true
+  - id: b
+    text: Тогда её можно не отправлять на сервер
+  - id: c
+    text: Она заменяет HTTPS
+  - id: d
+    text: Она запрещает POST
+explain: Кража сессии скриптом становится труднее. Сам запрос браузер всё равно
+  приложит.

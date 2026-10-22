@@ -1,0 +1,18 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  .box { transition: opacity 200ms; opacity: 0; }
+  .box.on { opacity: 1; }
+question: Когда запустится переход?
+choices:
+  - id: a
+    text: Когда элемент получит класс on и opacity сменится с 0 на 1
+    correct: true
+  - id: b
+    text: На каждой загрузке CSS-файла сам
+  - id: c
+    text: Только если есть keyframes
+  - id: d
+    text: "Никогда: opacity не анимируется"
+explain: Transition реагирует на смену вычисленного значения.

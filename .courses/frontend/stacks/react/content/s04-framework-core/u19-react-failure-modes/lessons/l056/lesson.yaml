@@ -1,0 +1,17 @@
+id: L056-react-memo-stability
+order: 56
+title: Мемоизация, поверхностное равенство и стабильные ссылки
+titleEn: Memoization, Shallow Equality, and Stable References
+essence: React.memo сравнивает props поверхностно. Новый объект или функция на
+  каждом рендере ломают эту проверку. Мемоизация — не значение по умолчанию.
+depth: perf
+required: true
+insights:
+  - insights/01-shallow.md
+  - insights/02-when.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: element.innerHTML = userTitle;
+question: Почему это опаснее, чем textContent, если title пришёл от пользователя?
+choices:
+  - id: a
+    text: Браузер разберёт строку как разметку в вашем источнике
+    correct: true
+  - id: b
+    text: textContent медленнее и поэтому опаснее
+  - id: c
+    text: innerHTML всегда экранирует теги
+  - id: d
+    text: Так работает только без CSP и никогда с ним
+explain: Разобранная разметка принадлежит вашему источнику.

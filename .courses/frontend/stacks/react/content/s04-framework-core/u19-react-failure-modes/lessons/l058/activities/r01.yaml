@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Какой порядок оптимизаций честный?
+options:
+  - id: a
+    text: Замер, место state, потом ссылки и memo
+    correct: true
+  - id: b
+    text: Сначала memo всего дерева, замер не нужен
+  - id: c
+    text: Сначала убрать все эффекты
+  - id: d
+    text: Сначала random key, чтобы сбросить кэш
+explain: Без коммита в профайлере непонятно, какой state широкий.
+hints:
+  - title: Список
+    markdown: Тысяча строк может быть дорогой из-за layout, не из-за JS-рендера. Это
+      уже список и окно, не useCallback на кнопке.

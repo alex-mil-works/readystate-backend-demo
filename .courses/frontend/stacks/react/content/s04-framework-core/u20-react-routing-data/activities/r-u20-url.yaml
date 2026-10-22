@@ -1,0 +1,24 @@
+id: r-u20-url
+kind: single_choice
+phase: revision
+prompt: Урок открывают ссылкой и кнопкой «назад». Где хранить его id?
+options:
+  - id: a
+    text: В URL
+    correct: true
+  - id: b
+    text: Только в useState
+  - id: c
+    text: В ref
+  - id: d
+    text: В заголовке вкладки как в единственном источнике
+explain: Адрес переживает обновление. Вторая копия в state разъедется.
+hints:
+  - title: Роутер
+    markdown: pushState сам дерево React не перерисует. Это делает подписка роутера.
+tags:
+  - react
+  - routing
+reinforces:
+  - L059-react-routing-url
+source: original

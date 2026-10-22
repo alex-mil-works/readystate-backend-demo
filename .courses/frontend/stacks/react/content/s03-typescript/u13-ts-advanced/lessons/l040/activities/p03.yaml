@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Чем схема Valibot/Zod на границе fetch лучше ручного `as`?
+options:
+  - id: a
+    text: Она читает значение и тип результата выводится из успешного разбора
+    correct: true
+  - id: b
+    text: Она остаётся в бандле как типы TypeScript
+  - id: c
+    text: Она заменяет `response.ok`
+  - id: d
+    text: Она делает поле optional автоматически
+explain: Библиотека — тот же guard, только декларативный. `ok` и разбор тела
+  по-прежнему два шага.

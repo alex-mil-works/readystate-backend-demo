@@ -1,0 +1,23 @@
+id: r-u32-cache
+kind: single_choice
+phase: revision
+prompt: Файл с хешем сборки в имени кэшируют…
+options:
+  - id: a
+    text: надолго, байты этого имени не изменятся
+    correct: true
+  - id: b
+    text: так же, как личный HTML кабинета, публично
+  - id: c
+    text: только если это cookie
+  - id: d
+    text: нельзя никогда
+explain: Личный ответ не кладут в общий кэш.
+hints:
+  - title: Путь
+    markdown: Блокирующий скрипт в голове останавливает разбор HTML.
+tags:
+  - http
+reinforces:
+  - L097-net-cache-reuse
+source: original

@@ -1,0 +1,9 @@
+id: S08
+title: Performance, rendering и platform
+titleEn: Performance, Rendering & Platform
+units:
+  - u36-perf-diagnostics
+  - u37-rendering
+  - u38-pwa-offline
+  - u40-platform-capabilities
+activities: activities

@@ -1,0 +1,17 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: |
+  Почему `innerHTML` со строкой от пользователя опаснее `textContent`?
+options:
+  - id: a
+    text: HTML парсится в узлы, и обработчики в атрибутах могут выполниться
+    correct: true
+  - id: b
+    text: '`textContent` отправляет строку на сервер'
+  - id: c
+    text: '`innerHTML` всегда выполняет вставленные теги `script`'
+  - id: d
+    text: Разницы нет, оба экранируют разметку
+explain: |
+  `script` через `innerHTML` не бежит, но разметка с `onerror` и похожими атрибутами — да. `textContent` остаётся текстом.

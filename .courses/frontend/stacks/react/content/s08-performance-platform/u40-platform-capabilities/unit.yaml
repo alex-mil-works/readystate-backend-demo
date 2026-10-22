@@ -1,0 +1,9 @@
+id: U40
+stageId: S08
+title: Платформа браузера
+titleEn: Browser Platform
+lessons:
+  - lessons/l119
+  - lessons/l120
+  - lessons/l121
+activities: activities

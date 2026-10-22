@@ -1,0 +1,9 @@
+id: U27
+stageId: S06
+title: Git и совместная работа
+titleEn: Git and Collaboration
+lessons:
+  - lessons/l080
+  - lessons/l081
+  - lessons/l082
+activities: activities

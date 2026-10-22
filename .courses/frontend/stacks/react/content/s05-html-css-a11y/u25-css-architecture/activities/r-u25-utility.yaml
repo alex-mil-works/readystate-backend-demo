@@ -1,0 +1,15 @@
+id: r-u25-utility
+kind: single_choice
+phase: revision
+prompt: Что утилита отступа не заменяет?
+options:
+  - id: a
+    text: Тег кнопки или ссылки и доступное имя
+    correct: true
+  - id: b
+    text: Шкалу темы
+  - id: c
+    text: gap
+  - id: d
+    text: класс модуля
+explain: Утилита задаёт шаг темы. Роль элемента она не создаёт.

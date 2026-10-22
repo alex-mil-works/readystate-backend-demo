@@ -1,0 +1,9 @@
+id: U14
+stageId: S03
+title: TypeScript вместе с React
+titleEn: TypeScript with React
+lessons:
+  - lessons/l041
+  - lessons/l042
+  - lessons/l043
+activities: activities

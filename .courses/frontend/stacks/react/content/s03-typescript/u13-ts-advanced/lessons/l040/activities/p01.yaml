@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Что поставить на результат `await response.json()`, если хотите поймать
+  кривой payload?
+options:
+  - id: a
+    text: "`unknown`, затем парсер в `User`"
+    correct: true
+  - id: b
+    text: "`as User` сразу в `setState`"
+  - id: c
+    text: "`any` и чтение полей"
+  - id: d
+    text: "`never`"
+explain: Утверждение не смотрит на JSON. Парсер смотрит.

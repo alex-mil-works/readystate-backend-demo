@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: http://app.example запрашивает камеру
+question: Почему API может просто отсутствовать?
+choices:
+  - id: a
+    text: Нет безопасного контекста
+    correct: true
+  - id: b
+    text: Камера есть только у SSR
+  - id: c
+    text: Нужен Shadow DOM
+  - id: d
+    text: localStorage её заменяет
+explain: Чувствительные API не работают на голом http.

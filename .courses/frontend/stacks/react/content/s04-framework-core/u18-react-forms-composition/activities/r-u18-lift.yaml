@@ -1,0 +1,24 @@
+id: r-u18-lift
+kind: single_choice
+phase: revision
+prompt: State модалки в корне перерисовывает тяжёлую карту. Что сделать?
+options:
+  - id: a
+    text: Опустить state к диалогу или его маленькому родителю
+    correct: true
+  - id: b
+    text: Поднять ещё выше
+  - id: c
+    text: Хранить open в URL на каждый hover
+  - id: d
+    text: Убрать children
+explain: Высокая граница state рендерит всех детей родителя.
+hints:
+  - title: Форма
+    markdown: "Controlled input и слот — разные оси: данные поля и сборка дерева."
+tags:
+  - react
+reinforces:
+  - L055-react-composition
+  - L053-react-controlled-inputs
+source: original

@@ -1,0 +1,17 @@
+id: p03
+kind: predict_output
+phase: practice
+code: <button type="button" aria-hidden="true">Закрыть</button>
+question: Что услышит пользователь скринридера?
+choices:
+  - id: a
+    text: "Кнопки для него нет: aria-hidden вырезал её из дерева"
+    correct: true
+  - id: b
+    text: Кнопку «Закрыть» как обычно
+  - id: c
+    text: Только слово true
+  - id: d
+    text: Заголовок диалога
+explain: hidden прячет элемент и потомков. Для декора внутри кнопки прячут svg,
+  не саму кнопку.

@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Когда обязателен функциональный updater?
+options:
+  - id: a
+    text: Следующее значение считают из предыдущего state
+    correct: true
+  - id: b
+    text: Всегда, иначе React не батчит
+  - id: c
+    text: Только в эффектах
+  - id: d
+    text: Когда передают props
+explain: От абсолютного следующего значения достаточно `setN(1)`. От «текущее
+  плюс один» — функция.
+hints:
+  - title: Снимок
+    markdown: Обработчик не видит setState, сделанный соседней строкой через
+      закрытую переменную. Видит его updater.

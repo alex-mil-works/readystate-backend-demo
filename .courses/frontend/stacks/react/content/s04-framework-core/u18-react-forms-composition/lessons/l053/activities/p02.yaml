@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function onSubmit(event) {
+    event.preventDefault();
+    save(query);
+  }
+question: Зачем здесь preventDefault?
+choices:
+  - id: a
+    text: Браузер не перезагрузит страницу нативной отправкой формы
+    correct: true
+  - id: b
+    text: Чтобы input стал controlled
+  - id: c
+    text: Чтобы очистить query
+  - id: d
+    text: preventDefault отменяет React-рендер
+explain: Нативный submit уходит с документа. preventDefault оставляет обработку вам.

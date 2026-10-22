@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Чем `unknown` полезнее `any` на границе с сетью?
+options:
+  - id: a
+    text: Нельзя прочитать поле, пока значение не сужено
+    correct: true
+  - id: b
+    text: "`unknown` валидирует JSON в runtime"
+  - id: c
+    text: "`unknown` стирается медленнее и ловит больше багов в браузере"
+  - id: d
+    text: Разницы нет, оба отключают проверку
+explain: "`unknown` заставляет написать `typeof` или парсер. `any` пускает `.id` сразу."

@@ -1,0 +1,13 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Зачем `Pick`, `Partial` и `ReturnType`, если можно написать тип ещё раз?
+rubric: |-
+  Ожидаемые пункты:
+  - одна форма, несколько проекций
+  - Pick/Omit/Partial
+  - ReturnType и Awaited не дублируют возврат
+  - переименование поля ловится компилятором
+sampleAnswer: Ручная копия разъезжается с моделью. Pick берёт часть ключей,
+  Partial делает черновик, Omit убирает поле. Если значение уже возвращает
+  функция, тип беру из ReturnType и снимаю Promise через Awaited.

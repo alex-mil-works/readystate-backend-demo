@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему не переписывать весь React-экран на custom elements без нужды?
+options:
+  - id: a
+    text: Изоляцию стилей уже даёт модуль, а граница с тенью усложняет события и
+      свойства
+    correct: true
+  - id: b
+    text: Браузер не умеет свои теги
+  - id: c
+    text: React запрещает любой DOM
+  - id: d
+    text: Дефис в имени тега невалиден
+explain: Виджет на крае системы — да. Вся карта курса — нет.

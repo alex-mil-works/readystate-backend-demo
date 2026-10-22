@@ -1,0 +1,17 @@
+id: L051-react-effects-cleanup
+order: 51
+title: Effects, зависимости и cleanup
+titleEn: Effects, Dependencies, and Cleanup
+essence: Эффект синхронизирует компонент с внешней системой. Зависимости — это
+  то, что эффект читает. Cleanup снимает прошлую синхронизацию.
+depth: mechanism
+required: true
+insights:
+  - insights/01-sync.md
+  - insights/02-deps-cleanup.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

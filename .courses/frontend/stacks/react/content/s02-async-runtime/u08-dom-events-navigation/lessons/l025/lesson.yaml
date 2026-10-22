@@ -1,0 +1,19 @@
+id: L025-js-history-navigation
+order: 25
+title: History, URL и navigation state
+titleEn: History, URL & Navigation State
+essence: >-
+  pushState меняет запись истории и URL без запроса к серверу и без popstate. Назад — это уже другое событие.
+depth: application
+required: true
+
+insights:
+  - insights/01-history-entries.md
+  - insights/02-url-as-state.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-single-choice.yaml
+  - activities/p03-predict-output.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

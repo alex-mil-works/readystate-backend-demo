@@ -1,0 +1,24 @@
+id: r-u17-order
+kind: single_choice
+phase: revision
+prompt: Почему хук нельзя вызывать под if?
+options:
+  - id: a
+    text: Слоты съедут, и state попадёт не в ту переменную
+    correct: true
+  - id: b
+    text: if запрещён в JSX
+  - id: c
+    text: useState тогда становится props
+  - id: d
+    text: Так начальное значение обновляется из props
+explain: Порядок вызовов между рендерами постоянный.
+hints:
+  - title: Старт
+    markdown: Аргумент useState читается только в первый раз.
+tags:
+  - react
+  - hooks
+reinforces:
+  - L050-react-state-hooks
+source: original

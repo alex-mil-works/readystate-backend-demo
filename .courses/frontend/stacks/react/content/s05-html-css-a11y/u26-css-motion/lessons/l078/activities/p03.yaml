@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Куда не ставить will-change: transform на всякий случай?"
+options:
+  - id: a
+    text: На сотни статичных карточек
+    correct: true
+  - id: b
+    text: Никуда, это всегда бесплатно
+  - id: c
+    text: Только на html lang
+  - id: d
+    text: На alt
+explain: Слой имеет цену памяти. Подсказку дают элементу, который правда анимируется.

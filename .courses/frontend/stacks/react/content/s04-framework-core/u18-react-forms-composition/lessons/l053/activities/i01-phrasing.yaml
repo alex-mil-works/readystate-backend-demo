@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Чем controlled input отличается от defaultValue и как отправить форму?
+rubric: |-
+  Ожидаемые пункты:
+  - value из state, onChange обратно
+  - value без onChange только для чтения
+  - defaultValue отдаёт текст браузеру
+  - onSubmit и preventDefault
+sampleAnswer: Controlled-поле показывает state и на каждое изменение пишет его
+  обратно. Без onChange React вернёт старое value. defaultValue задаёт только
+  старт, дальше текст живёт в DOM. Форму я отправляю событием submit и вызываю
+  preventDefault, чтобы страница не перезагрузилась.

@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Почему сохранение вешают на submit формы, а не только на click кнопки?
+options:
+  - id: a
+    text: Enter и семантика формы сходятся в одном обработчике
+    correct: true
+  - id: b
+    text: click не всплывает
+  - id: c
+    text: submit сам пишет в state полей
+  - id: d
+    text: Без submit value не обновится
+explain: Кнопка type=submit запускает тот же onSubmit.
+hints:
+  - title: Один источник
+    markdown: Не держите текст и в DOM, и в state. Либо value+onChange, либо
+      defaultValue без второй копии.

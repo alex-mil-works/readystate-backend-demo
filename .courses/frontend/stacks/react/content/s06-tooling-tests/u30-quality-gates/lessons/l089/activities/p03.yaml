@@ -1,0 +1,19 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  const n = 1
+  console.log(n)
+question: Prettier и ESLint оба правят точку с запятой по-разному. Что увидит
+  автор после двух прогонов?
+choices:
+  - id: a
+    text: Файл будет прыгать, пока инструменты спорят за один и тот же вид
+    correct: true
+  - id: b
+    text: Они всегда согласованы без настройки
+  - id: c
+    text: Prettier починит хук под if
+  - id: d
+    text: Спор останется только в типах
+explain: Формат отдают одному инструменту.

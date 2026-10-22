@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Человек нажал «блок» на уведомлениях. Что дальше?
+options:
+  - id: a
+    text: Жить без них и не открывать диалог снова и снова
+    correct: true
+  - id: b
+    text: Звать requestPermission в интервале
+  - id: c
+    text: Считать это согласием
+  - id: d
+    text: Удалить HTTPS
+explain: Повторный спам не меняет решение браузера.

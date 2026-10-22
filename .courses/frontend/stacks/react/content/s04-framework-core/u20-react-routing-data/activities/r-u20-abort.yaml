@@ -1,0 +1,24 @@
+id: r-u20-abort
+kind: single_choice
+phase: revision
+prompt: Пользователь ушёл с урока A на B, ответ A пришёл позже. Как не показать A?
+options:
+  - id: a
+    text: abort прошлого запроса в cleanup эффекта
+    correct: true
+  - id: b
+    text: "Ничего не делать: then отменяется сменой JSX"
+  - id: c
+    text: Хранить оба урока в одном null
+  - id: d
+    text: Убрать id из зависимостей
+explain: Поздний ответ пишет setState, если запрос жив.
+hints:
+  - title: Фазы
+    markdown: pending, error и data — разные статусы, не один null.
+tags:
+  - react
+  - data
+reinforces:
+  - L060-react-data-loading
+source: original

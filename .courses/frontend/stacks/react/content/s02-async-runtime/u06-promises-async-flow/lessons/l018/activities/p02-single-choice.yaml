@@ -1,0 +1,17 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: |
+  Почему `try/catch` вокруг `fetch(url)` без `await` не ловит отказ промиса?
+options:
+  - id: a
+    text: '`fetch` возвращает промис сразу; rejection случится позже и мимо этого `try`'
+    correct: true
+  - id: b
+    text: '`fetch` никогда не отклоняет промис'
+  - id: c
+    text: '`try/catch` не работает с функциями, которые возвращают промис'
+  - id: d
+    text: Сетевая ошибка всегда синхронный throw до возврата из `fetch`
+explain: |
+  `try/catch` ловит синхронный throw. Отказ промиса нужно `await` внутри `try` либо обработать через `.catch`.

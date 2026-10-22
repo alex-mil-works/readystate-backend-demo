@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему чужая страница может инициировать запрос с вашей сессионной cookie?
+options:
+  - id: a
+    text: Браузер сам прикладывает cookie к подходящему хосту, не спрашивая ваш JS
+    correct: true
+  - id: b
+    text: Cookie читается любым сайтом через CORS по умолчанию
+  - id: c
+    text: Так устроен только localStorage
+  - id: d
+    text: DNS подменяет домен всегда
+explain: Защита — SameSite и отдельное подтверждение меняющего запроса, не
+  надежда, что чужой сайт «не знает» cookie.

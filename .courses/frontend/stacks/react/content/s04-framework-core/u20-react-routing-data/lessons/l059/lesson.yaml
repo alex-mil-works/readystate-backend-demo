@@ -1,0 +1,17 @@
+id: L059-react-routing-url
+order: 59
+title: Клиентский роутинг и URL как state
+titleEn: Client-Side Routing and URL State
+essence: URL — источник правды для экрана, которым можно поделиться. Дублировать
+  путь в useState значит получить два состояния.
+depth: application
+required: true
+insights:
+  - insights/01-url-state.md
+  - insights/02-link.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

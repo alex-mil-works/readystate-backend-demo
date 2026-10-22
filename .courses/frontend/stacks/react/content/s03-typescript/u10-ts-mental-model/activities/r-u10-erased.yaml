@@ -1,0 +1,23 @@
+id: r-u10-erased
+kind: single_choice
+phase: revision
+prompt: "Где выполняется проверка аннотации `: string`?"
+options:
+  - id: a
+    text: В компиляторе, до запуска
+    correct: true
+  - id: b
+    text: В браузере на каждом вызове
+  - id: c
+    text: В JSON-ответе сервера
+  - id: d
+    text: Только если оставить `as`
+explain: Аннотация стирается и не становится guard.
+hints:
+  - title: Стирание
+    markdown: В бандле нет типов. Ошибка вида «не та форма JSON» — отдельная проверка.
+tags:
+  - typescript
+reinforces:
+  - L029-ts-compile-boundary
+source: original

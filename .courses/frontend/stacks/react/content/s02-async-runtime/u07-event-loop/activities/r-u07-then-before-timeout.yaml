@@ -1,0 +1,24 @@
+id: r-u07-then-before-timeout
+kind: single_choice
+phase: revision
+tags: [event-loop, microtask]
+reinforces: ['L020-js-event-loop-tasks']
+source: original
+prompt: |
+  В одном стеке стоят `Promise.then` и `setTimeout(fn, 0)`. Кто раньше?
+options:
+  - id: a
+    text: Колбэк `then`, потому что микрозадачи вычитываются до следующей task
+    correct: true
+  - id: b
+    text: Таймер, потому что задержка ноль
+  - id: c
+    text: Кто записан в исходнике выше
+  - id: d
+    text: Они в одной очереди, порядок случайный
+explain: |
+  После стека рантайм опустошает микрозадачи. Таймер ждёт своей task.
+hints:
+  - title: Очереди
+    markdown: |
+      Синхронный код, затем microtasks (`then`, `queueMicrotask`), затем следующая macrotask.

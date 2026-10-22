@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function len(value: string) {
+    return value.length;
+  }
+  len(1 as any);
+question: Сборка проходит. Что будет при вызове?
+choices:
+  - id: a
+    text: "Ошибка в runtime: у числа нет `length` в этом вызове"
+    correct: true
+  - id: b
+    text: Компилятор всё равно остановит сборку
+  - id: c
+    text: Вернётся `undefined` без исключения
+  - id: d
+    text: "`as any` вставляет проверку `typeof`"
+explain: "`as any` отключает проверку в этом месте. Движок увидит число и упадёт
+  на `.length`."

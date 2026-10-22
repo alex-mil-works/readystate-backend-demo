@@ -1,0 +1,26 @@
+id: r-s06-u30-u31-bridge
+kind: single_choice
+phase: revision
+prompt: Контур на каждый сейв уже гоняет тесты. Какие из них там уместны?
+options:
+  - id: a
+    text: Быстрые юниты и тесты компонента, а не весь браузерный набор
+    correct: true
+  - id: b
+    text: Только e2e на каждый символ
+  - id: c
+    text: Никаких, раз есть линтер
+  - id: d
+    text: Снапшот всего node_modules
+explain: Медленный браузер оставляют критичному пути.
+hints:
+  - title: U30 → U31
+    markdown: Линтер не доказывает поведение. Юнит дёшев. Playwright доказывает
+      адрес и страницу, но его мало.
+tags:
+  - tooling
+reinforces:
+  - L090-qa-check-loop
+  - L092-test-unit-vitest
+  - L094-test-e2e-playwright
+source: original

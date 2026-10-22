@@ -1,0 +1,23 @@
+id: r-u36-budget
+kind: single_choice
+phase: revision
+prompt: Бюджет первого чанка нужен, чтобы…
+options:
+  - id: a
+    text: скачок размера был виден в ревью
+    correct: true
+  - id: b
+    text: заменить измерение
+  - id: c
+    text: запретить HTML
+  - id: d
+    text: выключить кэш навсегда
+explain: RAIL напоминает масштаб отклика и кадра, но не является числом бюджета.
+hints:
+  - title: Порог
+    markdown: Мегабайт на первом экране важнее пары килобайт в общем чанке.
+tags:
+  - perf
+reinforces:
+  - L109-perf-budgets
+source: original

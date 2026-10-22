@@ -1,0 +1,18 @@
+id: L121-credentials-payments
+order: 121
+title: Ключи, оплата и сценарий от возможности
+titleEn: Credentials, Payments, and Capability-Driven UX
+essence: Passkey подтверждает устройство ключом, не паролем в хранилище.
+  Платёжный диалог браузера не делает вас хранителем карт. Нет API — есть другой
+  путь.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-passkey.md
+  - insights/02-capability.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

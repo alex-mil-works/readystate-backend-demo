@@ -1,0 +1,17 @@
+id: L032-ts-object-types
+order: 32
+title: Object types, aliases и interfaces
+titleEn: Object Types, Aliases, and Interfaces
+essence: Объектный тип описывает форму. Свежий литерал проверяют на лишние поля.
+  `interface` умеет сливаться, union удобнее писать через `type`.
+depth: application
+required: true
+insights:
+  - insights/01-shape.md
+  - insights/02-type-vs-interface.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

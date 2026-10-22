@@ -1,0 +1,9 @@
+id: U20
+stageId: S04
+title: Роутинг и поток данных
+titleEn: Routing and Data Flow
+lessons:
+  - lessons/l059
+  - lessons/l060
+  - lessons/l061
+activities: activities

@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Что манифест точно не обещает?
+options:
+  - id: a
+    text: Что браузер всегда покажет вашу кнопку установки
+    correct: true
+  - id: b
+    text: Имя и иконку
+  - id: c
+    text: Стартовый адрес
+  - id: d
+    text: Режим отображения
+explain: Установка — решение браузера при выполнении его условий.

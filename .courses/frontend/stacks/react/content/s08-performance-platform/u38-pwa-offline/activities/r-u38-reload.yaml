@@ -1,0 +1,23 @@
+id: r-u38-reload
+kind: single_choice
+phase: revision
+prompt: Тихий reload из нового воркера посреди ввода…
+options:
+  - id: a
+    text: выбрасывает несохранённое
+    correct: true
+  - id: b
+    text: требуется манифестом
+  - id: c
+    text: улучшает CLS
+  - id: d
+    text: шифрует форму
+explain: Обновление предлагают. Офлайн без локальных данных — честная заглушка.
+hints:
+  - title: Установка
+    markdown: Браузер может не показать вашу кнопку. Окно PWA остаётся вебом.
+tags:
+  - pwa
+reinforces:
+  - L114-pwa-install-update
+source: original

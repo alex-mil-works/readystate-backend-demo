@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: "Свежий объект `{ id: '1', extra: true }` кладут в `User`, где есть
+  только `id`. Что скажет компилятор?"
+options:
+  - id: a
+    text: Ошибка excess property — лишнее поле у литерала
+    correct: true
+  - id: b
+    text: "Молчит: лишние поля всегда разрешены"
+  - id: c
+    text: Удалит `extra` в runtime
+  - id: d
+    text: Превратит `User` в `any`
+explain: Проверка лишних полей ловит опечатки в объектном литерале, который
+  сразу аннотирован.

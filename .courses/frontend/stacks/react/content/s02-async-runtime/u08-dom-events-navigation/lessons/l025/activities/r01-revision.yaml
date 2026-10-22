@@ -1,0 +1,27 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Пользователь нажал «назад» после двух `pushState`. Какой обработчик должен перерисовать экран?
+options:
+  - id: a
+    text: '`popstate`: прочитать URL или `event.state` и отрисовать соответствующий экран'
+    correct: true
+  - id: b
+    text: Снова `pushState` — браузер вызовет его сам
+  - id: c
+    text: '`DOMContentLoaded`'
+  - id: d
+    text: Никакой — `pushState` уже обновил дерево DOM
+explain: |
+  Назад активирует прошлую запись и шлёт `popstate`. Само дерево от этого не знает, какой экран рисовать.
+hints:
+  - title: Три операции
+    markdown: |
+      `pushState` — новая запись, без `popstate` и без сети.
+      `replaceState` — подмена текущей записи.
+      Присваивание `location.href` — настоящая навигация.
+  - title: Что шарится
+    markdown: |
+      В ссылке живёт только URL. Объект `state` остаётся в истории этой вкладки.
+      Функции и узлы в `state` класть нельзя.

@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Число видимых уроков нужно и в заголовке, и в кнопке. Куда его положить?
+options:
+  - id: a
+    text: Посчитать `const count = visible.length` в рендере
+    correct: true
+  - id: b
+    text: В отдельный state, который эффект синхронизирует со списком
+  - id: c
+    text: В ref, чтобы не рендерить
+  - id: d
+    text: В key списка
+explain: Это производное. Два места, которые его показывают, читают одну
+  константу рендера.

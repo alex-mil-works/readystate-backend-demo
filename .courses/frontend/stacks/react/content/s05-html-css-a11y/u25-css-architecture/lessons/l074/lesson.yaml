@@ -1,0 +1,17 @@
+id: L074-css-bem-modules
+order: 74
+title: BEM, CSS Modules и границы компонента
+titleEn: BEM, CSS Modules, and Component Scope
+essence: Имя класса описывает блок, а не случайный тег. Модуль не даёт стилю
+  утечь в соседа.
+depth: application
+required: true
+insights:
+  - insights/01-bem.md
+  - insights/02-modules.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

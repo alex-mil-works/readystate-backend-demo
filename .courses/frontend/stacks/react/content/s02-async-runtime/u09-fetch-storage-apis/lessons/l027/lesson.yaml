@@ -1,0 +1,19 @@
+id: L027-js-storage-blobs
+order: 27
+title: localStorage, Files, Blobs и границы данных
+titleEn: localStorage, Files, Blobs & Data Boundaries
+essence: >-
+  localStorage — синхронные строки в origin, не сейф. Файл в браузере — Blob, а объектный URL нужно освобождать.
+depth: application
+required: true
+
+insights:
+  - insights/01-web-storage.md
+  - insights/02-blobs.md
+
+activities:
+  - activities/p01-predict-output.yaml
+  - activities/p02-single-choice.yaml
+  - activities/p03-single-choice.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

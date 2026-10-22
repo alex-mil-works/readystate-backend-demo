@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Почему жать через user-event, а не вызывать onClick из пропа?
+options:
+  - id: a
+    text: Так проверяется путь события, а не только функция в обход кнопки
+    correct: true
+  - id: b
+    text: onClick в React запрещён
+  - id: c
+    text: user-event не умеет кнопки
+  - id: d
+    text: Иначе не работает Vitest
+explain: Прямой вызов пропа пройдёт даже если кнопку забыли повесить.
+hints:
+  - title: Имя
+    markdown: Кнопка без доступного имени не найдётся по role и name. Это тот же
+      баг, что у скринридера.

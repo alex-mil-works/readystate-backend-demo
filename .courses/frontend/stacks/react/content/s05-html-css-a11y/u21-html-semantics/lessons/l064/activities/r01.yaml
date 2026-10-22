@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Что из этого относится к progressive enhancement?
+options:
+  - id: a
+    text: Форма и ссылка полезны и без вашего бандла
+    correct: true
+  - id: b
+    text: Весь текст только в JSON после запроса
+  - id: c
+    text: Отключить семантику ради div
+  - id: d
+    text: Один title на весь сайт
+explain: Улучшение добавляет поведение к уже существующему документу.
+hints:
+  - title: Сниппет
+    markdown: description не виден на странице. Не прячьте им единственную копию смысла.

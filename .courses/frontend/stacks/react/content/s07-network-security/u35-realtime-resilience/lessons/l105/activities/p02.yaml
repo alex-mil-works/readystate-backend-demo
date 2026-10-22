@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Зачем между попытками случайный разброс паузы?
+options:
+  - id: a
+    text: Чтобы толпа клиентов не повторила запрос в один и тот же миг
+    correct: true
+  - id: b
+    text: Чтобы обойти HTTPS
+  - id: c
+    text: Чтобы POST стал GET
+  - id: d
+    text: Разброс отменяет идемпотентность
+explain: Одинаковая пауза создаёт вторую волну нагрузки.

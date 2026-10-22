@@ -1,0 +1,17 @@
+id: L097-net-cache-reuse
+order: 97
+title: Загрузка страницы, кэш и повторное соединение
+titleEn: Page Load, Cache, and Connection Reuse
+essence: HTML находит CSS и JS. Кэш решает, можно ли не качать байты снова.
+  Персональный ответ нельзя отдавать как общий.
+depth: application
+required: true
+insights:
+  - insights/01-path.md
+  - insights/02-cache.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

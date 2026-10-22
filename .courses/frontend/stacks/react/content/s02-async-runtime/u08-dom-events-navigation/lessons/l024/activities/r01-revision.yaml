@@ -1,0 +1,29 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Зачем делегировать клики списку на родительский `ul`, а не вешать слушатель на каждый `li`?
+options:
+  - id: a
+    text: Один слушатель покрывает и будущие строки, цель берётся из `event.target`
+    correct: true
+  - id: b
+    text: Иначе `click` не пузырится
+  - id: c
+    text: '`li` не может быть `event.target`'
+  - id: d
+    text: Делегирование отменяет действие по умолчанию у ссылок внутри
+explain: |
+  Пузырение как раз позволяет поймать клик на предке. Новые строки не нужно подписывать заново.
+hints:
+  - title: Три операции
+    markdown: |
+      `target` — где жест начался. `currentTarget` — где висит слушатель.
+      `preventDefault` не равен `stopPropagation`.
+  - title: Ближайший ряд
+    markdown: |
+      Клик по иконке внутри строки даёт `target` иконки. Строку находят так:
+
+      ```js
+      event.target.closest('li')
+      ```

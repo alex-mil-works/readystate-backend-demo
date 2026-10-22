@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: "Компонент не вывел `T`. Что сделать вместо `items: any[]`?"
+options:
+  - id: a
+    text: Передать явный аргумент типа или сузить constraint
+    correct: true
+  - id: b
+    text: Поставить `any` на getKey
+  - id: c
+    text: Убрать generic и вернуть `ReactNode` из items
+  - id: d
+    text: Обернуть в `React.FC`
+explain: "`any` рвёт связь массива и колбэка — ради этого generic и заводили."

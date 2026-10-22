@@ -1,0 +1,19 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  <template id="row">
+    <li><slot></slot></li>
+  </template>
+question: Покажется ли эта разметка на странице сама, до клонирования?
+choices:
+  - id: a
+    text: Нет, содержимое template не рисуется, пока его не клонируют
+    correct: true
+  - id: b
+    text: Да, сразу как список
+  - id: c
+    text: Только в Shadow DOM автоматически
+  - id: d
+    text: template равен iframe
+explain: Шаблон — заготовка, не узел на экране.

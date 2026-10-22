@@ -1,0 +1,23 @@
+id: r-u23-spec
+kind: single_choice
+phase: revision
+prompt: Класс и более поздний селектор тега спорят за color. Кто победит?
+options:
+  - id: a
+    text: "Класс: специфичность выше порядка"
+    correct: true
+  - id: b
+    text: Тег, потому что он ниже
+  - id: c
+    text: Всегда important
+  - id: d
+    text: Наследуется margin, не color
+explain: При равном весе побеждает правило ниже.
+hints:
+  - title: Наследование
+    markdown: color течёт к детям. margin и border — нет.
+tags:
+  - css
+reinforces:
+  - L068-css-cascade-specificity
+source: original

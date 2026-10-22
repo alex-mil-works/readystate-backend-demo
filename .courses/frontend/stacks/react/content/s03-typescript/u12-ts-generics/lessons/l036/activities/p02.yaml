@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Что означает `keyof User`, если у User есть `id` и `name`?
+options:
+  - id: a
+    text: "Union имён: `'id' | 'name'`"
+    correct: true
+  - id: b
+    text: Сам объект User
+  - id: c
+    text: "`string`"
+  - id: d
+    text: Массив значений полей
+explain: "`keyof` даёт ключи, не значения."

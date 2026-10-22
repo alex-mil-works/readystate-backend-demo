@@ -1,0 +1,26 @@
+id: r-s06-u28-u29-bridge
+kind: single_choice
+phase: revision
+prompt: Сборка на CI собрала другой граф, чем у автора. Что проверить первым?
+options:
+  - id: a
+    text: Тот ли менеджер и не переписан ли лок при установке
+    correct: true
+  - id: b
+    text: Цвет кнопки в CSS
+  - id: c
+    text: Число коммитов в reflog
+  - id: d
+    text: Только Prettier
+explain: Бандлер видит то, что установка положила в дерево.
+hints:
+  - title: U28 → U29
+    markdown: Один установщик и замороженный лок. Иначе Vite или Rollup идут по
+      другому графу.
+tags:
+  - tooling
+reinforces:
+  - L084-pkg-installers
+  - L085-pkg-lock-supply
+  - L087-mod-vite
+source: original

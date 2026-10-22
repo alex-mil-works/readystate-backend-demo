@@ -1,0 +1,23 @@
+id: r-u38-idb
+kind: single_choice
+phase: revision
+prompt: Структурированный локальный прогресс кладут…
+options:
+  - id: a
+    text: в IndexedDB
+    correct: true
+  - id: b
+    text: в Cache API как пользователей
+  - id: c
+    text: в секрет внутри бандла
+  - id: d
+    text: в фрагмент URL
+explain: Другое устройство этой базы не видит. Квота не вечная.
+hints:
+  - title: Строки
+    markdown: localStorage маленький, синхронный, и скрипт его читает.
+tags:
+  - pwa
+reinforces:
+  - L115-pwa-storage
+source: original

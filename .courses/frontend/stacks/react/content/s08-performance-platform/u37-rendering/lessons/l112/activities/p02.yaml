@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Документация почти без интерактива и один виджет поиска. Что ближе?
+options:
+  - id: a
+    text: Контентный генератор с островом, в духе Astro
+    correct: true
+  - id: b
+    text: Обязательно полный клиентский бандл на каждый абзац
+  - id: c
+    text: Только Electron
+  - id: d
+    text: Отказ от HTML
+explain: Мало JS по умолчанию здесь уместнее комбайна приложения.

@@ -1,0 +1,26 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  function App() {
+    const [open, setOpen] = useState(false);
+    return (
+      <>
+        <HeavyTree />
+        <Dialog open={open} />
+      </>
+    );
+  }
+question: Почему при смене `open` может перерисоваться и тяжёлое дерево?
+choices:
+  - id: a
+    text: State лежит в App, рендер App заново вызывает HeavyTree
+    correct: true
+  - id: b
+    text: Dialog всегда рендерит соседей сам
+  - id: c
+    text: useState в App запрещён
+  - id: d
+    text: open сравнивается по key
+explain: Граница state слишком высока. Диалог со своим state или выделенный
+  родитель не трогает HeavyTree.

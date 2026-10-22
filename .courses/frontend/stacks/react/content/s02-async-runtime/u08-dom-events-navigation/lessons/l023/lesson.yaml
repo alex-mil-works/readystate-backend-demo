@@ -1,0 +1,19 @@
+id: L023-js-dom-model
+order: 23
+title: DOM как объектная модель браузера
+titleEn: The DOM as a Browser Object Model
+essence: >-
+  DOM — живое дерево узлов, не строка HTML. Чтение и запись дерева имеют разную цену и разную безопасность.
+depth: mechanism
+required: true
+
+insights:
+  - insights/01-live-tree.md
+  - insights/02-read-write.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-predict-output.yaml
+  - activities/p03-single-choice.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

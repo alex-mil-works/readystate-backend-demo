@@ -1,0 +1,26 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Чем `Promise.race` отличается от `Promise.any`?
+options:
+  - id: a
+    text: '`race` берёт первый settled, включая rejection; `any` ждёт первый fulfilled и падает AggregateError, если успехов нет'
+    correct: true
+  - id: b
+    text: Это синонимы
+  - id: c
+    text: '`race` отменяет проигравшие, `any` нет'
+  - id: d
+    text: '`any` возвращает массив, `race` — одно значение'
+explain: |
+  Оба смотрят на группу, но `race` не отличает успех от отказа — важен первый settle. `any` игнорирует rejection, пока есть шанс на fulfill.
+hints:
+  - title: Политики
+    markdown: |
+      `all` — все успешны или первый отказ. `allSettled` — отчёт по каждому.
+      `race` — первый финиш любого знака. `any` — первый успех.
+  - title: Когда стартует работа
+    markdown: |
+      Combinator не запускает `fetch`. Запрос начинается в строке `fetch(url)`.
+      `await` перед каждым вызовом выстраивает их в очередь.

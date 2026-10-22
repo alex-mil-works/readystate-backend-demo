@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Индикатор должен пройти три разных поворота по кругу. Что ближе?
+options:
+  - id: a
+    text: keyframes
+    correct: true
+  - id: b
+    text: один transition на color
+  - id: c
+    text: смена title
+  - id: d
+    text: "overflow: auto"
+explain: Две точки закрывает transition. Сценарий из нескольких — keyframes.

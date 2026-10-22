@@ -1,0 +1,28 @@
+id: r-s04-u19-u20-bridge
+kind: single_choice
+phase: revision
+prompt: Id урока уже в URL, но эффект ещё копирует его в state и по этой копии
+  грузит данные. Зачем копия вредна?
+options:
+  - id: a
+    text: Два источника разъедутся с «назад», а запрос можно вешать прямо на id из
+      адреса
+    correct: true
+  - id: b
+    text: Без копии нельзя вызвать abort
+  - id: c
+    text: URL нельзя читать в эффекте
+  - id: d
+    text: Context обязателен для любого id
+explain: Адрес и есть state экрана. Эффект зависит от него и отменяется в cleanup.
+hints:
+  - title: U19 → U20
+    markdown: Не зеркальте источник эффектом. Для маршрута источник — URL, для
+      запроса — abort при смене id.
+tags:
+  - react
+reinforces:
+  - L057-react-effect-pitfalls
+  - L059-react-routing-url
+  - L060-react-data-loading
+source: original

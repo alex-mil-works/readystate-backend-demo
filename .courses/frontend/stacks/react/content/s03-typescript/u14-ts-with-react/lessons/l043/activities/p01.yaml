@@ -1,0 +1,24 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |-
+  type ListProps<T> = {
+    items: T[];
+    getKey: (item: T) => string;
+  };
+  function List<T>({ items, getKey }: ListProps<T>) {
+    return items.map(getKey);
+  }
+  const keys = List({ items: [{ id: 'a' }], getKey: (item) => item.id });
+question: Откуда берётся поле `id` у `item` в `getKey`?
+choices:
+  - id: a
+    text: "`T` вывелся из элемента `items`, у него есть `id`"
+    correct: true
+  - id: b
+    text: "`getKey` всегда получает `any`"
+  - id: c
+    text: Поле `id` есть у любого `T` без вывода
+  - id: d
+    text: Вывод ломается, нужен `as any`
+explain: Аргумент `items` задаёт `T`. Колбэк обязан принять тот же `T`.

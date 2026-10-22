@@ -1,0 +1,20 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |-
+  function text(id: string | number) {
+    if (typeof id === 'string') return id.toUpperCase();
+    return id.toFixed(0);
+  }
+question: Что вернёт `text(2)`?
+choices:
+  - id: a
+    text: Строку `'2'` — ветка number вызывает `toFixed`
+    correct: true
+  - id: b
+    text: "Ошибку компиляции: union нельзя вызвать"
+  - id: c
+    text: "`2` числом без перевода в строку"
+  - id: d
+    text: "`undefined`"
+explain: "`typeof` отправляет число во вторую ветку. `toFixed(0)` возвращает строку."

@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  @media (prefers-reduced-motion: reduce) {
+    .toast { animation: none; }
+  }
+question: Тост появлялся только анимацией появления и не имел текста вне
+  keyframes. Что останется пользователю?
+choices:
+  - id: a
+    text: "Риск пустого статуса: анимация была единственным сигналом"
+    correct: true
+  - id: b
+    text: Текст всё равно произнесётся из keyframes
+  - id: c
+    text: Браузер проигнорирует media
+  - id: d
+    text: toast станет h1
+explain: Сообщение живёт в тексте. Анимация только привлекает взгляд.

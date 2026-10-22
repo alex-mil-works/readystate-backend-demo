@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Таблица и список оба рисуют `T`. Зачем один параметр типа на props, а не
+  два независимых?
+options:
+  - id: a
+    text: Иначе `renderItem` сможет принять другой тип, чем элемент `items`
+    correct: true
+  - id: b
+    text: Два параметра всегда ошибочны синтаксически
+  - id: c
+    text: Один `T` включает runtime-проверку id
+  - id: d
+    text: Так компилятор стирает меньше кода
+explain: Связь `items` и `renderItem` и есть смысл generic-компонента.
+hints:
+  - title: Constraint
+    markdown: "Если каждому элементу нужен id, пишите `T extends { id: string }` и
+      упростите `getKey`, а не расширяйте до any."

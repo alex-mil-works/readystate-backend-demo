@@ -1,0 +1,23 @@
+id: r-u13-parse
+kind: single_choice
+phase: revision
+prompt: Куда класть тело `response.json()` перед `setUser`?
+options:
+  - id: a
+    text: В парсер из `unknown`, в state — его результат
+    correct: true
+  - id: b
+    text: Сразу `as User`
+  - id: c
+    text: В `useRef<any>`
+  - id: d
+    text: В тип `never`
+explain: Парсер либо возвращает User, либо бросает.
+hints:
+  - title: ok
+    markdown: Статус HTTP и форма тела проверяются отдельно.
+tags:
+  - validation
+reinforces:
+  - L040-ts-runtime-validation
+source: original

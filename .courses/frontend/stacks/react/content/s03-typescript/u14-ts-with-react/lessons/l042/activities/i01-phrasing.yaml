@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Как типизировать пустого пользователя, DOM-ref и действие редьюсера?
+rubric: |-
+  Ожидаемые пункты:
+  - state User или null
+  - DOM ref с null до commit
+  - action union по type
+  - возврат хука кортежем или объектом
+sampleAnswer: Пока пользователя нет, state это User или null, без as User. Ref
+  на input стартует с null, поэтому перед focus стоит проверка. Действия
+  редьюсера я описываю union с полем type, чтобы новое действие не прошло мимо
+  switch. Хук с двумя значениями возвращает кортеж.

@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Пустой массив `const ids = []` и потом `ids.push(1)`. Что не так без аннотации?
+options:
+  - id: a
+    text: Массив выводится как `never[]`, push числа спорит с компилятором
+    correct: true
+  - id: b
+    text: Массив всегда становится `any[]`
+  - id: c
+    text: TypeScript запрещает `const` для массивов
+  - id: d
+    text: Тип станет `number[]` по первому `push` задним числом
+explain: Пустой массив не из чего вывести. Нужно `number[]` или начальное значение.

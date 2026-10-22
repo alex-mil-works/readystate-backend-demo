@@ -1,0 +1,19 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function openLesson(id) {
+    setLessonId(id);
+  }
+question: Адрес при этом не меняется. Что сломается?
+choices:
+  - id: a
+    text: Назад, обновление и чужая ссылка откроют не тот экран
+    correct: true
+  - id: b
+    text: JSX перестанет видеть id
+  - id: c
+    text: Роутер удалит компонент
+  - id: d
+    text: Ничего, state и есть URL
+explain: Два источника. Экран смотрит в state, браузер — в старый адрес.

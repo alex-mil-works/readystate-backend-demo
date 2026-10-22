@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Сторонний график просит DOM-элемент в конструкторе. Когда его создавать?
+options:
+  - id: a
+    text: В эффекте, когда ref уже указывает на узел, и уничтожать в cleanup
+    correct: true
+  - id: b
+    text: В теле рендера на каждый проход
+  - id: c
+    text: В useState начальным значением
+  - id: d
+    text: До первого return, синхронно через document.body
+explain: Рендер должен остаться чистым. Подписка виджета снимается в cleanup.

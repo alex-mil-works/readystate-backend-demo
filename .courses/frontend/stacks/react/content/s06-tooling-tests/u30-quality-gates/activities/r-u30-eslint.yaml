@@ -1,0 +1,23 @@
+id: r-u30-eslint
+kind: single_choice
+phase: revision
+prompt: Кто ловит хук, вызванный под if?
+options:
+  - id: a
+    text: Правило ESLint, не Prettier
+    correct: true
+  - id: b
+    text: Форматтер
+  - id: c
+    text: Только source map
+  - id: d
+    text: Каретка версии
+explain: Форматные споры отдают Prettier и выключают их в линтере.
+hints:
+  - title: Шум
+    markdown: Правило, которое глушат в каждом файле, удаляют или чинят по-настоящему.
+tags:
+  - quality
+reinforces:
+  - L089-qa-eslint-prettier
+source: original

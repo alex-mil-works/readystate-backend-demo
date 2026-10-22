@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: "Зачем `T extends { id: string }`, а не `T = any`?"
+options:
+  - id: a
+    text: Внутри можно читать `id`, а снаружи не примут объект без `id`
+    correct: true
+  - id: b
+    text: "`extends` включает runtime-проверку поля"
+  - id: c
+    text: Так `T` всегда становится `string`
+  - id: d
+    text: Без `any` generic не компилируется
+explain: Constraint — компиляторное ограничение, не парсер.

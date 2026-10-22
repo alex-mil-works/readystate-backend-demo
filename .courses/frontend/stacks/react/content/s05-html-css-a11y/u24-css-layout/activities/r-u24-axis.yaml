@@ -1,0 +1,23 @@
+id: r-u24-axis
+kind: single_choice
+phase: revision
+prompt: justify-content во flex-ряду распределяет место…
+options:
+  - id: a
+    text: по главной оси
+    correct: true
+  - id: b
+    text: только по поперечной
+  - id: c
+    text: по z-index
+  - id: d
+    text: внутри каждой буквы
+explain: align-items — поперечная ось.
+hints:
+  - title: min-width
+    markdown: flex-элемент не сожмётся уже контента, пока min-width не 0.
+tags:
+  - css
+reinforces:
+  - L071-css-flexbox
+source: original

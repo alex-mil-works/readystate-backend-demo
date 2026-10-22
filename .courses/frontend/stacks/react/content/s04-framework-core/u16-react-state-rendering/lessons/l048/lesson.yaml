@@ -1,0 +1,17 @@
+id: L048-react-keys-identity
+order: 48
+title: Identity, keys и reconciliation
+titleEn: Identity, Keys, and Reconciliation
+essence: React сопоставляет дерево по позиции и key. Key — это личность строки
+  среди соседей, не индекс, если список переставляют.
+depth: mechanism
+required: true
+insights:
+  - insights/01-match.md
+  - insights/02-index-key.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

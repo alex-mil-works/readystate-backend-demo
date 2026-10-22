@@ -1,0 +1,18 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  const inputRef = useRef<HTMLInputElement>(null);
+  inputRef.current?.focus();
+question: Почему у вызова стоит `?.`?
+choices:
+  - id: a
+    text: До commit в DOM `current` ещё null
+    correct: true
+  - id: b
+    text: "`useRef` всегда возвращает undefined значение"
+  - id: c
+    text: focus есть только у `number`
+  - id: d
+    text: Оператор нужен, потому что ref это state
+explain: Инициализация `null` честно попадает в тип `HTMLInputElement | null`.

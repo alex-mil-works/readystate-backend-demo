@@ -1,0 +1,17 @@
+id: L036-ts-keyof-mapped
+order: 36
+title: "`keyof`, indexed access и mapped types"
+titleEn: keyof, Indexed Access, and Mapped Types
+essence: "`keyof` — имена полей. `T[K]` — тип поля. Mapped type строит новый
+  объект, проходя по ключам."
+depth: mechanism
+required: true
+insights:
+  - insights/01-key-and-lookup.md
+  - insights/02-mapped.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

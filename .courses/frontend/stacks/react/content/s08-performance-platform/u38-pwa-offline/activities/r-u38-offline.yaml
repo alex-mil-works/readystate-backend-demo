@@ -1,0 +1,24 @@
+id: r-u38-offline
+kind: single_choice
+phase: revision
+prompt: Сети нет, уроки на клиенте не хранились. Что показать?
+options:
+  - id: a
+    text: честную заглушку
+    correct: true
+  - id: b
+    text: чужой закэшированный кабинет
+  - id: c
+    text: что установка уже нативное приложение
+  - id: d
+    text: стек воркера
+explain: Offline-first только если данные правда локальные.
+hints:
+  - title: Кэш
+    markdown: Оболочку версионируют. Иначе исправление не доедет.
+tags:
+  - pwa
+reinforces:
+  - L114-pwa-install-update
+  - L113-pwa-service-worker
+source: original

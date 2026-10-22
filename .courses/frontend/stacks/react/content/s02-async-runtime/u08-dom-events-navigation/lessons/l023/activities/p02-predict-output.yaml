@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |
+  const box = document.createElement('div');
+  box.innerHTML = '<b>hi</b><script>window.__ran = true</script>';
+  console.log(box.querySelector('b')?.textContent);
+  console.log(Boolean(window.__ran));
+question: Что напечатают два лога в обычном браузере?
+choices:
+  - id: a
+    text: '`hi`, затем `false`'
+    correct: true
+  - id: b
+    text: '`hi`, затем `true`'
+  - id: c
+    text: '`null`, затем `true`'
+  - id: d
+    text: Оба `false` — innerHTML не парсит теги
+explain: |
+  Разметка `<b>` становится узлом. Скрипт, вставленный через `innerHTML`, не запускается, поэтому флаг не ставится.

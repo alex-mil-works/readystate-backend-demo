@@ -1,0 +1,24 @@
+id: r-u36-inp
+kind: single_choice
+phase: revision
+prompt: Клик заметно висит, первая отрисовка уже была быстрой. Куда смотреть?
+options:
+  - id: a
+    text: На INP и обработчик
+    correct: true
+  - id: b
+    text: Только на LCP
+  - id: c
+    text: На манифест PWA
+  - id: d
+    text: На дефис в имени тега
+explain: Три метрики не сводят в одну.
+hints:
+  - title: Гипотеза
+    markdown: Замечание Lighthouse проверяют записью, не правят вслепую.
+tags:
+  - perf
+reinforces:
+  - L107-perf-cwv
+  - L108-perf-devtools
+source: original

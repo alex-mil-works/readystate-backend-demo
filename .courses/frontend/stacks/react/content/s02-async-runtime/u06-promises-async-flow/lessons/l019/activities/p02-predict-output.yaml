@@ -1,0 +1,23 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |
+  const a = Promise.resolve('a');
+  const b = Promise.reject('b');
+  Promise.all([a, b]).then(
+    (v) => console.log('ok', v),
+    (e) => console.log('fail', e),
+  );
+question: Что напечатается?
+choices:
+  - id: a
+    text: '`fail b`'
+    correct: true
+  - id: b
+    text: '`ok ["a"]`'
+  - id: c
+    text: '`ok [a, b]`'
+  - id: d
+    text: Ничего — `reject` без `Error` игнорируется
+explain: |
+  Достаточно одного rejection. Reason пробрасывается как есть, здесь это строка `'b'`.

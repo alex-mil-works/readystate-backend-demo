@@ -1,0 +1,20 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  export function used() {}
+  export function unused() {}
+  // приложение импортирует только used
+question: Что tree-shaking может сделать с unused, если граф честный?
+choices:
+  - id: a
+    text: Не класть его в бандл приложения
+    correct: true
+  - id: b
+    text: Обязательно оставить оба и выполнить unused
+  - id: c
+    text: Превратить unused в CSS
+  - id: d
+    text: Удалить used
+explain: Побочный эффект на верхнем уровне модуля мешает выкидыванию. Честный
+  ESM-экспорт — нет.

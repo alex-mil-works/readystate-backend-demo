@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Сборка пишет «failed», а ниже «is not exported by module». Куда смотреть?
+options:
+  - id: a
+    text: В названный модуль и в то, что из него реально экспортируется
+    correct: true
+  - id: b
+    text: Только в первую строку failed, модуль неважен
+  - id: c
+    text: В Prettier
+  - id: d
+    text: В количество коммитов
+explain: Виновник обычно назван. Общая обёртка ошибки — нет.
+hints:
+  - title: Секрет
+    markdown: Ключ, который нельзя показывать пользователю, не получает клиентский
+      префикс и не живёт в исходнике фронтенда.

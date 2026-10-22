@@ -1,0 +1,9 @@
+id: U31
+stageId: S06
+title: Стратегия тестирования
+titleEn: Testing Strategy
+lessons:
+  - lessons/l092
+  - lessons/l093
+  - lessons/l094
+activities: activities

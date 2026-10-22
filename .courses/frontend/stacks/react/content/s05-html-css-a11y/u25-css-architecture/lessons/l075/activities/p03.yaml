@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: <div class="mt-4 cursor-pointer" onclick="open()">Урок</div>
+question: Чего утилиты здесь не исправили?
+choices:
+  - id: a
+    text: Это не ссылка и не кнопка, хотя выглядит кликабельным
+    correct: true
+  - id: b
+    text: mt-4 не входит в тему
+  - id: c
+    text: cursor-pointer задаёт href
+  - id: d
+    text: div стал landmark
+explain: Вид курсора не заменяет элемент. Переход — ссылка.

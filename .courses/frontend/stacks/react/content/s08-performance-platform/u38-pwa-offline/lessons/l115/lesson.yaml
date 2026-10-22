@@ -1,0 +1,18 @@
+id: L115-pwa-storage
+order: 115
+title: Хранилища браузера и граница синхронизации
+titleEn: Browser Storage and Sync Boundaries
+essence: localStorage маленький и синхронный. IndexedDB держит структуры. Cache
+  API держит ответы. Ни одно из них не является общей базой между людьми и
+  устройствами.
+depth: application
+required: true
+insights:
+  - insights/01-kinds.md
+  - insights/02-quota.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

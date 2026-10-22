@@ -1,0 +1,23 @@
+id: r-u10-unknown
+kind: single_choice
+phase: revision
+prompt: На границе `JSON.parse` что предпочтительнее `any`?
+options:
+  - id: a
+    text: "`unknown` и сужение перед чтением поля"
+    correct: true
+  - id: b
+    text: "`never`"
+  - id: c
+    text: "`void`"
+  - id: d
+    text: Оставить `any`, оно проверяет поля
+explain: "`unknown` не даёт прочитать поле молча."
+hints:
+  - title: any
+    markdown: "`any` совместим со всем и глушит следующую строку."
+tags:
+  - unknown
+reinforces:
+  - L031-ts-any-unknown-never
+source: original

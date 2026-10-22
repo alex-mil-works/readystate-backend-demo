@@ -1,0 +1,24 @@
+id: r-u19-profile
+kind: single_choice
+phase: revision
+prompt: С чего начать, если ввод в поиске тормозит карту?
+options:
+  - id: a
+    text: Посмотреть, не рендерит ли общий родитель и карту, и поле
+    correct: true
+  - id: b
+    text: Обернуть всё приложение в memo вслепую
+  - id: c
+    text: Удалить keys
+  - id: d
+    text: Перенести текст в ref и читать его в карте
+explain: Замер показывает ширину коммита. Лечение — место state.
+hints:
+  - title: Дёшево
+    markdown: Частый рендер на доли миллисекунды можно не трогать.
+tags:
+  - react
+  - perf
+reinforces:
+  - L058-react-render-profiling
+source: original

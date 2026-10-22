@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Экран показывает «Saving…» или «Saved». Где должна жить эта развилка?
+options:
+  - id: a
+    text: В JSX от текущего флага, без ручной смены textContent
+    correct: true
+  - id: b
+    text: В цепочке classList и textContent после каждого клика
+  - id: c
+    text: Только в CSS без данных
+  - id: d
+    text: В document.title
+explain: Текст — функция состояния. React обновит узел, если описание изменилось.

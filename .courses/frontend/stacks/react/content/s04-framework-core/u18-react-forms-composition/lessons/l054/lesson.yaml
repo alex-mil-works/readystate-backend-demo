@@ -1,0 +1,17 @@
+id: L054-react-refs-dom
+order: 54
+title: Refs, escape hatches и DOM interop
+titleEn: Refs, Escape Hatches, and DOM Interop
+essence: Ref держит мутабельный бокс и не запускает рендер. Им берут узел, фокус
+  и интеграцию, не данные экрана.
+depth: application
+required: true
+insights:
+  - insights/01-no-render.md
+  - insights/02-not-state.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

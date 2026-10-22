@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Коммит уже в main, и его забрали другие. Как убрать эффект этой правки?
+options:
+  - id: a
+    text: "revert: новый коммит отменяет изменения"
+    correct: true
+  - id: b
+    text: reset --hard и force-push main
+  - id: c
+    text: удалить reflog на сервере одной кнопкой
+  - id: d
+    text: стереть файл .git у всех
+explain: Revert не требует переписывать уже скачанную историю.

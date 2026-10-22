@@ -1,0 +1,15 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Чем content-box отличается от border-box и что делает overflow?
+rubric: |-
+  Ожидаемые пункты:
+  - width при content-box без padding и border
+  - border-box включает их
+  - margin в width не входит и может схлопнуться
+  - hidden легко срезает фокус и поповеры
+sampleAnswer: "При content-box ширина — это только текст, поля и рамка торчат
+  сверху. border-box кладёт их внутрь заявленной ширины, поэтому проценты
+  сходятся. Margin в ширину не входит и по вертикали между блоками схлопывается.
+  overflow: hidden я не вешаю на большой контейнер: он обрежет фокус и
+  выпадающее меню."

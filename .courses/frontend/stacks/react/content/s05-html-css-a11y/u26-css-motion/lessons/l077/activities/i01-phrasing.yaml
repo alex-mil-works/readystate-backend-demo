@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Чем transition отличается от keyframes и что не стоит анимировать оптом?
+rubric: |-
+  Ожидаемые пункты:
+  - transition между двумя значениями
+  - список свойств, не all
+  - keyframes для нескольких кадров
+  - display не плавный
+sampleAnswer: "Transition догоняет новое значение opacity или transform за
+  заданное время. all я не ставлю: поедет и ширина, и тень. Если кадров
+  несколько, как у спиннера, это keyframes. Появление блока через display само
+  по себе не интерполируется."

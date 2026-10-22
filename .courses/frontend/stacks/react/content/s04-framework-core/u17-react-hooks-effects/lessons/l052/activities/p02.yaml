@@ -1,0 +1,22 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function formatName(user) {
+    const [nick, setNick] = useState(user.name);
+    return nick;
+  }
+question: Почему это плохой хук, даже если переименовать функцию?
+choices:
+  - id: a
+    text: "Он ещё и не хук по правилам: но если оставить useState в обычной функции,
+      её нельзя звать условно и из утилиты"
+    correct: true
+  - id: b
+    text: useState внутри любой функции всегда шарит state
+  - id: c
+    text: formatName обязан вернуть JSX
+  - id: d
+    text: Начальное значение нельзя брать из аргумента
+explain: Хук — только то, что вызывают как хук с верхнего уровня компонента.
+  Утилита форматирования state не хранит.

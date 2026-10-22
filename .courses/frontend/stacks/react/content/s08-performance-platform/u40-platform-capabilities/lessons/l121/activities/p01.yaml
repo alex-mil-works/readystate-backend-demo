@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Где оказывается закрытый ключ passkey?
+options:
+  - id: a
+    text: У платформы, не в localStorage сайта
+    correct: true
+  - id: b
+    text: В полезной нагрузке JWT на клиенте
+  - id: c
+    text: В репозитории фронтенда
+  - id: d
+    text: В Cache API
+explain: Сайт хранит открытый ключ и проверяет подпись на сервере.

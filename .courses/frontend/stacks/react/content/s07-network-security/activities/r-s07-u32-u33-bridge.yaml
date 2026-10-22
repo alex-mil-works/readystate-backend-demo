@@ -1,0 +1,28 @@
+id: r-s07-u32-u33-bridge
+kind: single_choice
+phase: revision
+prompt: Личный HTML кабинета отдают с публичным кэшем, а API стоит на другом
+  хосте. Что здесь смешалось?
+options:
+  - id: a
+    text: чужие данные могут осесть в общем кэше, а другой хост — уже другой источник
+    correct: true
+  - id: b
+    text: кэш заменяет CORS и права
+  - id: c
+    text: фрагмент URL как раз защищает кабинет
+  - id: d
+    text: GET нельзя кэшировать никогда, POST можно всегда
+explain: Персональное не делают public. Чтение чужого источника решает браузер
+  по заголовкам, не кэш.
+hints:
+  - title: U32 → U33
+    markdown: Кэш про свежесть и общность. Источник про схему, хост и порт. Оба не
+      проверяют права.
+tags:
+  - network
+  - security
+reinforces:
+  - L097-net-cache-reuse
+  - L098-sec-origin-cors
+source: original

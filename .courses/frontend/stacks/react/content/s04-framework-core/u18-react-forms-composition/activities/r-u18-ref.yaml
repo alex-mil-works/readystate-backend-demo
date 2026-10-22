@@ -1,0 +1,24 @@
+id: r-u18-ref
+kind: single_choice
+phase: revision
+prompt: Что произойдёт, если писать только в ref и ждать новый текст на экране?
+options:
+  - id: a
+    text: "Экран не обновится: запись в ref не рендерит"
+    correct: true
+  - id: b
+    text: Ререндер случится сразу
+  - id: c
+    text: ref сбросится в null
+  - id: d
+    text: React скопирует current в props
+explain: Видимые данные — state. Ref — для фокуса и императивного узла.
+hints:
+  - title: Виджет
+    markdown: Библиотеке отдают узел из эффекта и уничтожают её в cleanup.
+tags:
+  - react
+  - refs
+reinforces:
+  - L054-react-refs-dom
+source: original

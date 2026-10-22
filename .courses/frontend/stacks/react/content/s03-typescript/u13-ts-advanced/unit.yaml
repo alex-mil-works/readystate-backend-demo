@@ -1,0 +1,9 @@
+id: U13
+stageId: S03
+title: Продвинутый TypeScript для UI
+titleEn: Advanced TypeScript for UI
+lessons:
+  - lessons/l038
+  - lessons/l039
+  - lessons/l040
+activities: activities

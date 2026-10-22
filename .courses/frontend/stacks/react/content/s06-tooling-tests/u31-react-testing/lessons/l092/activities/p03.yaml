@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  const items = pickRecall(pool, 2);
+  expect(items).toHaveLength(2);
+question: Тест зелёный. Что он на самом деле доказал?
+choices:
+  - id: a
+    text: Что эта функция на этом пуле вернула два элемента
+    correct: true
+  - id: b
+    text: Что весь UI урока работает
+  - id: c
+    text: Что прод-сборка собралась
+  - id: d
+    text: Что сеть доступна
+explain: Граница доказательства — вызов функции, не приложение.

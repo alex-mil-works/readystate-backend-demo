@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Запрос стартует из эффекта по id урока в адресе. Что вернуть из эффекта?
+options:
+  - id: a
+    text: Функцию, которая вызовет abort у текущего запроса
+    correct: true
+  - id: b
+    text: "Ничего: сеть умрёт вместе с компонентом сама"
+  - id: c
+    text: Новый setState со старым уроком
+  - id: d
+    text: Только console.log
+explain: Смена id и unmount должны оборвать прошлый signal.

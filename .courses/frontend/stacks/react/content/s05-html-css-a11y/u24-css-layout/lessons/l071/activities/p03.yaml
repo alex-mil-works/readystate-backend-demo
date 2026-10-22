@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Чем flex отличается от задачи «сетка из строк и колонок сразу»?
+options:
+  - id: a
+    text: Flex ведёт одну ось, вторая только выравнивает
+    correct: true
+  - id: b
+    text: Flex всегда двумерный
+  - id: c
+    text: Flex не умеет gap
+  - id: d
+    text: Flex заменяет таблицу данных
+explain: Двумерную раскладку проще отдать grid.

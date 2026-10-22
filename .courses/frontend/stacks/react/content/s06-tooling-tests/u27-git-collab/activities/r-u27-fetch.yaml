@@ -1,0 +1,23 @@
+id: r-u27-fetch
+kind: single_choice
+phase: revision
+prompt: fetch в отличие от pull…
+options:
+  - id: a
+    text: не сливает принесённое в текущую ветку
+    correct: true
+  - id: b
+    text: сразу пушит main
+  - id: c
+    text: решает конфликт за вас
+  - id: d
+    text: удаляет reflog
+explain: pull = fetch и соединение с текущей веткой.
+hints:
+  - title: Конфликт
+    markdown: Маркеры в файле нельзя коммитить. Оставляют одну осмысленную версию.
+tags:
+  - git
+reinforces:
+  - L081-git-pr-conflicts
+source: original

@@ -1,0 +1,24 @@
+id: r-u11-optional
+kind: single_choice
+phase: revision
+prompt: "Вызов `greet(name)` без второго аргумента `title?: string` законен. Что
+  внутри функции?"
+options:
+  - id: a
+    text: "`title` имеет тип `string | undefined`"
+    correct: true
+  - id: b
+    text: "`title` это `null`"
+  - id: c
+    text: Параметр обязателен
+  - id: d
+    text: Тип становится `any`
+explain: Optional parameter добавляет undefined, не null.
+hints:
+  - title: Колбэк
+    markdown: "Пишите `(id: string) => void`, не `Function`."
+tags:
+  - functions
+reinforces:
+  - L033-ts-function-types
+source: original

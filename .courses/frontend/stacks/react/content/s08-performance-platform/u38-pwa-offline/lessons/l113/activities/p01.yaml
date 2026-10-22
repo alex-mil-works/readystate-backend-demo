@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Чем Service Worker не является?
+options:
+  - id: a
+    text: Обычным модулем рендера внутри компонента
+    correct: true
+  - id: b
+    text: Прокси, который может ответить из кэша
+  - id: c
+    text: Скриптом со своими install и fetch
+  - id: d
+    text: Штукой, которая переживает закрытие вкладки
+explain: Его жизненный цикл не равен рендеру React.

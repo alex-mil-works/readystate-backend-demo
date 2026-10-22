@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему поиск не кладут в тот же Context, что и тему?
+options:
+  - id: a
+    text: Каждый символ перерисует всех потребителей провайдера
+    correct: true
+  - id: b
+    text: Context не вызывает рендер
+  - id: c
+    text: Тема обязана жить в useRef
+  - id: d
+    text: Поиск нельзя хранить в state
+explain: Частое значение либо локально у поля и списка, либо в store с точечной
+  подпиской.

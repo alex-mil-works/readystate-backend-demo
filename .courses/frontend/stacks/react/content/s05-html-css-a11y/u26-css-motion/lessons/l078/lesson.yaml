@@ -1,0 +1,17 @@
+id: L078-css-paint-cost
+order: 78
+title: Цена layout, paint и composite
+titleEn: Layout, Paint, and Composite Cost
+essence: Ширина и верх заново считают раскладку. Цвет перекрашивает. Transform и
+  opacity чаще остаются на композите.
+depth: perf
+required: true
+insights:
+  - insights/01-pipeline.md
+  - insights/02-thrash.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Два несвязанных type с полями `id: string` присваиваются друг другу. Почему?"
+options:
+  - id: a
+    text: Совпадает структура, имя типа не штамп
+    correct: true
+  - id: b
+    text: TypeScript считает все type одним классом
+  - id: c
+    text: Так бывает только у interface
+  - id: d
+    text: Присваивание всегда запрещено без `as`
+explain: Номинальной системы по умолчанию нет. Нужен brand, если имя должно
+  различать типы.

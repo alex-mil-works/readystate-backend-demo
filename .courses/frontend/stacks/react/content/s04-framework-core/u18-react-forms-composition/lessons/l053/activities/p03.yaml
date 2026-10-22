@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Когда уместен defaultValue, а не value?
+options:
+  - id: a
+    text: Редкий черновик, который React не должен контролировать каждый символ
+    correct: true
+  - id: b
+    text: Когда текст надо сбрасывать из props каждый рендер
+  - id: c
+    text: "Всегда: value устарел"
+  - id: d
+    text: Только для чекбокса
+explain: Неконтролируемое поле хранит текст в DOM. Сброс тогда делают новым key,
+  а не пустым value.

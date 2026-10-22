@@ -1,0 +1,17 @@
+id: L053-react-controlled-inputs
+order: 53
+title: События и controlled inputs
+titleEn: Events and Controlled Inputs
+essence: Controlled-поле читает value из state и пишет каждое изменение обратно.
+  Без onChange такое поле только для чтения.
+depth: application
+required: true
+insights:
+  - insights/01-controlled.md
+  - insights/02-submit.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

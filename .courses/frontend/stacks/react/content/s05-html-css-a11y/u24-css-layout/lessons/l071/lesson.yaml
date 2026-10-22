@@ -1,0 +1,17 @@
+id: L071-css-flexbox
+order: 71
+title: Ментальная модель Flexbox
+titleEn: The Flexbox Mental Model
+essence: Flex — одномерный ряд или колонка. Главная ось распределяет свободное
+  место, поперечная выравнивает строку.
+depth: mechanism
+required: true
+insights:
+  - insights/01-axes.md
+  - insights/02-flex-item.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

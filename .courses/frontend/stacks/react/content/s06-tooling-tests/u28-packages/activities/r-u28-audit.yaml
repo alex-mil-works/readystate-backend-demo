@@ -1,0 +1,24 @@
+id: r-u28-audit
+kind: single_choice
+phase: revision
+prompt: Зелёный audit значит…
+options:
+  - id: a
+    text: нет совпадений с известным списком дыр, не «пакет безвреден»
+    correct: true
+  - id: b
+    text: можно не смотреть пост-инсталл
+  - id: c
+    text: лок больше не нужен
+  - id: d
+    text: мажор безопасен всегда
+explain: Новый вредоносный релиз может ещё не быть в списке.
+hints:
+  - title: dev
+    markdown: Тест-раннер — devDependency. В рантайм приложения он не обязан входить.
+tags:
+  - packages
+reinforces:
+  - L085-pkg-lock-supply
+  - L083-pkg-manifest-semver
+source: original

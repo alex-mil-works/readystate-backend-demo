@@ -1,0 +1,15 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Зачем избегать tabindex больше нуля?
+options:
+  - id: a
+    text: Он вырывает элемент из естественного порядка Tab
+    correct: true
+  - id: b
+    text: Он отключает label
+  - id: c
+    text: "Он равен outline: none"
+  - id: d
+    text: Он нужен каждому input
+explain: Порядок документа и есть порядок клавиатуры. Меняйте вёрстку, не номера.

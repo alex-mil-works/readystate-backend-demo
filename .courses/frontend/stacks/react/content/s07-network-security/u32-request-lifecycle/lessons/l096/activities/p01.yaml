@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Какой метод по контракту не меняет данные на сервере?
+options:
+  - id: a
+    text: GET
+    correct: true
+  - id: b
+    text: POST
+  - id: c
+    text: любой с телом JSON
+  - id: d
+    text: тот, у которого статус 500
+explain: Безопасный метод можноprefetch-ить и класть в кэш. POST — нет.

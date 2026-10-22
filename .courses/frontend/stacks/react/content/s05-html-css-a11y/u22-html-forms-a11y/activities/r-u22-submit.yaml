@@ -1,0 +1,15 @@
+id: r-u22-submit
+kind: single_choice
+phase: revision
+prompt: Иконка внутри формы не должна её отправлять. Какой type?
+options:
+  - id: a
+    text: button
+    correct: true
+  - id: b
+    text: submit
+  - id: c
+    text: можно опустить
+  - id: d
+    text: reset на каждое поле
+explain: Кнопка без type в form — submit.

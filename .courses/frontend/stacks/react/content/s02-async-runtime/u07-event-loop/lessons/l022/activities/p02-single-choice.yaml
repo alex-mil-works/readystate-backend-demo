@@ -1,0 +1,17 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: |
+  Зачем резать большой массив на куски через `setTimeout`?
+options:
+  - id: a
+    text: Чтобы между кусками event loop успел взять ввод и отрисовку
+    correct: true
+  - id: b
+    text: Чтобы куски пошли в разных потоках JS
+  - id: c
+    text: Чтобы суммарное время стало меньше
+  - id: d
+    text: '`setTimeout` ускоряет сам цикл за счёт JIT'
+explain: |
+  Сумма CPU та же. Выигрыш в том, что между task браузер может ответить на жест и нарисовать кадр.

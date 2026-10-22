@@ -1,0 +1,15 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: |
+  Объясните вслух: какие состояния у Promise и как работает цепочка `then`.
+rubric: |
+  Ожидаемые пункты (30–60 сек):
+  - pending / fulfilled / rejected, settle один раз
+  - `then` возвращает новый промис
+  - return value и return promise (flatten)
+  - без return дальше приходит undefined
+sampleAnswer: |
+  Промис один раз переходит из pending в fulfilled или rejected. Повторный resolve его не переписывает.
+  then возвращает новый промис и не меняет исходный. Вернули значение — его увидит следующий шаг;
+  вернули промис — цепочка дождётся и развернёт его. Без return дальше придёт undefined.

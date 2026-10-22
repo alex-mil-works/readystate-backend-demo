@@ -1,0 +1,24 @@
+id: r-u16-snapshot
+kind: single_choice
+phase: revision
+prompt: Два `setN(n + 1)` в одном клике при n = 0 дают следующее n…
+options:
+  - id: a
+    text: "1"
+    correct: true
+  - id: b
+    text: "2"
+  - id: c
+    text: "0"
+  - id: d
+    text: n + n
+explain: Оба читают один снимок. Для +2 нужен updater.
+hints:
+  - title: Updater
+    markdown: "`setN((prev) => prev + 1)` дважды складывает очередь."
+tags:
+  - react
+  - state
+reinforces:
+  - L047-react-state-snapshot
+source: original

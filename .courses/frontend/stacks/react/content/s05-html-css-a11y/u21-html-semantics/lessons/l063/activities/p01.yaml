@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: «Открыть урок» ведёт на URL. Какой элемент?
+options:
+  - id: a
+    text: Ссылка с href
+    correct: true
+  - id: b
+    text: div с onClick
+  - id: c
+    text: button без type, который меняет location вручную
+  - id: d
+    text: span внутри таблицы
+explain: "Переход — ссылка: её можно открыть в новой вкладке и найти через
+  список ссылок."

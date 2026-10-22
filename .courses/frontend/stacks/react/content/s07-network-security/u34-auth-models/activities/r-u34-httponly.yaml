@@ -1,0 +1,23 @@
+id: r-u34-httponly
+kind: single_choice
+phase: revision
+prompt: HttpOnly у сессионной cookie нужен, чтобы…
+options:
+  - id: a
+    text: скрипт страницы не прочитал её
+    correct: true
+  - id: b
+    text: браузер перестал прикладывать её к запросам
+  - id: c
+    text: заменить проверку прав
+  - id: d
+    text: зашифровать весь интернет
+explain: Чужой сайт всё ещё может инициировать запрос, куда браузер её приложит.
+hints:
+  - title: Права
+    markdown: В cookie кладут идентификатор сессии. Роль живёт на сервере.
+tags:
+  - auth
+reinforces:
+  - L101-auth-cookie-csrf
+source: original

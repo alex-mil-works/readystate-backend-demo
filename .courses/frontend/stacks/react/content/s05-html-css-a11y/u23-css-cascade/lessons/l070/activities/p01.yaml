@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Нужно убрать подсказку и из вида, и из доступа, не оставляя дырки. Что выбрать?
+options:
+  - id: a
+    text: "display: none или скрытие условным рендером"
+    correct: true
+  - id: b
+    text: "visibility: hidden, место должно схлопнуться"
+  - id: c
+    text: "opacity: 0, скринридер её и так пропустит"
+  - id: d
+    text: "z-index: -1"
+explain: "opacity: 0 элемент остаётся в дереве и в Tab. visibility оставляет геометрию."

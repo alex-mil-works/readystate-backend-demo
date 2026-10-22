@@ -1,0 +1,25 @@
+id: r-u31-flake
+kind: single_choice
+phase: revision
+prompt: Тест мигает из-за sleep(1000). Чем заменить паузу?
+options:
+  - id: a
+    text: Ожиданием текста, роли или адреса
+    correct: true
+  - id: b
+    text: Паузой в пять секунд
+  - id: c
+    text: Моком useState внутри e2e
+  - id: d
+    text: Отключением ретраев и надеждой
+explain: Пауза не знает, готов ли экран.
+hints:
+  - title: Слой
+    markdown: Юнит — функция. Компонент — роль и текст. E2E — настоящий браузер на
+      коротком пути.
+tags:
+  - test
+reinforces:
+  - L094-test-e2e-playwright
+  - L092-test-unit-vitest
+source: original

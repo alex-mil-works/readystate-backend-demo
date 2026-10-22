@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  .col { display: flex; }
+  .col input { flex: 1 1 auto; }
+question: Длинный placeholder не даёт инпуту сжаться уже карточки. Какое
+  свойство обычно добавляют инпуту?
+choices:
+  - id: a
+    text: "min-width: 0"
+    correct: true
+  - id: b
+    text: "float: left"
+  - id: c
+    text: "z-index: 1"
+  - id: d
+    text: "display: inline"
+explain: Минимум auto держит элемент не уже контента. Ноль разрешает сжаться и
+  включить overflow поля.

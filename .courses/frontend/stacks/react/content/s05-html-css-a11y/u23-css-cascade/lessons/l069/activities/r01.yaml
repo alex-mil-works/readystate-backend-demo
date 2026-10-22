@@ -1,0 +1,16 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "Два абзаца с margin-bottom: 24px и margin-top: 24px. Почему зазор часто
+  24, а не 48?"
+options:
+  - id: a
+    text: Вертикальные margin схлопнулись
+    correct: true
+  - id: b
+    text: border-box вычитает половину
+  - id: c
+    text: padding всегда равен margin
+  - id: d
+    text: Так работает только grid
+explain: Схлопывание — свойство обычного потока. Flex и grid его не делают.

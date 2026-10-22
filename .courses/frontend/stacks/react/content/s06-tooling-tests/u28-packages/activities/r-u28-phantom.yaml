@@ -1,0 +1,23 @@
+id: r-u28-phantom
+kind: single_choice
+phase: revision
+prompt: Импорт пакета работает, хотя его нет в dependencies. На npm это часто…
+options:
+  - id: a
+    text: фантомная зависимость из поднятого дерева
+    correct: true
+  - id: b
+    text: нормальный peer
+  - id: c
+    text: ошибка SemVer патча
+  - id: d
+    text: признак source map
+explain: На строгой установке импорт пропадёт. Пакет надо объявить.
+hints:
+  - title: Один менеджер
+    markdown: Лок npm, pnpm и Yarn разный. В репозитории один установщик.
+tags:
+  - packages
+reinforces:
+  - L084-pkg-installers
+source: original

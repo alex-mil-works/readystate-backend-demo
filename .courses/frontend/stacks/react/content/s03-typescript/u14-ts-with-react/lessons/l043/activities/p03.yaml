@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Что из этого стоит экспортировать вместе с `List`?
+options:
+  - id: a
+    text: "`ListProps<T>`"
+    correct: true
+  - id: b
+    text: Внутренний `useRef` счётчика рендеров
+  - id: c
+    text: Черновик несохранённого фильтра как `any`
+  - id: d
+    text: Приватный default state
+explain: Вызывающему нужен тип props, чтобы собрать их до JSX.

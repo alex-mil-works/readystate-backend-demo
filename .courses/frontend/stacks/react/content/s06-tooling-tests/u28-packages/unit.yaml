@@ -1,0 +1,9 @@
+id: U28
+stageId: S06
+title: Пакеты и зависимости
+titleEn: Packages and Dependencies
+lessons:
+  - lessons/l083
+  - lessons/l084
+  - lessons/l085
+activities: activities

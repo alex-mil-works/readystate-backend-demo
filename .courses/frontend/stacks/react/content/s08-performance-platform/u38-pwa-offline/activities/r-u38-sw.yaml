@@ -1,0 +1,23 @@
+id: r-u38-sw
+kind: single_choice
+phase: revision
+prompt: Service Worker в первую очередь…
+options:
+  - id: a
+    text: прокси запросов со своим циклом жизни
+    correct: true
+  - id: b
+    text: хук useState
+  - id: c
+    text: замена HTTPS
+  - id: d
+    text: таблица IndexedDB
+explain: Кэш без новой версии может запереть старый фронтенд.
+hints:
+  - title: Ожидание
+    markdown: Новый воркер не всегда сразу забирает открытые вкладки.
+tags:
+  - pwa
+reinforces:
+  - L113-pwa-service-worker
+source: original

@@ -1,0 +1,17 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: |
+  Клик пришёлся по `span` внутри `li`. Слушатель висит на `ul`. Чему равен `event.target`?
+options:
+  - id: a
+    text: Узлу `span`, с которого начался клик
+    correct: true
+  - id: b
+    text: Узлу `ul`, потому что слушатель висит на нём
+  - id: c
+    text: Всегда `document`
+  - id: d
+    text: '`li`, браузер поднимает target до интерактивного родителя'
+explain: |
+  `target` — исходный узел. До строки доходят через `closest`. `currentTarget` внутри слушателя — это `ul`.

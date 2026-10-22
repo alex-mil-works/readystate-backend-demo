@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Почему `console.log(n)` сразу после `setN(n + 1)` печатает старое `n`?
+options:
+  - id: a
+    text: Текущий обработчик держит снимок, экран обновится следующим рендером
+    correct: true
+  - id: b
+    text: setState сломан
+  - id: c
+    text: Лог читает DOM, а не state
+  - id: d
+    text: n меняется, но console его кэширует навсегда
+explain: Обновление запланировано. Константа `n` этого вызова не переприсваивается.

@@ -1,0 +1,24 @@
+id: r-u33-origin
+kind: single_choice
+phase: revision
+prompt: Что входит в источник?
+options:
+  - id: a
+    text: схема, хост и порт
+    correct: true
+  - id: b
+    text: только путь
+  - id: c
+    text: только фрагмент
+  - id: d
+    text: текст cookie
+explain: Другой порт — уже другой источник.
+hints:
+  - title: CORS
+    markdown: Заголовок разрешает браузеру прочитать ответ. Права на действие он не
+      выдаёт.
+tags:
+  - security
+reinforces:
+  - L098-sec-origin-cors
+source: original

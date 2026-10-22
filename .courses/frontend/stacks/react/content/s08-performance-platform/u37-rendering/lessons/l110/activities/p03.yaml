@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  // сервер: <span>{new Date().toISOString()}</span>
+  // клиент при гидрации считает новую дату
+question: Что не так?
+choices:
+  - id: a
+    text: Разметка не совпадёт, гидрация ругнётся или перерисует узел
+    correct: true
+  - id: b
+    text: Даты всегда одинаковые
+  - id: c
+    text: Так и задумано для LCP
+  - id: d
+    text: CSR не умеет Date
+explain: Нестабильный рендер нельзя отдавать с сервера и пересчитывать на клиенте иначе.

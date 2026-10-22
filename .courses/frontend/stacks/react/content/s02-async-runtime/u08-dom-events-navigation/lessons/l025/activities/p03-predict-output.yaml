@@ -1,0 +1,22 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |
+  let n = 0;
+  window.addEventListener('popstate', () => { n += 1; });
+  history.pushState({ page: 1 }, '', '/a');
+  history.pushState({ page: 2 }, '', '/b');
+  console.log(n, location.pathname);
+question: Что напечатается после двух `pushState`?
+choices:
+  - id: a
+    text: '`0` и `/b`'
+    correct: true
+  - id: b
+    text: '`2` и `/b`'
+  - id: c
+    text: '`1` и `/a`'
+  - id: d
+    text: '`0` и исходный путь — pushState не меняет pathname'
+explain: |
+  Оба вызова меняют URL, второй оставляет `/b`. `popstate` от `pushState` не приходит, счётчик остаётся 0.

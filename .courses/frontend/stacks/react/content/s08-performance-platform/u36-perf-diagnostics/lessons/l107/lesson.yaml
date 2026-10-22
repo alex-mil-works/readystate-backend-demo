@@ -1,0 +1,17 @@
+id: L107-perf-cwv
+order: 107
+title: "Core Web Vitals: LCP, CLS, INP"
+titleEn: "Core Web Vitals: LCP, CLS, INP"
+essence: "Три полевых сигнала: когда появилось главное содержимое, прыгала ли
+  вёрстка и как быстро интерфейс ответил на действие."
+depth: perf
+required: true
+insights:
+  - insights/01-three.md
+  - insights/02-field.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

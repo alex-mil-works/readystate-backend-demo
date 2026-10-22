@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Заголовок документа должен совпадать с именем урока. Куда писать
+  `document.title`?
+options:
+  - id: a
+    text: "В эффект, который зависит от имени: это внешняя система"
+    correct: true
+  - id: b
+    text: В тело рендера без эффекта
+  - id: c
+    text: В useState заголовка, который никто не читает
+  - id: d
+    text: Только в key маршрута
+explain: title — не React-дерево. Эффект подстраивает его и может вернуть
+  прежний заголовок в cleanup.

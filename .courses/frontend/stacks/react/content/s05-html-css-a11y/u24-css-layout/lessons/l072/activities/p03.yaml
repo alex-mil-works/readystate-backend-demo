@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Почему расписание занятий не заменяют на grid из div?
+options:
+  - id: a
+    text: Связь строка–колонка для скринридера есть у table и th
+    correct: true
+  - id: b
+    text: grid запрещён в main
+  - id: c
+    text: fr не умеет две колонки
+  - id: d
+    text: table не стилизуется
+explain: Grid — про вид. Таблица — про данные.

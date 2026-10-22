@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  useEffect(() => {
+    loadLesson(id).then(setLesson);
+  }, [id]);
+question: Медленный ответ для id=A приходит после того, как пользователь открыл
+  id=B. Что увидит экран без отмены?
+choices:
+  - id: a
+    text: Урок A может затереть уже показанный B
+    correct: true
+  - id: b
+    text: React отменяет then при смене id сам
+  - id: c
+    text: setLesson сравнивает id внутри ответа всегда
+  - id: d
+    text: Эффект не перезапускается
+explain: Нет abort и нет проверки, что ответ ещё актуален. Cleanup как раз для этого.

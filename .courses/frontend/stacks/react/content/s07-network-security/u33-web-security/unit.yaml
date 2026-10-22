@@ -1,0 +1,9 @@
+id: U33
+stageId: S07
+title: Границы веба
+titleEn: Web Security Boundaries
+lessons:
+  - lessons/l098
+  - lessons/l099
+  - lessons/l100
+activities: activities

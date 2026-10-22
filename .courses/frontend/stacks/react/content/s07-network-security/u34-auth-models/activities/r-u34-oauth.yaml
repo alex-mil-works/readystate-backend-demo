@@ -1,0 +1,23 @@
+id: r-u34-oauth
+kind: single_choice
+phase: revision
+prompt: Секрет OAuth-клиента во фронтенде…
+options:
+  - id: a
+    text: "нельзя хранить: бандл публичен"
+    correct: true
+  - id: b
+    text: обязателен, иначе провайдер не ответит
+  - id: c
+    text: заменяет адрес возврата
+  - id: d
+    text: это и есть пароль пользователя
+explain: Чужой пароль в свою форму не собирают. Код возврата не пишут в аналитику.
+hints:
+  - title: Возврат
+    markdown: Адрес возврата заранее зарегистрирован, иначе ответ уведут.
+tags:
+  - auth
+reinforces:
+  - L103-auth-oauth
+source: original

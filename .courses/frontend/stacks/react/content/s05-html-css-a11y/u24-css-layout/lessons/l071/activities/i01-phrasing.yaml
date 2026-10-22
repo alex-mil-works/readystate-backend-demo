@@ -1,0 +1,13 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Объясните оси flex и почему поле не сжимается в узкой карточке.
+rubric: |-
+  Ожидаемые пункты:
+  - одна главная ось
+  - justify вдоль, align поперёк
+  - flex-grow делит свободное место
+  - min-width: auto не даёт стать уже контента
+sampleAnswer: Flex выстраивает детей в ряд или в колонку. Свободное место по
+  главной оси раздаёт justify-content, по поперечной — align-items. Поле с flex
+  1 всё равно не сожмётся уже своего текста, пока min-width не станет 0.

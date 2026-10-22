@@ -1,0 +1,24 @@
+id: r-u18-slot
+kind: single_choice
+phase: revision
+prompt: Как показать разные кнопки в одном диалоге?
+options:
+  - id: a
+    text: Слотом actions снаружи
+    correct: true
+  - id: b
+    text: Enum всех кнопок продукта внутри диалога
+  - id: c
+    text: Наследованием Dialog
+  - id: d
+    text: Случайным key
+explain: Рамка не знает сценарии экранов.
+hints:
+  - title: Владелец
+    markdown: Общий state двух детей — у ближайшего родителя, не в корне без нужды.
+tags:
+  - react
+  - composition
+reinforces:
+  - L055-react-composition
+source: original

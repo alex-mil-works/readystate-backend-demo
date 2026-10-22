@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему SSR не значит, что кнопки живые в первом HTML?
+options:
+  - id: a
+    text: Разметка есть, обработчики появятся после загрузки скрипта
+    correct: true
+  - id: b
+    text: Сервер исполняет onClick сам в браузере пользователя
+  - id: c
+    text: Гидрация отменяет JavaScript
+  - id: d
+    text: Кнопки в SSR запрещены
+explain: Интерактив — отдельная цена после HTML.

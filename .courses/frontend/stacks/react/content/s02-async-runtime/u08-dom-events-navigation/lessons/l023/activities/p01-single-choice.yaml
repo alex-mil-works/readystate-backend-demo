@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: |
+  Чем `querySelectorAll` отличается от `getElementsByTagName`?
+options:
+  - id: a
+    text: Первый даёт статический снимок, вторая коллекция живая и видит дальнейшие правки
+    correct: true
+  - id: b
+    text: Оба всегда живые
+  - id: c
+    text: '`querySelectorAll` включает теневой DOM открытых компонентов автоматически'
+  - id: d
+    text: '`getElementsByTagName` возвращает строку HTML'
+explain: |
+  Живая коллекция меняет длину, если вы добавляете узлы во время обхода. Снимок — нет.

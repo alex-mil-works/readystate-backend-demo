@@ -1,0 +1,23 @@
+id: r-u32-get
+kind: single_choice
+phase: revision
+prompt: Что HTTP обещает про GET?
+options:
+  - id: a
+    text: Он не должен менять данные, его можно повторить
+    correct: true
+  - id: b
+    text: Он всегда создаёт ресурс
+  - id: c
+    text: Он не имеет статуса
+  - id: d
+    text: Он синоним POST
+explain: 404 — полученный ответ. Обрыв — ответа нет.
+hints:
+  - title: Класс
+    markdown: 2xx удалось, 4xx претензия к запросу, 5xx претензия к серверу.
+tags:
+  - http
+reinforces:
+  - L096-net-http
+source: original

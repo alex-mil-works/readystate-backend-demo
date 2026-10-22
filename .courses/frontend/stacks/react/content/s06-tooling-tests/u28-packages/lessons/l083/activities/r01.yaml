@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Патч-релиз по SemVer обязан…
+options:
+  - id: a
+    text: не ломать заявленное API
+    correct: true
+  - id: b
+    text: всегда удалять экспорт
+  - id: c
+    text: менять имя пакета
+  - id: d
+    text: быть больше мажора
+explain: Если патч ломает вызов, это ошибка выпуска, не «так SemVer работает».
+hints:
+  - title: 0.x
+    markdown: До 1.0.0 минор часто ломает API. Каретка на 0.x это учитывает.

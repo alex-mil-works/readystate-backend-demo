@@ -1,0 +1,23 @@
+id: r-u32-hash
+kind: single_choice
+phase: revision
+prompt: Фрагмент URL после решётки…
+options:
+  - id: a
+    text: на сервер не отправляется
+    correct: true
+  - id: b
+    text: обязателен в каждом POST
+  - id: c
+    text: заменяет порт
+  - id: d
+    text: это и есть origin
+explain: Origin собирают из схемы, хоста и порта.
+hints:
+  - title: TLS
+    markdown: TCP соединяет. TLS проверяет имя и закрывает канал.
+tags:
+  - http
+reinforces:
+  - L095-net-url-to-server
+source: original

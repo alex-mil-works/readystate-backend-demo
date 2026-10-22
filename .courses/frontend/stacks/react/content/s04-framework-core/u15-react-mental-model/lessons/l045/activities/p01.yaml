@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Ребёнок записал `props.value = "x"`. Что увидит следующий рендер?
+options:
+  - id: a
+    text: "Значение родителя: локальная запись props не источник правды"
+    correct: true
+  - id: b
+    text: Навсегда "x", React копирует мутацию вверх
+  - id: c
+    text: Ошибку браузера до рендера
+  - id: d
+    text: Пустую строку
+explain: Props — аргументы вызова. Мутация не становится состоянием владельца.

@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Картинка героя без ширины и высоты сдвигает заголовок вниз, когда
+  догружается. Какой сигнал портится в первую очередь?
+options:
+  - id: a
+    text: CLS
+    correct: true
+  - id: b
+    text: Только INP
+  - id: c
+    text: Только DNS
+  - id: d
+    text: Это не видно пользователю
+explain: Прыжок вёрстки без жеста — сдвиг, не задержка клика.

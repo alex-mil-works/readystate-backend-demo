@@ -1,0 +1,23 @@
+id: r-u31-role
+kind: single_choice
+phase: revision
+prompt: Как Testing Library должна найти кнопку?
+options:
+  - id: a
+    text: По роли и доступному имени
+    correct: true
+  - id: b
+    text: По классу оформления
+  - id: c
+    text: По числу вызовов useState
+  - id: d
+    text: По порядковому номеру div
+explain: Клик через user-event проходит тем же путём, что у человека.
+hints:
+  - title: Имя
+    markdown: Кнопка без имени не найдётся. Это та же проблема, что для скринридера.
+tags:
+  - test
+reinforces:
+  - L093-test-testing-library
+source: original

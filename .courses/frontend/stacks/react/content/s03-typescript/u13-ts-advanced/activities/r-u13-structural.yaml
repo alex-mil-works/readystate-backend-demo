@@ -1,0 +1,23 @@
+id: r-u13-structural
+kind: single_choice
+phase: revision
+prompt: Почему объект с лишним полем в переменной можно передать в `Point`?
+options:
+  - id: a
+    text: Достаточно наличия x и y, имя типа не штамп
+    correct: true
+  - id: b
+    text: Лишние поля удаляются
+  - id: c
+    text: Так нельзя никогда
+  - id: d
+    text: Только если переменная называется point
+explain: Структурная совместимость. Excess check — про свежий литерал.
+hints:
+  - title: Литерал
+    markdown: "`draw({ x, y, z })` уже ошибка, хотя переменная с z проходит."
+tags:
+  - structural
+reinforces:
+  - L038-ts-structural-excess
+source: original

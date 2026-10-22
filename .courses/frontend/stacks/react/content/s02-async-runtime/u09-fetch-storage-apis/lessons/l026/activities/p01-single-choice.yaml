@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: |
+  Сервер ответил `500`. Что сделает `fetch`?
+options:
+  - id: a
+    text: Промис выполнится с `Response`, `ok` будет false
+    correct: true
+  - id: b
+    text: Промис отклонится
+  - id: c
+    text: Промис зависнет в pending
+  - id: d
+    text: Бросит синхронный TypeError до `await`
+explain: |
+  HTTP-ошибка — это ответ. Rejection у fetch — про сеть, CORS и abort, не про код статуса.

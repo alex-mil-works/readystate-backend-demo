@@ -1,0 +1,17 @@
+id: L069-css-box-model
+order: 69
+title: Box model, box-sizing и overflow
+titleEn: Box Model, box-sizing, and Overflow
+essence: Ширина — не вся коробка, пока в неё не входят padding и border.
+  Overflow решает, куда девается то, что не влезло.
+depth: mechanism
+required: true
+insights:
+  - insights/01-box.md
+  - insights/02-overflow.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

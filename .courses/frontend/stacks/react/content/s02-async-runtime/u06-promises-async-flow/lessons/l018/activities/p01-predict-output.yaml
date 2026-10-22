@@ -1,0 +1,22 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |
+  async function f() {
+    throw new Error('x');
+  }
+  f().catch(() => console.log('caught'));
+  console.log('sync');
+question: В каком порядке появятся логи?
+choices:
+  - id: a
+    text: Сначала `sync`, затем `caught`
+    correct: true
+  - id: b
+    text: Сначала `caught`, затем `sync`
+  - id: c
+    text: Только `sync` — throw внутри async останавливает стек
+  - id: d
+    text: Только `caught` — строка после `f()` не выполняется
+explain: |
+  `throw` в async становится rejection промиса и не вылетает синхронно. `sync` печатается сразу, `catch` — микрозадачей.

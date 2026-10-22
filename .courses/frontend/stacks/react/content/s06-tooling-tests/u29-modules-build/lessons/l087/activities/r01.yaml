@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Что предсобирает Vite в деве и зачем?
+options:
+  - id: a
+    text: "Зависимости из node_modules: их много и они редко меняются"
+    correct: true
+  - id: b
+    text: Каждый тест e2e
+  - id: c
+    text: Только картинки
+  - id: d
+    text: Локфайл в браузер
+explain: Исходники приложения остаются отдельными модулями.
+hints:
+  - title: HMR
+    markdown: Меняется модуль и соседи по границе.accept. Это не полная
+      перезагрузка, пока граница жива.

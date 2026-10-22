@@ -1,0 +1,17 @@
+id: L096-net-http
+order: 96
+title: "HTTP: запрос, ответ и смысл метода"
+titleEn: HTTP Requests, Responses, and Methods
+essence: Запрос — метод, путь и заголовки. Ответ — статус и тело. GET не меняет
+  данные. POST не обещает, что повтор безопасен.
+depth: application
+required: true
+insights:
+  - insights/01-message.md
+  - insights/02-methods.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Два компонента вызывают `useToggle()`. Что у них общего?
+options:
+  - id: a
+    text: Только код хука; state у каждого свой
+    correct: true
+  - id: b
+    text: Один и тот же boolean
+  - id: c
+    text: Обязательный Context
+  - id: d
+    text: Один эффект на всё приложение
+explain: Хук — функция. Данные появляются в слотах того компонента, который её вызвал.

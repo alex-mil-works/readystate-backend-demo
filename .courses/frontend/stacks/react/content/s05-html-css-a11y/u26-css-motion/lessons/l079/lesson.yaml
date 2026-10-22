@@ -1,0 +1,17 @@
+id: L079-css-reduced-motion
+order: 79
+title: Reduced motion и доступное движение
+titleEn: Reduced Motion and Accessible Motion
+essence: Движение не единственный способ сказать «открыто» или «ошибка».
+  prefers-reduced-motion выключает декоративную анимацию.
+depth: application
+required: true
+insights:
+  - insights/01-query.md
+  - insights/02-not-only-motion.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

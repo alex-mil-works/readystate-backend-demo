@@ -1,0 +1,17 @@
+id: L089-qa-eslint-prettier
+order: 89
+title: "ESLint и Prettier: разные работы"
+titleEn: ESLint and Prettier Do Different Jobs
+essence: Линтер ловит опасные конструкции. Форматтер выравнивает вид. Оба не
+  заменяют типы и тесты.
+depth: application
+required: true
+insights:
+  - insights/01-split.md
+  - insights/02-when.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

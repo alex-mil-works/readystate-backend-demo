@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "Есть `value: string | null`. В какой строке вызов `value.trim()` законен?"
+options:
+  - id: a
+    text: После `if (value === null) return`
+    correct: true
+  - id: b
+    text: Сразу, null игнорируется
+  - id: c
+    text: Только если написать `value as string` всегда
+  - id: d
+    text: После присваивания `const copy = value` и проверки `copy`, но вызова на
+      `value`
+explain: Сужение привязано к проверенному binding.
+hints:
+  - title: Общее у union
+    markdown: Пока тип `string | number`, доступны только общие операции. Метод
+      одной стороны — после narrowing.

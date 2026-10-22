@@ -1,0 +1,23 @@
+id: r-u24-rem
+kind: single_choice
+phase: revision
+prompt: Почему текст в rem, а не в px?
+options:
+  - id: a
+    text: Размер следует настройке шрифта пользователя
+    correct: true
+  - id: b
+    text: rem отключает каскад
+  - id: c
+    text: px всегда равен ширине экрана
+  - id: d
+    text: так запрещают зум
+explain: Зум не отключают. 100vh на телефоне часто выше видимой области.
+hints:
+  - title: Запрос
+    markdown: База — узкий экран. min-width добавляет колонки.
+tags:
+  - css
+reinforces:
+  - L073-css-responsive
+source: original

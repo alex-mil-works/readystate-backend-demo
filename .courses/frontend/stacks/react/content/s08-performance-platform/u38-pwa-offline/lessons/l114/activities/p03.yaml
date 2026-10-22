@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: // новый worker вызывает location.reload() сразу
+question: Человек на середине ответа в уроке. Что плохо?
+choices:
+  - id: a
+    text: Ввод пропадёт из-за перезагрузки, которую он не выбирал
+    correct: true
+  - id: b
+    text: Обновление так и надо делать всегда
+  - id: c
+    text: Reload не трогает форму
+  - id: d
+    text: Это требование манифеста
+explain: Предложите обновить, не выдёргивайте экран.

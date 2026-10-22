@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Зачем Shadow DOM виджету, который встраивают на чужие сайты?
+options:
+  - id: a
+    text: Чтобы стили хозяина и стили виджета не перемешались
+    correct: true
+  - id: b
+    text: Чтобы заменить HTTPS
+  - id: c
+    text: Чтобы не нужен был JavaScript
+  - id: d
+    text: Чтобы запретить слоты
+explain: Наружу оставляют события и слоты, не внутренние классы.

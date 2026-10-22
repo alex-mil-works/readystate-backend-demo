@@ -1,0 +1,18 @@
+id: L104-rt-ws-sse
+order: 104
+title: WebSocket и события с сервера
+titleEn: WebSockets and Server-Sent Events
+essence: Поток с сервера к клиенту часто закрывает SSE по обычному HTTP.
+  Двусторонний сокет нужен, когда обе стороны шлют часто. Сохранение по кнопке
+  остаётся обычным запросом.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-direction.md
+  - insights/02-not-post.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

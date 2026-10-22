@@ -1,0 +1,17 @@
+id: L108-perf-devtools
+order: 108
+title: DevTools, Lighthouse и запись времени
+titleEn: DevTools, Lighthouse, and Timelines
+essence: "Сначала запись: сеть, длинные задачи, кадры. Lighthouse — лабораторный
+  чеклист, не замена полю и не приказ менять код."
+depth: perf
+required: true
+insights:
+  - insights/01-timeline.md
+  - insights/02-lighthouse.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

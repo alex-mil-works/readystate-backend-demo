@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Зачем рядом с запросом разрешения оставлять другой путь?
+options:
+  - id: a
+    text: Отказ и отсутствие API не должны убивать сценарий
+    correct: true
+  - id: b
+    text: Так выше CLS
+  - id: c
+    text: Диалог тогда не нужен никогда
+  - id: d
+    text: Чтобы обойти SameSite
+explain: Город можно ввести, файл можно выбрать, напоминание можно не слать.
+hints:
+  - title: Состояние
+    markdown: Проверяйте prompt, granted и denied, не храните свою догадку мимо браузера.

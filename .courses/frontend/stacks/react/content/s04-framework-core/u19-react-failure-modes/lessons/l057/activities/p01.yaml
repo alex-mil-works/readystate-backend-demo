@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Эффект копирует `props.query` в state на каждое изменение. Зачем это
+  обычно лишнее?
+options:
+  - id: a
+    text: Рендер и так видит props.query, копия отстаёт на кадр
+    correct: true
+  - id: b
+    text: props нельзя читать в JSX
+  - id: c
+    text: Без копии не работает controlled input
+  - id: d
+    text: Так очищаются зависимости
+explain: Зеркало нужно для черновика, который живёт своей жизнью, и его надо
+  явно сбрасывать.

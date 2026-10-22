@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Кто проверяет подпись входа по ключу?
+options:
+  - id: a
+    text: Сервер
+    correct: true
+  - id: b
+    text: Только сравнение строк во фронтенде
+  - id: c
+    text: CSS
+  - id: d
+    text: Service Worker как единственная граница
+explain: Клиент начинает церемонию. Допуск к сессии решает сервер.
+hints:
+  - title: Деградация
+    markdown: Нет диалога оплаты — обычный переход к провайдеру. Нет ключа —
+      запасной вход, не тупик.

@@ -1,0 +1,15 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: |
+  Объясните вслух: как событие идёт по дереву и как устроено делегирование.
+rubric: |
+  Ожидаемые пункты (30–60 сек):
+  - capture, target, bubble
+  - target vs currentTarget
+  - preventDefault vs stopPropagation vs stopImmediatePropagation
+  - один слушатель на предке и closest
+sampleAnswer: |
+  Событие спускается в capture, срабатывает на цели и, если умеет, всплывает. target — узел жеста, currentTarget — узел слушателя.
+  preventDefault отменяет действие браузера и не рвёт путь. stopPropagation рвёт путь, но не соседние слушатели того же узла.
+  На списке достаточно одного слушателя на ul: новые строки всплывают сами, а строку из вложенного клика достают через closest.

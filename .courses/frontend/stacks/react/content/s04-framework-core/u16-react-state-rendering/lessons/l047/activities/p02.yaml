@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function onClick() {
+    setN((prev) => prev + 1);
+    setN((prev) => prev + 1);
+  }
+question: Чему будет равен счётчик после клика, если до него был 0?
+choices:
+  - id: a
+    text: "2: каждый updater видит результат предыдущего"
+    correct: true
+  - id: b
+    text: "1"
+  - id: c
+    text: "0"
+  - id: d
+    text: Зависит от `console.log` внутри рендера
+explain: Функциональное обновление ставится в очередь и получает уже обновлённое
+  значение.

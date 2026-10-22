@@ -1,0 +1,19 @@
+id: L024-js-events-delegation
+order: 24
+title: Event propagation, delegation и default actions
+titleEn: Propagation, Delegation & Default Actions
+essence: >-
+  Событие идёт через capture и bubble. Остановить всплытие и отменить действие браузера — разные операции.
+depth: mechanism
+required: true
+
+insights:
+  - insights/01-propagation.md
+  - insights/02-delegation.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-single-choice.yaml
+  - activities/p03-predict-output.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

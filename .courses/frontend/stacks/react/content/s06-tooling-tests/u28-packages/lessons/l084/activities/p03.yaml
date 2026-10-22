@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  # в проекте pnpm-lock.yaml
+  npm install
+question: Какой риск у этой команды?
+choices:
+  - id: a
+    text: Появится другой лок и другое дерево, чем у команды
+    correct: true
+  - id: b
+    text: npm откажется запускаться всегда
+  - id: c
+    text: pnpm и npm делят один формат лока без разницы
+  - id: d
+    text: Удалится только кэш браузера
+explain: Форматы локов не взаимозаменяемы.

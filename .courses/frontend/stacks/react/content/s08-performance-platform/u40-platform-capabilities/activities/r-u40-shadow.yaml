@@ -1,0 +1,23 @@
+id: r-u40-shadow
+kind: single_choice
+phase: revision
+prompt: Shadow DOM нужен, чтобы…
+options:
+  - id: a
+    text: стили виджета и страницы не смешались
+    correct: true
+  - id: b
+    text: заменить серверный рендер
+  - id: c
+    text: хранить passkey
+  - id: d
+    text: ускорить LCP сам по себе
+explain: Контракт снаружи — атрибуты, слоты и события.
+hints:
+  - title: Шаблон
+    markdown: Содержимое template не видно, пока его не клонируют.
+tags:
+  - platform
+reinforces:
+  - L119-web-components
+source: original

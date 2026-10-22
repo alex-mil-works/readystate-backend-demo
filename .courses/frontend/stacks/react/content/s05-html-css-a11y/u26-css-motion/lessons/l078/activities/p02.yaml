@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  for (const row of rows) {
+    row.style.height = '40px';
+    console.log(row.offsetHeight);
+  }
+question: Почему цикл дорогой?
+choices:
+  - id: a
+    text: Каждое чтение offsetHeight после записи заставляет синхронный layout
+    correct: true
+  - id: b
+    text: console.log бесплатно батчит стиль
+  - id: c
+    text: height не влияет на layout
+  - id: d
+    text: так работает только opacity
+explain: Сначала все чтения, потом все записи, либо не читайте геометрию в том
+  же проходе.

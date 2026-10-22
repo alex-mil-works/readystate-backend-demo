@@ -1,0 +1,25 @@
+id: r-u16-derived
+kind: single_choice
+phase: revision
+prompt: Счётчик видимых строк нужен в двух местах. Куда его писать?
+options:
+  - id: a
+    text: В константу рендера от уже отфильтрованного списка
+    correct: true
+  - id: b
+    text: В state, который эффект догоняет
+  - id: c
+    text: В key списка
+  - id: d
+    text: В document.title
+explain: Производное не хранят.
+hints:
+  - title: Кадр
+    markdown: Догоняющий эффект показывает старое число один рендер.
+tags:
+  - react
+  - state
+reinforces:
+  - L049-react-immutable-derived
+  - L047-react-state-snapshot
+source: original

@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Три радиокнопки «роль». Как связать их в один вопрос?
+options:
+  - id: a
+    text: Общий name и fieldset с legend
+    correct: true
+  - id: b
+    text: Три разных name
+  - id: c
+    text: Три div с одним классом
+  - id: d
+    text: Один checkbox
+explain: Общее имя даёт одно значение. Legend называет группу.

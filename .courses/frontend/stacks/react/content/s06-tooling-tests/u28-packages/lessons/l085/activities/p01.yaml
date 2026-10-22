@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Почему локфайл коммитят?
+options:
+  - id: a
+    text: Чтобы у всех и в CI было то же дерево, которое уже проверили
+    correct: true
+  - id: b
+    text: Git без него не пушит
+  - id: c
+    text: Он заменяет package.json
+  - id: d
+    text: Чтобы можно было смешивать npm и pnpm
+explain: Манифест оставляет диапазон. Лок закрывает его конкретными версиями.

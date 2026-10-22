@@ -1,0 +1,19 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function Child({ onRename }) {
+    return <button onClick={() => onRename('Ann')}>Rename</button>;
+  }
+question: Кто меняет имя, если `onRename` пришёл от родителя?
+choices:
+  - id: a
+    text: Родитель, внутри своего обработчика
+    correct: true
+  - id: b
+    text: Child, потому что кнопка стоит в нём
+  - id: c
+    text: React сам пишет в props.value
+  - id: d
+    text: "Никто: колбэк только для логов"
+explain: Колбэк — способ попросить владельца. Данные по-прежнему живут наверху.

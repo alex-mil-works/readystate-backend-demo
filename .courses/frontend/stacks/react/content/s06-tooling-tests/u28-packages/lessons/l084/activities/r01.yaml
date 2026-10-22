@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Зачем pnpm по умолчанию не даёт импортировать необъявленный пакет?
+options:
+  - id: a
+    text: Чтобы граф совпал с манифестом, а не с случайным hoist
+    correct: true
+  - id: b
+    text: Чтобы запретить SemVer
+  - id: c
+    text: Чтобы не нужен был локфайл
+  - id: d
+    text: Чтобы все пакеты стали peer
+explain: Жёсткая изоляция ловит ошибку на машине автора.
+hints:
+  - title: Один бинарь
+    markdown: CI ставит тем же менеджером, что записан в packageManager.

@@ -1,0 +1,23 @@
+id: r-u22-aria
+kind: single_choice
+phase: revision
+prompt: Нужна обычная кнопка. Берёте role=button на div?
+options:
+  - id: a
+    text: "Нет: хватает button, роль не добавляет клавиши"
+    correct: true
+  - id: b
+    text: Да, это всегда лучше нативного тега
+  - id: c
+    text: Да, и aria-hidden на неё же
+  - id: d
+    text: Только вместе с placeholder
+explain: ARIA — для виджета без нативного тега и для состояния вроде expanded.
+hints:
+  - title: Состояние
+    markdown: aria-expanded на кнопке панели совпадает с тем, открыта ли она.
+tags:
+  - a11y
+reinforces:
+  - L067-html-aria-when
+source: original

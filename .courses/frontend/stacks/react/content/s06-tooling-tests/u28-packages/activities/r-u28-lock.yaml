@@ -1,0 +1,23 @@
+id: r-u28-lock
+kind: single_choice
+phase: revision
+prompt: Почему локфайл коммитят?
+options:
+  - id: a
+    text: CI и коллеги ставят то дерево, которое уже проверили
+    correct: true
+  - id: b
+    text: Он заменяет package.json
+  - id: c
+    text: Без него нельзя сделать commit
+  - id: d
+    text: Чтобы каждый раз брать latest
+explain: CI ставит, не переписывая лок.
+hints:
+  - title: Код
+    markdown: Зависимость исполняется, включая скрипт установки. Аудит не заменяет ревью.
+tags:
+  - packages
+reinforces:
+  - L085-pkg-lock-supply
+source: original

@@ -1,0 +1,24 @@
+id: r-u14-list
+kind: single_choice
+phase: revision
+prompt: Почему `items` и `renderItem` делят один `T`?
+options:
+  - id: a
+    text: Иначе рендер сможет ждать другой элемент, чем лежит в массиве
+    correct: true
+  - id: b
+    text: Так быстрее reconciliation
+  - id: c
+    text: Один T проверяет id в runtime
+  - id: d
+    text: React требует ровно один generic на файл
+explain: Связь массива и колбэка — смысл generic-компонента.
+hints:
+  - title: Публично
+    markdown: Экспортируйте props type. Внутренний ref наружу не входит.
+tags:
+  - react
+  - generics
+reinforces:
+  - L043-ts-react-generic-components
+source: original

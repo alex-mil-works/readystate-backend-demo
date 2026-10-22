@@ -1,0 +1,27 @@
+id: r-s08-u38-u40-bridge
+kind: single_choice
+phase: revision
+prompt: Офлайн-прогресс лежит в IndexedDB, а вход хотят сделать паролем в
+  localStorage. Что разъехалось?
+options:
+  - id: a
+    text: полка для записей и секрет, который нельзя светить скрипту, — разные места
+    correct: true
+  - id: b
+    text: localStorage зашифрован HttpOnly
+  - id: c
+    text: passkey как раз хранит закрытый ключ в базе уроков
+  - id: d
+    text: Cache API заменяет разрешение камеры
+explain: Прогресс локален этому браузеру. Секрет входа туда не кладут.
+hints:
+  - title: U38 → U40
+    markdown: IndexedDB не синхронизирует телефон. Passkey не лежит в JavaScript.
+      Разрешение устройства просят отдельно и не на загрузке.
+tags:
+  - platform
+reinforces:
+  - L115-pwa-storage
+  - L121-credentials-payments
+  - L120-device-permissions
+source: original

@@ -1,0 +1,18 @@
+id: L098-sec-origin-cors
+order: 98
+title: Источник, CORS и учётные данные
+titleEn: Origin, CORS, and Credentials
+essence: Источник — схема, хост и порт. Скрипт не читает чужой ответ, пока
+  сервер явно не разрешит это браузеру. CORS не заменяет проверку прав на
+  сервере.
+depth: security
+required: true
+insights:
+  - insights/01-origin.md
+  - insights/02-cors.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

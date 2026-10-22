@@ -1,0 +1,21 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |-
+  function prop<T, K extends keyof T>(obj: T, key: K): T[K] {
+    return obj[key];
+  }
+  const user = { id: 'a', age: 20 };
+  const age = prop(user, 'age');
+question: Какой тип у `age`?
+choices:
+  - id: a
+    text: "`number`"
+    correct: true
+  - id: b
+    text: "`string | number`"
+  - id: c
+    text: "`any`"
+  - id: d
+    text: "Ошибка: ключ должен быть `string` без связи с объектом"
+explain: "`K` вывелся как `'age'`, `T[K]` — тип этого поля."

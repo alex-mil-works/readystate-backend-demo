@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Vitest нужен только чтобы гонять тесты пакета-приложения. Куда его записать?
+options:
+  - id: a
+    text: devDependencies
+    correct: true
+  - id: b
+    text: dependencies, иначе тесты не найдут его в CI
+  - id: c
+    text: peerDependencies всегда
+  - id: d
+    text: внутрь version
+explain: В прод-рантайм тест-раннер не входит. CI ставит и dev-зависимости, если
+  его об этом попросить.

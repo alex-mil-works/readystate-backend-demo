@@ -1,0 +1,24 @@
+id: r-u24-minmax
+kind: single_choice
+phase: revision
+prompt: Колонка 1fr раздувается длинным словом. Чем заменить?
+options:
+  - id: a
+    text: minmax(0, 1fr)
+    correct: true
+  - id: b
+    text: "display: none на странице"
+  - id: c
+    text: больше tabindex
+  - id: d
+    text: float
+explain: "Тот же приём, что min-width: 0 у flex-ребёнка."
+hints:
+  - title: Ось
+    markdown: Две оси сразу — grid. Один ряд — flex.
+tags:
+  - css
+reinforces:
+  - L072-css-grid
+  - L071-css-flexbox
+source: original

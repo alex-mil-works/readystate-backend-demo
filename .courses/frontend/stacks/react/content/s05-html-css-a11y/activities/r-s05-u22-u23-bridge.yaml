@@ -1,0 +1,28 @@
+id: r-s05-u22-u23-bridge
+kind: single_choice
+phase: revision
+prompt: Кольцо фокуса сняли правилом кнопки с высокой специфичностью и без
+  замены. Что сломано?
+options:
+  - id: a
+    text: Клавиатурный фокус не виден, каскад это закрепил
+    correct: true
+  - id: b
+    text: label перестанет связываться
+  - id: c
+    text: border-box отменит Tab
+  - id: d
+    text: z-index вернёт обводку сам
+explain: Фокус — требование доступности. Его вес в CSS не отменяет обязанность
+  оставить индикатор.
+hints:
+  - title: U22 → U23
+    markdown: ":focus-visible задаёт замену. Более специфичное outline: none без
+      замены победит слабое кольцо."
+tags:
+  - html
+  - css
+reinforces:
+  - L066-html-labels-focus
+  - L068-css-cascade-specificity
+source: original

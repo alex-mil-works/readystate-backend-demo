@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Нужны только `id` и `name` из `User`. Что выбрать?
+options:
+  - id: a
+    text: "`Pick<User, 'id' | 'name'>`"
+    correct: true
+  - id: b
+    text: "`Partial<User>`"
+  - id: c
+    text: "`Omit<User, 'id' | 'name'>`"
+  - id: d
+    text: "`ReturnType<User>`"
+explain: "`Pick` оставляет перечисленные ключи. `Partial` делает все поля
+  необязательными."

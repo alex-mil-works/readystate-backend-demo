@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  VITE_SITE_PASSWORD=hunter2
+  # сборка Vite
+question: Где окажется это значение?
+choices:
+  - id: a
+    text: В клиентском бандле, его увидит любой, кто откроет скрипт
+    correct: true
+  - id: b
+    text: Только в памяти сервера и нигде больше
+  - id: c
+    text: "Нигде: префикс VITE_ как раз прячет секрет"
+  - id: d
+    text: В git reflog вместо бандла
+explain: Префикс означает «отдать браузеру». Для настоящего секрета это не место.

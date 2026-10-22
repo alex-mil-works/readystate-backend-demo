@@ -1,0 +1,22 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |-
+  type Point = { x: number; y: number };
+  function draw(p: Point) {
+    return p.x;
+  }
+  const dot = { x: 1, y: 2, z: 9 };
+  draw(dot);
+question: Соберётся ли вызов `draw(dot)`?
+choices:
+  - id: a
+    text: "Да: у значения есть x и y, лишнее z не мешает"
+    correct: true
+  - id: b
+    text: "Нет: любое лишнее поле запрещено всегда"
+  - id: c
+    text: Да, и внутри draw можно читать `p.z`
+  - id: d
+    text: "Нет: типы сравниваются по имени переменной"
+explain: Структурная совместимость пускает более широкий объект. В `Point` поля `z` нет.

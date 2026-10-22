@@ -1,0 +1,23 @@
+id: r-u35-retry
+kind: single_choice
+phase: revision
+prompt: Какой сбой стоит повторить?
+options:
+  - id: a
+    text: обрыв или временный 5xx, с паузой
+    correct: true
+  - id: b
+    text: 422 с ошибкой поля, сразу и много раз
+  - id: c
+    text: 403 в бесконечном цикле
+  - id: d
+    text: любой POST без ключа, пока не получится
+explain: Повтор оплаты без ключа идемпотентности может списать дважды.
+hints:
+  - title: Отмена
+    markdown: Уход с экрана отменяет запрос. Молчаливый флаг работу не останавливает.
+tags:
+  - realtime
+reinforces:
+  - L105-rt-retry-cancel
+source: original

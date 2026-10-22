@@ -1,0 +1,17 @@
+id: L040-ts-runtime-validation
+order: 40
+title: Runtime validation и typed fetch
+titleEn: Runtime Validation and Typed Fetch
+essence: После `response.json()` тип честно `unknown`. Узкий тип появляется из
+  проверки, не из `as`.
+depth: application
+required: true
+insights:
+  - insights/01-unknown-json.md
+  - insights/02-narrow-by-hand.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

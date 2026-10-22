@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Имя пользователя пришло из API и его надо показать. Как?
+options:
+  - id: a
+    text: Как текст узла, не как HTML-строку
+    correct: true
+  - id: b
+    text: Склеить в innerHTML
+  - id: c
+    text: Положить в src скрипта
+  - id: d
+    text: Только в комментарий HTML, браузер комментарии исполняет
+explain: Текст не создаёт теги. Сырая разметка создаёт.

@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Почему огромный z-index не гарантирует, что меню выше модалки?
+rubric: |-
+  Ожидаемые пункты:
+  - z-index внутри stacking context
+  - transform и opacity создают контекст
+  - display none убирает из доступа, opacity нет
+  - inline не принимает width
+sampleAnswer: "z-index сравнивает соседей в одном контексте наложения. Transform
+  на карточке запирает меню внутри, и его 9999 не спорит с модалкой снаружи.
+  Отдельно: display none убирает элемент из дерева доступности, а opacity 0
+  оставляет его в Tab."

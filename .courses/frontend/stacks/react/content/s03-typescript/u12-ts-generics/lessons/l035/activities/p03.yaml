@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Функция `identity<T>(value: T): T` вызвана со строкой. Что нельзя
+  сделать в теле без ошибки?"
+options:
+  - id: a
+    text: Вернуть число, если `T` не связан с number
+    correct: true
+  - id: b
+    text: Вернуть `value`
+  - id: c
+    text: Принять строку снаружи
+  - id: d
+    text: Вывести `T` как string
+explain: Возврат должен быть тем же `T`. Число не является произвольным `T`.

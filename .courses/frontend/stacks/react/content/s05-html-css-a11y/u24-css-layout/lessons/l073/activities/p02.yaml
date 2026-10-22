@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему кегль текста лучше в rem, чем в px?
+options:
+  - id: a
+    text: Он следует размеру шрифта, который задал пользователь
+    correct: true
+  - id: b
+    text: rem не каскадируется
+  - id: c
+    text: px всегда равен 1vh
+  - id: d
+    text: rem отключает media queries
+explain: Корень 16px по умолчанию, но человек может увеличить базовый шрифт.

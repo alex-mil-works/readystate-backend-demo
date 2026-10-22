@@ -1,0 +1,23 @@
+id: r-u37-next
+kind: single_choice
+phase: revision
+prompt: Next заменяет модель state?
+options:
+  - id: a
+    text: Нет, он выбирает, где выполнять дерево
+    correct: true
+  - id: b
+    text: Да, useState больше нет
+  - id: c
+    text: Да, гидрация отменена
+  - id: d
+    text: Он запрещает маршруты
+explain: Astro экономит JS на документах. Приложению с формами ближе другой продукт.
+hints:
+  - title: Остров
+    markdown: Серверный кусок без state и клиентский остров не путают.
+tags:
+  - render
+reinforces:
+  - L112-render-meta-react
+source: original

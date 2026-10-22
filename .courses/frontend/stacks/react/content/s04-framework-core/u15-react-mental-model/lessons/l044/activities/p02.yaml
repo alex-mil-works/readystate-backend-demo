@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function Greeting() {
+    return <p>Hi</p>;
+  }
+  const tree = <Greeting />;
+question: Чему соответствует `tree` до отрисовки?
+choices:
+  - id: a
+    text: Элементу с типом-функцией Greeting, не абзацу в DOM
+    correct: true
+  - id: b
+    text: Уже вставленному `<p>`
+  - id: c
+    text: Результату вызова Greeting, который произошёл в этой строке сам
+  - id: d
+    text: Строке "Hi"
+explain: "`<Greeting />` создаёт элемент. React вызовет функцию, когда будет
+  строить дерево."

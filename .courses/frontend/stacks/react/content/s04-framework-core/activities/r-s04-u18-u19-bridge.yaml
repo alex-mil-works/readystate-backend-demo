@@ -1,0 +1,25 @@
+id: r-s04-u18-u19-bridge
+kind: single_choice
+phase: revision
+prompt: Мемоизированной строке каждый рендер передают новый onChange и новый
+  style. Что увидит memo?
+options:
+  - id: a
+    text: "Изменение props: ссылки другие, рендер строки не пропустится"
+    correct: true
+  - id: b
+    text: Равенство по тексту функции
+  - id: c
+    text: style сравнивается глубоко всегда
+  - id: d
+    text: onChange из слота children стабилен сам
+explain: Композиция не стабилизирует ссылки. Инлайн-функция новая.
+hints:
+  - title: U18 → U19
+    markdown: Слот и колбэк — обычные props. Memo сравнивает их через Object.is.
+tags:
+  - react
+reinforces:
+  - L055-react-composition
+  - L056-react-memo-stability
+source: original

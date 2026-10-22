@@ -1,0 +1,17 @@
+id: L039-ts-discriminated-satisfies
+order: 39
+title: Discriminated unions, guards и `satisfies`
+titleEn: Discriminated Unions, Guards, and satisfies
+essence: Общее поле-тег сужает union в switch. `satisfies` проверяет выражение и
+  не расширяет его тип, в отличие от аннотации.
+depth: application
+required: true
+insights:
+  - insights/01-discriminant.md
+  - insights/02-satisfies.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

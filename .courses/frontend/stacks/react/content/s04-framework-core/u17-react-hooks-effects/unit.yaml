@@ -1,0 +1,9 @@
+id: U17
+stageId: S04
+title: Hooks и эффекты
+titleEn: Hooks and Effects
+lessons:
+  - lessons/l050
+  - lessons/l051
+  - lessons/l052
+activities: activities

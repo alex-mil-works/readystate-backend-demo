@@ -1,0 +1,17 @@
+id: L081-git-pr-conflicts
+order: 81
+title: Remotes, pull request и конфликты
+titleEn: Remotes, Pull Requests, and Conflicts
+essence: Remote — другой репозиторий. PR — предложение влить ветку после
+  просмотра и проверок. Конфликт — две правки одного места, его решают смыслом.
+depth: application
+required: true
+insights:
+  - insights/01-remote.md
+  - insights/02-conflict.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

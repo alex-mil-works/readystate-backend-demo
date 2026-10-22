@@ -1,0 +1,24 @@
+id: r-u29-graph
+kind: single_choice
+phase: revision
+prompt: Файл в src никуда не импортирован. В прод-бандле его…
+options:
+  - id: a
+    text: не будет, если сборщик идёт по графу от входа
+    correct: true
+  - id: b
+    text: будет всегда
+  - id: c
+    text: заменит index.html
+  - id: d
+    text: станет локфайлом
+explain: Динамический import делает отложенный путь явным.
+hints:
+  - title: Цикл
+    markdown: Два модуля, которые импортируют друг друга, легко читают экспорт
+      слишком рано.
+tags:
+  - build
+reinforces:
+  - L086-mod-esm-splitting
+source: original

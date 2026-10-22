@@ -1,0 +1,16 @@
+id: p02
+kind: predict_output
+phase: practice
+code: <input name="email" type="email" required>
+question: Пользователь жмёт submit с пустым полем. Что сделает браузер без вашего JS?
+choices:
+  - id: a
+    text: Не отправит форму и покажет, что поле нужно заполнить
+    correct: true
+  - id: b
+    text: Отправит пустую строку молча
+  - id: c
+    text: Удалит input
+  - id: d
+    text: Сработает только если есть React
+explain: required — ограничение платформы, не скрипт.

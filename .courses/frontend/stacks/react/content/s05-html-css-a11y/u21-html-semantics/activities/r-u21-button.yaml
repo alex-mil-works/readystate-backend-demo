@@ -1,0 +1,24 @@
+id: r-u21-button
+kind: single_choice
+phase: revision
+prompt: Сбросить фильтр на этой же странице. Что взять?
+options:
+  - id: a
+    text: button type=button
+    correct: true
+  - id: b
+    text: ссылку без href
+  - id: c
+    text: div role=button без клавиатуры
+  - id: d
+    text: h2
+explain: Если адреса нет, это не ссылка.
+hints:
+  - title: Ориентир
+    markdown: Второй nav подписывают aria-label.
+tags:
+  - html
+reinforces:
+  - L063-html-links-media
+  - L062-html-landmarks
+source: original

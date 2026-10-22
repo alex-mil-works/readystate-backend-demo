@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Пользователь грузится с сервера. Какой аргумент у `useState` честнее?
+options:
+  - id: a
+    text: "`useState<User | null>(null)`"
+    correct: true
+  - id: b
+    text: "`useState<User>(null as User)`"
+  - id: c
+    text: "`useState<any>(null)`"
+  - id: d
+    text: "`useState<never>(null)`"
+explain: До ответа пользователя нет. Assertion притворяется, что объект уже есть.

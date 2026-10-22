@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Панель плавно проявляется. Что указать в transition?
+options:
+  - id: a
+    text: opacity и transform, не all
+    correct: true
+  - id: b
+    text: all 2s на body
+  - id: c
+    text: только display
+  - id: d
+    text: z-index без длительности
+explain: display не интерполируется. all зацепит лишние свойства.

@@ -1,0 +1,23 @@
+id: r-u21-title
+kind: single_choice
+phase: revision
+prompt: Почему у каждого урока свой title?
+options:
+  - id: a
+    text: Вкладка, история и поиск отличают экраны
+    correct: true
+  - id: b
+    text: title заменяет main
+  - id: c
+    text: достаточно одного на сайт
+  - id: d
+    text: title виден только при включённом JS
+explain: lang на html выбирает язык чтения.
+hints:
+  - title: Без скрипта
+    markdown: Ссылка и форма должны быть полезны до гидрации.
+tags:
+  - html
+reinforces:
+  - L064-html-metadata-enhancement
+source: original

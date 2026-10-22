@@ -1,0 +1,17 @@
+id: L063-html-links-media
+order: 63
+title: Ссылки, изображения, таблицы и media
+titleEn: Links, Images, Tables, and Media
+essence: Ссылка уводит на адрес, кнопка совершает действие. У картинки и таблицы
+  есть текстовый эквивалент, у медиа — управление.
+depth: application
+required: true
+insights:
+  - insights/01-link-button.md
+  - insights/02-alt-table.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

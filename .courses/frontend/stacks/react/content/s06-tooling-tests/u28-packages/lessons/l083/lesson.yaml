@@ -1,0 +1,17 @@
+id: L083-pkg-manifest-semver
+order: 83
+title: package.json, SemVer и виды зависимостей
+titleEn: package.json, SemVer, and Dependency Kinds
+essence: Манифест называет пакет, скрипты и диапазоны версий. SemVer отделяет
+  ломку API от починки. devDependency не едет в прод-бандл библиотеки.
+depth: application
+required: true
+insights:
+  - insights/01-manifest.md
+  - insights/02-semver.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

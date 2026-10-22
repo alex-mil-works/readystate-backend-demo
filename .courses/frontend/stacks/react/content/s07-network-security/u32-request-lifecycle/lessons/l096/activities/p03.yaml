@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  POST /orders
+  { "sku": "course" }
+question: Пользователь отправил ту же форму дважды. Что HTTP обещает?
+choices:
+  - id: a
+    text: "Ничего: POST может создать второй заказ"
+    correct: true
+  - id: b
+    text: Второй запрос обязательно отменит первый
+  - id: c
+    text: Это то же, что GET
+  - id: d
+    text: Статус всегда будет 204
+explain: Идемпотентность заказывают отдельно, методом или ключом. Сам POST её не даёт.

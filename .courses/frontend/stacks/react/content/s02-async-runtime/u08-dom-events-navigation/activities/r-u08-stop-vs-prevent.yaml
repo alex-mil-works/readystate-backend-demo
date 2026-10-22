@@ -1,0 +1,25 @@
+id: r-u08-stop-vs-prevent
+kind: single_choice
+phase: revision
+tags: [events]
+reinforces: ['L024-js-events-delegation']
+source: original
+prompt: |
+  Нужно не отправлять форму, но дать событию всплыть до аналитики на `document`. Что вызвать?
+options:
+  - id: a
+    text: '`preventDefault`'
+    correct: true
+  - id: b
+    text: '`stopPropagation`'
+  - id: c
+    text: '`stopImmediatePropagation`'
+  - id: d
+    text: Оба `preventDefault` и `stopPropagation` обязательны всегда
+explain: |
+  Действие браузера и путь события независимы. Аналитике наверху как раз нужно всплытие.
+hints:
+  - title: Разные оси
+    markdown: |
+      `preventDefault` — не делать переход или submit.
+      `stopPropagation` — не пускать событие дальше по дереву.

@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Почему голый `history.pushState` без роутера не меняет React-экран?
+options:
+  - id: a
+    text: Адрес сменился, но React не подписан и не перечитал дерево
+    correct: true
+  - id: b
+    text: pushState стирает state хуков
+  - id: c
+    text: Браузер запрещает pushState в React
+  - id: d
+    text: Нужен ещё location.reload
+explain: Роутер слушает history и уже тогда рендерит маршрут.
+hints:
+  - title: Один источник
+    markdown: Не храните копию pathname в useState «для удобства», если её надо
+      вручную синхронизировать.

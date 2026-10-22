@@ -1,0 +1,13 @@
+# U07 — manifest юнита (порядок уроков).
+
+id: U07
+stageId: S02
+title: Event Loop и планирование
+titleEn: Event Loop & Scheduling
+
+lessons:
+  - lessons/l020
+  - lessons/l021
+  - lessons/l022
+
+activities: activities

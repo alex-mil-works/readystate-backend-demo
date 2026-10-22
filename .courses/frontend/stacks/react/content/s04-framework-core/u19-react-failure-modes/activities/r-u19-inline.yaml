@@ -1,0 +1,25 @@
+id: r-u19-inline
+kind: single_choice
+phase: revision
+prompt: Почему инлайн-объект в props мешает memo?
+options:
+  - id: a
+    text: Ссылка новая каждый рендер, сравнение поверхностное
+    correct: true
+  - id: b
+    text: memo сравнивает глубоко и всё равно пропускает
+  - id: c
+    text: Объекты в React запрещены
+  - id: d
+    text: Так задаётся key
+explain: Object.is не заходит внутрь style.
+hints:
+  - title: Потом
+    markdown: Сначала опустить state. useCallback — когда ссылка кому-то нужна и
+      зависимости честные.
+tags:
+  - react
+  - perf
+reinforces:
+  - L056-react-memo-stability
+source: original

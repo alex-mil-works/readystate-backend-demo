@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Статус 503 при живом соединении означает…
+options:
+  - id: a
+    text: сервер ответил, что сейчас не справляется
+    correct: true
+  - id: b
+    text: DNS не нашёл хост
+  - id: c
+    text: браузер не отправил путь
+  - id: d
+    text: ответ точно пустой навсегда
+explain: 5xx — ответ сервера. Обрыв TCP до статуса — другая ошибка.

@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Почему в полезную нагрузку JWT не кладут пароль?
+options:
+  - id: a
+    text: Её может прочитать каждый, у кого есть токен
+    correct: true
+  - id: b
+    text: Подпись шифрует всё тело навсегда
+  - id: c
+    text: JWT нельзя передать по HTTPS
+  - id: d
+    text: Сервер не видит утверждения
+explain: Подпись защищает от подмены, не от чтения.

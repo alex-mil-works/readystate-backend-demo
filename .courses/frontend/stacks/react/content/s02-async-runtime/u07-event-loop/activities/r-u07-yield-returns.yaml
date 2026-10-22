@@ -1,0 +1,24 @@
+id: r-u07-yield-returns
+kind: single_choice
+phase: revision
+tags: [long-task]
+reinforces: ['L022-js-long-tasks-raf']
+source: original
+prompt: |
+  Как разрезать длинный синхронный обход, чтобы клики снова обрабатывались?
+options:
+  - id: a
+    text: Сделать кусок, выйти из функции и запланировать хвост отдельной task
+    correct: true
+  - id: b
+    text: Вызвать `requestAnimationFrame` внутри цикла и продолжить `for`
+  - id: c
+    text: Пометить цикл `async`, не ставя `await`
+  - id: d
+    text: Обернуть весь цикл в `Promise.resolve().then`
+explain: |
+  Пока `for` не вернулся, очереди молчат. `async` без точки ожидания не разрезает синхронный код.
+hints:
+  - title: Уступить стек
+    markdown: |
+      Уступить можно только возвратом. Хвост планируют `setTimeout`, rAF или `scheduler.yield()`.

@@ -1,0 +1,16 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "Чем display: none отличается от opacity: 0 для кнопки?"
+options:
+  - id: a
+    text: none убирает её из Tab и из дерева, opacity оставляет кликабельной для
+      клавиатуры
+    correct: true
+  - id: b
+    text: разницы нет
+  - id: c
+    text: opacity тоже удаляет из accessibility tree всегда
+  - id: d
+    text: none оставляет пустое место
+explain: Прятать неактивное меню лучше условием или none, не нулевой непрозрачностью.

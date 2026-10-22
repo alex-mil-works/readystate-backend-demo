@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Кто должен поймать «хук вызван под if»?
+options:
+  - id: a
+    text: ESLint-правило хуков, не Prettier
+    correct: true
+  - id: b
+    text: Prettier, потому что это отступ
+  - id: c
+    text: Только прод-бандлер после деплоя
+  - id: d
+    text: Локфайл
+explain: Форматтер не знает правил React. Линтер знает, если правило включено.

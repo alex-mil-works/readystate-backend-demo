@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Когда внешний store уместнее Context?
+options:
+  - id: a
+    text: Обновления частые, и подписчиков надо уведомлять точечно
+    correct: true
+  - id: b
+    text: Всегда, Context устарел
+  - id: c
+    text: Только для theme
+  - id: d
+    text: Когда значение не меняется никогда
+explain: Context хорош редким значением. Store — когда подписка должна быть
+  избирательной.
+hints:
+  - title: Кэш
+    markdown: Ключ запроса, отмена и повтор относятся к серверным данным. Не прячьте
+      их в один useState вместе с открытой вкладкой.

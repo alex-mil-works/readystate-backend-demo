@@ -1,0 +1,17 @@
+id: L043-ts-react-generic-components
+order: 43
+title: Generic components и публичные API
+titleEn: Generic Components and Public APIs
+essence: Список и таблица берут параметр типа элемента. Наружу отдают props
+  type. Внутрь не протаскивают `any`, чтобы «подошло всё».
+depth: tradeoff
+required: true
+insights:
+  - insights/01-list.md
+  - insights/02-public-api.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

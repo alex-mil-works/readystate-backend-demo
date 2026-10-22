@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Как найти кнопку «Сохранить» в тесте?
+options:
+  - id: a
+    text: По роли button и доступному имени
+    correct: true
+  - id: b
+    text: По классу .btn-primary
+  - id: c
+    text: По числу вызовов useState
+  - id: d
+    text: По порядку div в разметке
+explain: Имя и роль переживут смену CSS.

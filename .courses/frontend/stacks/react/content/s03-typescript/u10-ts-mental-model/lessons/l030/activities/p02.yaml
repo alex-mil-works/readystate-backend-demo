@@ -1,0 +1,18 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  let status = 'open';
+  status = 'closed';
+question: Какой тип у `status` после инициализации?
+choices:
+  - id: a
+    text: "`string`, литерал расширен"
+    correct: true
+  - id: b
+    text: "`'open' | 'closed'` автоматически"
+  - id: c
+    text: "`'open'`, второе присваивание — ошибка"
+  - id: d
+    text: "`any`"
+explain: "`let` со строкой выводится как `string`, поэтому `'closed'` допустим."

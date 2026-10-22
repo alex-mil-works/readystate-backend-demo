@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Кнопка должна сфокусировать соседний input. Где хранить узел?
+options:
+  - id: a
+    text: В ref и вызвать focus в обработчике клика
+    correct: true
+  - id: b
+    text: В state, чтобы рендер сам вызвал focus
+  - id: c
+    text: В props строки id
+  - id: d
+    text: В key формы
+explain: Фокус — команда узлу, не данные для JSX. Запись в ref не планирует
+  лишний рендер.

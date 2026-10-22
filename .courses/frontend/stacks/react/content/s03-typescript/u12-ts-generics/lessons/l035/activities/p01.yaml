@@ -1,0 +1,20 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |-
+  function first<T>(items: T[]): T | undefined {
+    return items[0];
+  }
+  const name = first(['ann', 'bob']);
+question: Какой тип у `name`?
+choices:
+  - id: a
+    text: "`string | undefined`"
+    correct: true
+  - id: b
+    text: "`any`"
+  - id: c
+    text: "`string` без undefined"
+  - id: d
+    text: "`unknown`"
+explain: "`T` вывелся как `string`. Элемента может не быть, поэтому undefined остаётся."

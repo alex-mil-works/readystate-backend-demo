@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Компонент на этом месте сменили с `Input` на `Text`. Что с его state?
+options:
+  - id: a
+    text: "State сбрасывается: это другая личность в дереве"
+    correct: true
+  - id: b
+    text: State переедет в Text
+  - id: c
+    text: State останется, если совпали props
+  - id: d
+    text: Key родителя это запрещает
+explain: Тип в этой позиции — часть идентичности.
+hints:
+  - title: Соседи
+    markdown: Key уникален среди детей одного родителя. Глобально по всему
+      приложению он не обязан быть единственным.

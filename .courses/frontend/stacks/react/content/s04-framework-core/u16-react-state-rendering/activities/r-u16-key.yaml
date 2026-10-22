@@ -1,0 +1,24 @@
+id: r-u16-key
+kind: single_choice
+phase: revision
+prompt: Список переставляют, у строки есть локальный черновик. Какой key?
+options:
+  - id: a
+    text: Стабильный id сущности
+    correct: true
+  - id: b
+    text: Индекс после сортировки
+  - id: c
+    text: Math.random() каждый рендер
+  - id: d
+    text: Длина имени
+explain: Индекс и random не сохраняют личность строки.
+hints:
+  - title: Тип
+    markdown: Смена типа компонента на том же месте сбрасывает state.
+tags:
+  - react
+  - keys
+reinforces:
+  - L048-react-keys-identity
+source: original

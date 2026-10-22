@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Почему «перейти на Next» не лечит непонятый CSR?
+options:
+  - id: a
+    text: Режим рендера не заменяет модель состояния и гидрации
+    correct: true
+  - id: b
+    text: Next не умеет HTML
+  - id: c
+    text: Он выключает JavaScript
+  - id: d
+    text: Маршруты исчезают
+explain: "Сначала симптом: пустой первый кадр, личный данные, общий документ."
+hints:
+  - title: Граница
+    markdown: Серверный компонент не держит useState. Клиентский остров — держит.
+      Путать их значит не туда положить интерактив.

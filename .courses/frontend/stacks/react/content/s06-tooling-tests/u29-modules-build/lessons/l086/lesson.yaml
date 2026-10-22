@@ -1,0 +1,17 @@
+id: L086-mod-esm-splitting
+order: 86
+title: ESM, граф модулей и нарезка кода
+titleEn: ESM, the Module Graph, and Code Splitting
+essence: import и export задают статический граф. Динамический import() отрезает
+  кусок, который не нужен первому экрану.
+depth: mechanism
+required: true
+insights:
+  - insights/01-graph.md
+  - insights/02-split.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,9 @@
+id: U34
+stageId: S07
+title: Сессия и делегирование
+titleEn: Sessions and Delegation
+lessons:
+  - lessons/l101
+  - lessons/l102
+  - lessons/l103
+activities: activities

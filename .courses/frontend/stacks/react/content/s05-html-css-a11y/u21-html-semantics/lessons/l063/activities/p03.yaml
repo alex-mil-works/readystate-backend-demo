@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Расписание модулей: строки и колонки с заголовками. Чем сверстать?"
+options:
+  - id: a
+    text: table, caption и th
+    correct: true
+  - id: b
+    text: table без ячеек-заголовков, только td
+  - id: c
+    text: div-сетка, потому что table устарела для любых данных
+  - id: d
+    text: список img
+explain: Данные со связью «строка–колонка» — таблица. Раскладка страницы — нет.

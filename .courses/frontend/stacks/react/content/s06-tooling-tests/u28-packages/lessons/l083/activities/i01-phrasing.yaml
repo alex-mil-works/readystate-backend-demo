@@ -1,0 +1,15 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Чем dependencies, devDependencies и peerDependencies отличаются и что
+  значит мажор?
+rubric: |-
+  Ожидаемые пункты:
+  - runtime против инструментов разработки
+  - peer ставит приложение, не вложенная копия
+  - мажор может сломать API
+  - каретка на 1.x не переходит на 2
+sampleAnswer: В dependencies лежит то, без чего пакет работает у пользователя. В
+  devDependencies — тесты и сборка. peerDependency, как React у UI-кита, должен
+  быть один на приложение. Мажорная цифра предупреждает, что вызов может
+  сломаться. Каретка на 18 не пустит 19.

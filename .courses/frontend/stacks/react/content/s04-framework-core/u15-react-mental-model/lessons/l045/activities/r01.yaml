@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Как ребёнок законно меняет данные, которые показывает?
+options:
+  - id: a
+    text: Вызывает колбэк владельца, тот обновляет свой state
+    correct: true
+  - id: b
+    text: Пишет в props
+  - id: c
+    text: Наследует компонент родителя
+  - id: d
+    text: Кладёт значение в children
+explain: Поток вниз, события вверх.
+hints:
+  - title: Слот
+    markdown: "`children` — тоже props. Его передаёт родитель, ребёнок только
+      выбирает, куда вставить."

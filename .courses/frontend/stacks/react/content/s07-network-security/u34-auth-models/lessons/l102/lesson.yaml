@@ -1,0 +1,18 @@
+id: L102-auth-jwt
+order: 102
+title: "JWT: короткий доступ и отдельное обновление"
+titleEn: JWT Access and Refresh Trade-offs
+essence: JWT по умолчанию подписан, а не зашифрован. Короткий доступ
+  ограничивает кражу. Проверяет подпись сервер. В полезной нагрузке нет
+  секретов.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-claims.md
+  - insights/02-where.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

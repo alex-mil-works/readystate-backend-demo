@@ -1,0 +1,26 @@
+id: r-s08-u36-u37-bridge
+kind: single_choice
+phase: revision
+prompt: LCP плохой, и сразу решают «включить SSR». Чего не хватает в этом шаге?
+options:
+  - id: a
+    text: "записи, что именно тормозит первый кадр: сеть, картинка или пустой HTML"
+    correct: true
+  - id: b
+    text: SSR всегда лечит и CLS, и INP
+  - id: c
+    text: достаточно сменить имя фреймворка
+  - id: d
+    text: надо отключить измерение
+explain: Режим рендера выбирают под симптом, не вместо диагноза.
+hints:
+  - title: U36 → U37
+    markdown: Поле и водопад говорят, пустой ли документ. Гидрация потом обязана
+      совпасть с HTML, который вы начали отдавать.
+tags:
+  - platform
+reinforces:
+  - L107-perf-cwv
+  - L108-perf-devtools
+  - L110-render-csr-ssr
+source: original

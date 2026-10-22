@@ -1,0 +1,24 @@
+id: r-u17-deps
+kind: single_choice
+phase: revision
+prompt: Эффект с пустым массивом логирует count раз в секунду. Count уже 3. Что в логе?
+options:
+  - id: a
+    text: 0, снимок первого запуска
+    correct: true
+  - id: b
+    text: "3"
+  - id: c
+    text: Интервал сам подписан на state
+  - id: d
+    text: cleanup подставляет новое число
+explain: Зависимости перечисляют прочитанные значения.
+hints:
+  - title: Cleanup
+    markdown: Функция из эффекта снимает интервал перед следующим запуском и при unmount.
+tags:
+  - react
+  - effects
+reinforces:
+  - L051-react-effects-cleanup
+source: original

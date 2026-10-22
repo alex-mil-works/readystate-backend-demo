@@ -1,0 +1,17 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: |
+  Почему access token плохо хранить в `localStorage`?
+options:
+  - id: a
+    text: Любой скрипт страницы, включая XSS, читает его как обычную строку
+    correct: true
+  - id: b
+    text: '`localStorage` отправляется в заголовке Cookie сам'
+  - id: c
+    text: Браузер шифрует его ключом сервера и расшифровывает только по HTTPS
+  - id: d
+    text: Значение видно только на сервере
+explain: |
+  Storage доступен JS этого origin. httpOnly-cookie скрипт прочитать не может. Storage в cookie-заголовок сам не превращается.

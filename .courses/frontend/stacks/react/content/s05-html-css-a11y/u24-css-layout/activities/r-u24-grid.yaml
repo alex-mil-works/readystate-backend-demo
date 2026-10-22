@@ -1,0 +1,23 @@
+id: r-u24-grid
+kind: single_choice
+phase: revision
+prompt: Меню 240px и резиновый контент. Что описать?
+options:
+  - id: a
+    text: "grid-template-columns: 240px 1fr"
+    correct: true
+  - id: b
+    text: одну таблицу без th ради вида
+  - id: c
+    text: только inline
+  - id: d
+    text: user-scalable=no
+explain: Очередь кнопок внутри ячейки можно оставить flex.
+hints:
+  - title: Данные
+    markdown: Связь строка-колонка для скринридера — у table, не у grid из div.
+tags:
+  - css
+reinforces:
+  - L072-css-grid
+source: original

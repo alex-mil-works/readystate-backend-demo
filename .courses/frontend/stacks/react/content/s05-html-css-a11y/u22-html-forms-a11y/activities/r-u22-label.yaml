@@ -1,0 +1,23 @@
+id: r-u22-label
+kind: single_choice
+phase: revision
+prompt: Чем подписать поле, чтобы имя не исчезло при вводе?
+options:
+  - id: a
+    text: label, связанный с input
+    correct: true
+  - id: b
+    text: только placeholder
+  - id: c
+    text: цветом рамки
+  - id: d
+    text: tabindex=3
+explain: У кнопки-иконки тоже нужно имя.
+hints:
+  - title: Фокус
+    markdown: outline не снимают без замены. Для клавиатуры оставляют :focus-visible.
+tags:
+  - a11y
+reinforces:
+  - L066-html-labels-focus
+source: original

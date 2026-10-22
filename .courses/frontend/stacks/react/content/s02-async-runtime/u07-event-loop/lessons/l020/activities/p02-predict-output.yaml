@@ -1,0 +1,24 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |
+  Promise.resolve()
+    .then(() => {
+      console.log(1);
+      queueMicrotask(() => console.log(2));
+    })
+    .then(() => console.log(3));
+  console.log(0);
+question: Что выведется?
+choices:
+  - id: a
+    text: 0 1 2 3
+    correct: true
+  - id: b
+    text: 0 1 3 2
+  - id: c
+    text: 1 2 3 0
+  - id: d
+    text: 0 1 3
+explain: |
+  `0` синхронно. В первом `then` печатается `1` и в очередь ставится `2`. Второй `then` ставится в очередь уже после этого, поэтому `2` раньше `3`.

@@ -1,0 +1,17 @@
+id: L035-ts-generics-constraints
+order: 35
+title: Generic functions и constraints
+titleEn: Generic Functions and Constraints
+essence: Параметр типа сохраняет связь входа и выхода. Constraint ограничивает,
+  чем этот параметр может быть.
+depth: application
+required: true
+insights:
+  - insights/01-identity.md
+  - insights/02-extends.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

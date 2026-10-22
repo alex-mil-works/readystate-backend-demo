@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Сервер изредка присылает статус сборки, клиент ничего не шлёт обратно.
+  Что ближе?
+options:
+  - id: a
+    text: SSE или редкий опрос
+    correct: true
+  - id: b
+    text: Обязательный WebSocket с собственным протоколом
+  - id: c
+    text: Только DNS
+  - id: d
+    text: POST без ответа
+explain: Одно направление не требует двустороннего сокета.

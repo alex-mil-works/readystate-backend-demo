@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  # pre-commit упал на линте
+  git commit --no-verify
+question: Что вы только что сделали с контуром?
+choices:
+  - id: a
+    text: Пропустили ту же проверку, которую CI всё равно обязан повторить
+    correct: true
+  - id: b
+    text: Починили правило
+  - id: c
+    text: Прогнали типы вместо линта
+  - id: d
+    text: Обновили лок безопасно
+explain: Обход хука не чинит файл. Он переносит красное дальше.

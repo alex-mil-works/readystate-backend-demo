@@ -1,0 +1,24 @@
+id: r-u15-render
+kind: single_choice
+phase: revision
+prompt: Что нельзя делать в теле рендера?
+options:
+  - id: a
+    text: Искать узел и писать в него, пока функция обязана вернуть описание
+    correct: true
+  - id: b
+    text: Читать props
+  - id: c
+    text: Считать derived value
+  - id: d
+    text: Вернуть элемент
+explain: "Рендер чистый: те же данные — то же описание."
+hints:
+  - title: Формула
+    markdown: UI описывают от state. Шаги обновления DOM остаются внутри React.
+tags:
+  - react
+reinforces:
+  - L044-react-elements-jsx
+  - L046-react-declarative-ui
+source: original

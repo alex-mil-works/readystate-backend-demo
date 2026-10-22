@@ -1,0 +1,24 @@
+id: r-s02-u08-u09-bridge
+kind: single_choice
+phase: revision
+tags: [history, fetch, abort]
+reinforces: ['L025-js-history-navigation', 'L026-js-fetch-abort']
+source: original
+prompt: |
+  Роутер сменил экран через History API, а `fetch` прошлого экрана ещё не закончился. Что сделать с запросом?
+options:
+  - id: a
+    text: '`abort()` его signal, иначе поздний ответ запишет состояние уже другого экрана'
+    correct: true
+  - id: b
+    text: Ничего — `pushState` отменяет все `fetch` документа
+  - id: c
+    text: Дождаться ответа — `popstate` сам отбросит чужой JSON
+  - id: d
+    text: Положить промис в `history.state`, браузер его отменит
+explain: |
+  Смена URL не рвёт сеть. Отмена — явный `AbortController`, не побочный эффект истории.
+hints:
+  - title: U08 → U09
+    markdown: |
+      `pushState` не шлёт `popstate` и не трогает сеть. Уход с экрана и скрытие вкладки — разные поводы, но запрос гасит signal.

@@ -1,0 +1,24 @@
+id: r-u14-node
+kind: single_choice
+phase: revision
+prompt: Какой тип children подходит для текста, `null` и элемента?
+options:
+  - id: a
+    text: "`React.ReactNode`"
+    correct: true
+  - id: b
+    text: "`React.ReactElement` только"
+  - id: c
+    text: "`string`"
+  - id: d
+    text: "`never`"
+explain: ReactNode шире элемента.
+hints:
+  - title: Событие
+    markdown: "`ChangeEvent<HTMLInputElement>` даёт строковый value."
+tags:
+  - react
+  - props
+reinforces:
+  - L041-ts-react-props
+source: original

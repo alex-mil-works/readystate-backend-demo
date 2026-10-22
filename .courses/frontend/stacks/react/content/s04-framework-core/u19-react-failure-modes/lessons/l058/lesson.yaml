@@ -1,0 +1,17 @@
+id: L058-react-render-profiling
+order: 58
+title: Профилирование рендеров и выбор оптимизаций
+titleEn: Profiling Renders and Choosing Optimizations
+essence: Сначала узнайте, кто рендерится и почему. Оптимизация без замера прячет
+  state не там и плодит memo.
+depth: perf
+required: true
+insights:
+  - insights/01-why.md
+  - insights/02-order.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,9 @@
+id: U19
+stageId: S04
+title: Поломки рендера React
+titleEn: React Render Failure Modes
+lessons:
+  - lessons/l056
+  - lessons/l057
+  - lessons/l058
+activities: activities

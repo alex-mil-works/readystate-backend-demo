@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Что Next не отменяет в клиентском компоненте?
+options:
+  - id: a
+    text: Снимок state и правила эффектов
+    correct: true
+  - id: b
+    text: Необходимость HTML
+  - id: c
+    text: Существование сети
+  - id: d
+    text: Семантику кнопки
+explain: Серверный режим убирает лишний код из браузера. Там, где остаётся
+  клиент, модель React прежняя.

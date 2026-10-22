@@ -1,0 +1,9 @@
+id: S07
+title: Сеть, security и auth
+titleEn: Network, Security & Auth
+units:
+  - u32-request-lifecycle
+  - u33-web-security
+  - u34-auth-models
+  - u35-realtime-resilience
+activities: activities

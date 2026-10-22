@@ -1,0 +1,17 @@
+id: L105-rt-retry-cancel
+order: 105
+title: Повтор, пауза, идемпотентность и отмена
+titleEn: Retry, Backoff, Idempotency, and Cancellation
+essence: Повторяют то, что безопасно повторить, и не сразу. Отмена — это сигнал
+  запроса, а не игнор опоздавшего ответа. Ошибка клиента повтором не лечится.
+depth: application
+required: true
+insights:
+  - insights/01-retry.md
+  - insights/02-once.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

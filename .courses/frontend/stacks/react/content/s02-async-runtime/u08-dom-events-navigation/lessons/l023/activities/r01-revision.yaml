@@ -1,0 +1,25 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Вы перенесли узел через `parent.append(node)`. Что произошло с объектом узла?
+options:
+  - id: a
+    text: Тот же узел сменил родителя, это не глубокая копия
+    correct: true
+  - id: b
+    text: Браузер клонировал узел, старый остался на месте
+  - id: c
+    text: Узел сериализовался в HTML и распарсился заново
+  - id: d
+    text: '`append` копирует только textContent'
+explain: |
+  У узла одна позиция в дереве. `append` переносит объект. Копия — это `cloneNode`.
+hints:
+  - title: Живое дерево
+    markdown: |
+      `children` и `getElementsBy*` обновляются вместе с деревом. `querySelectorAll` — снимок.
+  - title: Строка и узлы
+    markdown: |
+      `textContent` не парсит HTML. `innerHTML` парсит, но не запускает вставленный `script`.
+      Обработчик в атрибуте при этом может сработать — это XSS.

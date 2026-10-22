@@ -1,0 +1,17 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: |
+  Зачем вызывать `URL.revokeObjectURL` после превью файла?
+options:
+  - id: a
+    text: Иначе blob-адрес продолжает удерживать байты в памяти
+    correct: true
+  - id: b
+    text: Иначе файл удалится с диска пользователя
+  - id: c
+    text: Иначе `fetch` этого адреса начнёт сетевой запрос
+  - id: d
+    text: Метод обязателен, чтобы `File` стал `Blob`
+explain: |
+  `createObjectURL` не копирует файл на сервер. Он держит ссылку на байты, пока URL не отзовут.

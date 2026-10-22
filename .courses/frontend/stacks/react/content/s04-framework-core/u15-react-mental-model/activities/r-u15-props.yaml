@@ -1,0 +1,23 @@
+id: r-u15-props
+kind: single_choice
+phase: revision
+prompt: Как ребёнок просит изменить данные владельца?
+options:
+  - id: a
+    text: Вызывает колбэк из props
+    correct: true
+  - id: b
+    text: Пишет в props.value
+  - id: c
+    text: Наследует класс родителя
+  - id: d
+    text: Меняет children по ссылке
+explain: Поток данных вниз, событие вверх.
+hints:
+  - title: Слот
+    markdown: children передаёт родитель. Ребёнок решает только, куда его поставить.
+tags:
+  - react
+reinforces:
+  - L045-react-props-flow
+source: original

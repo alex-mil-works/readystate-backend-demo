@@ -1,0 +1,27 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Вкладку спрятали, поллинг `/status` идёт по `setInterval`. Что уместно сделать на `visibilitychange`?
+options:
+  - id: a
+    text: Остановить интервал, а при возврате один раз обновить данные
+    correct: true
+  - id: b
+    text: Участить интервал, чтобы догнать пропущенные тики
+  - id: c
+    text: Вызвать `location.reload()`
+  - id: d
+    text: '`document.hidden` само отменяет все `fetch`'
+explain: |
+  Скрытая вкладка не должна копить запросы. Visibility не равно abort: таймер останавливаете вы.
+hints:
+  - title: Три разных вопроса
+    markdown: |
+      Есть ли API — `'Notification' in window`.
+      Какое решение пользователя — `permissions.query`.
+      Показать диалог — отдельный вызов с жеста, и только если состояние ещё `prompt`.
+  - title: Скрытая вкладка
+    markdown: |
+      `document.hidden` плюс `visibilitychange`. В фоне таймеры и так грубее.
+      Опрос гасят явно и делают один refresh, когда вкладка снова видима.

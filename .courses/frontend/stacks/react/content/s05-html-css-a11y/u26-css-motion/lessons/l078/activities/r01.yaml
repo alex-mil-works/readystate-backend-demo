@@ -1,0 +1,16 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Какая тройка ближе всего к порядку «дорого → дешевле» для анимации?
+options:
+  - id: a
+    text: layout, paint, composite
+    correct: true
+  - id: b
+    text: composite, layout, paint
+  - id: c
+    text: только цвет всегда layout
+  - id: d
+    text: opacity всегда пересчитывает таблицу
+explain: "Не абсолютный закон на каждом браузере, но рабочая модель: геометрию
+  трогают реже."

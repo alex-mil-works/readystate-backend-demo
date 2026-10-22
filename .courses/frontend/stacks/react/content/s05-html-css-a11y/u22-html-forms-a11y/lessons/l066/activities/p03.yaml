@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: <button type="button"><svg><!-- иконка --></svg></button>
+question: Как это объявит скринридер без подписи?
+choices:
+  - id: a
+    text: Кнопка без имени
+    correct: true
+  - id: b
+    text: Кнопка «иконка»
+  - id: c
+    text: Ссылка на svg
+  - id: d
+    text: Заголовок страницы
+explain: Внутри нет текста. Нужен aria-label или скрытый текст.

@@ -1,0 +1,17 @@
+id: L047-react-state-snapshot
+order: 47
+title: State как снимок
+titleEn: State as a Snapshot
+essence: Обработчик видит state того рендера, в котором он создан. setState
+  планирует следующий снимок, а не меняет текущий.
+depth: mechanism
+required: true
+insights:
+  - insights/01-snapshot.md
+  - insights/02-batch.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

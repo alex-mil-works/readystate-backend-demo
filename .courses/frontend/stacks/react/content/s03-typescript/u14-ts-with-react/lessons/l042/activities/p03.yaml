@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Хук переключателя возвращает флаг и функцию. Какой тип возврата яснее
+  для двух позиций?
+options:
+  - id: a
+    text: "`[boolean, () => void]`"
+    correct: true
+  - id: b
+    text: "`any[]`"
+  - id: c
+    text: "`React.ReactNode`"
+  - id: d
+    text: "`void`"
+explain: Кортеж фиксирует порядок. Имена нужны, когда возврат разрастается в объект.

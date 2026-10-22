@@ -1,0 +1,22 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |
+  let mode = 'live';
+  document.addEventListener('visibilitychange', () => {
+    mode = document.hidden ? 'paused' : 'live';
+  });
+  console.log(mode);
+question: Что напечатается в момент регистрации слушателя на видимой вкладке?
+choices:
+  - id: a
+    text: '`live`'
+    correct: true
+  - id: b
+    text: '`paused`'
+  - id: c
+    text: '`hidden`'
+  - id: d
+    text: Ничего — слушатель вызывается сразу
+explain: |
+  `visibilitychange` не стреляет в момент подписки. Пока вкладка видима, `mode` остаётся начальным `'live'`.

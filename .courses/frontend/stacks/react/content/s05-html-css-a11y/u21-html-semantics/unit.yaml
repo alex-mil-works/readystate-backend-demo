@@ -1,0 +1,9 @@
+id: U21
+stageId: S05
+title: Семантика HTML
+titleEn: HTML Semantics
+lessons:
+  - lessons/l062
+  - lessons/l063
+  - lessons/l064
+activities: activities

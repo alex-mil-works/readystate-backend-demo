@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Компонент рендерится часто, но коммит занимает доли миллисекунды. Что делать?
+options:
+  - id: a
+    text: Ничего, пока нет дорогой работы
+    correct: true
+  - id: b
+    text: Обязательный useMemo на каждой строке JSX
+  - id: c
+    text: Запретить setState
+  - id: d
+    text: Хранить разметку в ref
+explain: Число рендеров само по себе не бюджет. Бюджет — время и видимые лаги.

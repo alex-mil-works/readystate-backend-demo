@@ -1,0 +1,27 @@
+id: r-s08-u37-u38-bridge
+kind: single_choice
+phase: revision
+prompt: Страницу собрали заранее, а Service Worker навсегда отдаёт первый кэш
+  оболочки. Что сломается?
+options:
+  - id: a
+    text: новая сборка HTML не доедет, пока кэш не версионируют
+    correct: true
+  - id: b
+    text: SSG само обновляет воркер
+  - id: c
+    text: остров отменяет fetch
+  - id: d
+    text: манифест запрещает кэш
+explain: Статика и кэш воркера — две политики свежести.
+hints:
+  - title: U37 → U38
+    markdown: SSG делает дешёвый документ. Воркер может его запереть. Обновление
+      показывают, а не перезагружают формы молча.
+tags:
+  - platform
+reinforces:
+  - L111-render-ssg-islands
+  - L113-pwa-service-worker
+  - L114-pwa-install-update
+source: original

@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: ".card .button__label { color: red; }"
+question: Кнопка сменила внутренний класс. Что сломалось?
+choices:
+  - id: a
+    text: Родитель стилизовал частную разметку, контракт кнопки этого не обещал
+    correct: true
+  - id: b
+    text: Ничего, специфичность нулевая
+  - id: c
+    text: Токен подставится сам
+  - id: d
+    text: Так и надо передавать variant
+explain: Вариант кнопки — её API. Родитель не знает внутренний label.

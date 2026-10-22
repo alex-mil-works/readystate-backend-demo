@@ -1,0 +1,17 @@
+id: L029-ts-compile-boundary
+order: 29
+title: Что добавляет TypeScript — и чего нет
+titleEn: What TypeScript Adds — and What It Does Not
+essence: TypeScript проверяет программу до запуска и стирается в JavaScript.
+  Зелёная сборка не проверяет JSON, DOM и сеть.
+depth: mechanism
+required: true
+insights:
+  - insights/01-erased.md
+  - insights/02-not-a-guard.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

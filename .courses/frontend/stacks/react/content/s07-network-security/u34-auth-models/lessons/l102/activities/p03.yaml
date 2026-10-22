@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: localStorage.setItem('access', token)
+question: Какой риск у такого хранения, если на странице выполнится чужой скрипт?
+choices:
+  - id: a
+    text: Он прочитает токен из хранилища
+    correct: true
+  - id: b
+    text: HttpOnly на localStorage это запретит
+  - id: c
+    text: Скрипт видит только cookie чужого сайта
+  - id: d
+    text: Токен к этому моменту уже зашифрован браузером
+explain: У localStorage нет флага HttpOnly.

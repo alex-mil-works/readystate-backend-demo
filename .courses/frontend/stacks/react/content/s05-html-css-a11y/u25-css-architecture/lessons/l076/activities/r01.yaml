@@ -1,0 +1,15 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Зачем custom properties темы, если в файле можно писать hex?
+options:
+  - id: a
+    text: Один токен меняет тему и не плодит близкие цвета
+    correct: true
+  - id: b
+    text: Они отключают каскад
+  - id: c
+    text: Они заменяют button
+  - id: d
+    text: Они увеличивают специфичность до id
+explain: Компонент читает переменную. Палитру правят в одном месте.

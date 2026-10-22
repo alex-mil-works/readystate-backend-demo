@@ -1,0 +1,26 @@
+id: r-s03-u13-u14-bridge
+kind: single_choice
+phase: revision
+prompt: Ответ fetch кладут в `useState<User>` через `as User`. Какой шов пропущен?
+options:
+  - id: a
+    text: Разбор `unknown` до записи в state
+    correct: true
+  - id: b
+    text: Нужен только `React.FC`
+  - id: c
+    text: Достаточно generic на компоненте списка
+  - id: d
+    text: State и так проверит JSON при рендере
+explain: Аннотация state не валидирует сеть. Парсер из прошлого юнита стоит
+  перед setState.
+hints:
+  - title: U13 → U14
+    markdown: Честный `User | null` в useState начинается с null и получает User
+      только после parse.
+tags:
+  - typescript
+reinforces:
+  - L040-ts-runtime-validation
+  - L042-ts-react-state-hooks
+source: original

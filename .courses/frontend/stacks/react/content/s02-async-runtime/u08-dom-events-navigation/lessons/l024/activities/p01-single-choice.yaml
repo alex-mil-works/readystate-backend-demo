@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: |
+  Чем `preventDefault` отличается от `stopPropagation`?
+options:
+  - id: a
+    text: Первое отменяет действие браузера, второе обрывает путь события по дереву
+    correct: true
+  - id: b
+    text: Это синонимы
+  - id: c
+    text: '`preventDefault` останавливает других слушателей на том же узле'
+  - id: d
+    text: '`stopPropagation` отменяет отправку формы'
+explain: |
+  Ссылку можно не открывать и при этом позволить событию всплыть. И наоборот: всплытие можно оборвать, не трогая default action.

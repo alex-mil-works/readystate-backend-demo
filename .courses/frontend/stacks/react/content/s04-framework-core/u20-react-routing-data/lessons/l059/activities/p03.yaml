@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Черновик поля «заметка» на один сеанс. Куда его класть?
+options:
+  - id: a
+    text: В локальный state формы, не в URL
+    correct: true
+  - id: b
+    text: Обязательно в search params на каждый символ
+  - id: c
+    text: В key маршрута
+  - id: d
+    text: Только в document.cookie
+explain: Не всё состояние — адрес. В URL попадает то, чем делятся и что восстанавливают.

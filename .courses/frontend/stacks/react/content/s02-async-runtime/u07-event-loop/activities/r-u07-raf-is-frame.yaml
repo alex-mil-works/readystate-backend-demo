@@ -1,0 +1,24 @@
+id: r-u07-raf-is-frame
+kind: single_choice
+phase: revision
+tags: [raf, rendering]
+reinforces: ['L021-js-timers-microtasks-rendering', 'L022-js-long-tasks-raf']
+source: original
+prompt: |
+  Почему анимацию вешают на `requestAnimationFrame`, а не на `setTimeout(..., 16)`?
+options:
+  - id: a
+    text: rAF попадает в шаг кадра, таймер — нет
+    correct: true
+  - id: b
+    text: Таймер на 16 мс запрещён спецификацией
+  - id: c
+    text: rAF выполняется в другом потоке
+  - id: d
+    text: '`setTimeout` не умеет задержку меньше 100 мс'
+explain: |
+  Кадр планирует браузер. Таймер лишь обещает task не раньше N миллисекунд.
+hints:
+  - title: Кадр
+    markdown: |
+      rAF не дробит уже идущий цикл. Он только планирует работу к ближайшей отрисовке, когда стек свободен.

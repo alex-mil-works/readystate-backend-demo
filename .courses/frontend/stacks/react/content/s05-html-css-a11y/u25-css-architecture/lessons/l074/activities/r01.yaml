@@ -1,0 +1,15 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Что оставить глобальным, а что положить рядом с компонентом?
+options:
+  - id: a
+    text: Глобально токены и сброс, локально классы блока
+    correct: true
+  - id: b
+    text: Глобально всё, модули только для тестов
+  - id: c
+    text: Локально margin body
+  - id: d
+    text: Один класс title на проект
+explain: Утечка глобального title как раз то, от чего прячет модуль.

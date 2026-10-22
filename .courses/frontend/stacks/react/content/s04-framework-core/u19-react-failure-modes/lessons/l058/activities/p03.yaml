@@ -1,0 +1,26 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  function Page() {
+    const [q, setQ] = useState('');
+    return (
+      <>
+        <Search value={q} onChange={setQ} />
+        <LessonMap />
+      </>
+    );
+  }
+question: Почему `LessonMap` участвует в рендере при вводе, даже без props от q?
+choices:
+  - id: a
+    text: Родитель Page рендерится из-за своего state и снова вызывает LessonMap
+    correct: true
+  - id: b
+    text: setQ написан в LessonMap
+  - id: c
+    text: useState всегда рендерит соседей через Context
+  - id: d
+    text: Search передаёт q по DOM
+explain: Вызов функции ребёнка происходит заново, если родитель рендерится и
+  ребёнок не отсечён.

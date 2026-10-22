@@ -1,0 +1,21 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |
+  console.log('A');
+  setTimeout(() => console.log('B'), 0);
+  Promise.resolve().then(() => console.log('C'));
+  console.log('D');
+question: В каком порядке появятся буквы?
+choices:
+  - id: a
+    text: A D C B
+    correct: true
+  - id: b
+    text: A B C D
+  - id: c
+    text: A C D B
+  - id: d
+    text: A D B C
+explain: |
+  `A` и `D` — текущий стек. `C` — микрозадача и идёт сразу после стека. `B` — task и ждёт, пока микрозадачи кончатся.

@@ -1,0 +1,17 @@
+id: L060-react-data-loading
+order: 60
+title: Загрузка данных, ошибки и pending UI
+titleEn: Data Loading, Errors, and Pending UI
+essence: Запрос из эффекта отменяется в cleanup. Экран явно показывает ожидание,
+  ошибку или данные — не один nullable объект.
+depth: application
+required: true
+insights:
+  - insights/01-states.md
+  - insights/02-abort.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

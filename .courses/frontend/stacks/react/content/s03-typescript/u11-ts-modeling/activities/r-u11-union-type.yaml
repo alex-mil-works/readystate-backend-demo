@@ -1,0 +1,24 @@
+id: r-u11-union-type
+kind: single_choice
+phase: revision
+prompt: Чем описать «либо круг, либо прямоугольник»?
+options:
+  - id: a
+    text: "`type Shape = Circle | Rect`"
+    correct: true
+  - id: b
+    text: Слиянием двух interface с одним именем
+  - id: c
+    text: "`Circle & Rect`"
+  - id: d
+    text: "`keyof Circle`"
+explain: Union пишут через type.
+hints:
+  - title: interface
+    markdown: Повторный interface с тем же именем сливается, это не union.
+tags:
+  - unions
+reinforces:
+  - L032-ts-object-types
+  - L034-ts-unions-narrowing
+source: original

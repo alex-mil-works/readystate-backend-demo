@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Где ещё прочитать ту же настройку, если движение запускает скрипт?
+options:
+  - id: a
+    text: matchMedia в JS и не стартовать лишний цикл
+    correct: true
+  - id: b
+    text: Только в title
+  - id: c
+    text: В alt картинки
+  - id: d
+    text: Её нельзя прочитать из скрипта
+explain: CSS-медиа не останавливает requestAnimationFrame само.

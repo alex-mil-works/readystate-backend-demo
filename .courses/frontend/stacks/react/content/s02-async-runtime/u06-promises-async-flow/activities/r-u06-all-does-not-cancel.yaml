@@ -1,0 +1,24 @@
+id: r-u06-all-does-not-cancel
+kind: single_choice
+phase: revision
+tags: [promise, combinators]
+reinforces: ['L019-js-promise-combinators']
+source: original
+prompt: |
+  `Promise.all` отклонился из-за одного запроса. Что с остальными уже запущенными `fetch`?
+options:
+  - id: a
+    text: Они продолжаются, пока их отдельно не отменят
+    correct: true
+  - id: b
+    text: Браузер их обрывает
+  - id: c
+    text: Они переходят в `allSettled` автоматически
+  - id: d
+    text: Их колбэки выполняются синхронно в том же стеке
+explain: |
+  `all` меняет только сводный промис. Отмена чужих запросов — забота `AbortController`.
+hints:
+  - title: Старт раньше all
+    markdown: |
+      `fetch` стартует в момент вызова. `Promise.all` лишь ждёт уже созданные промисы и не управляет сетью.

@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: 'Зачем Panel принимает `children`, а не проп `kind: "info" | "error"` на
+  каждый экран?'
+options:
+  - id: a
+    text: Содержимое остаётся у вызывающего, рамка переиспользуется
+    correct: true
+  - id: b
+    text: children быстрее любого props
+  - id: c
+    text: Без children компонент не рендерится
+  - id: d
+    text: Так отключается однонаправленный поток
+explain: Композиция не требует заранее перечислить все варианты внутри Panel.

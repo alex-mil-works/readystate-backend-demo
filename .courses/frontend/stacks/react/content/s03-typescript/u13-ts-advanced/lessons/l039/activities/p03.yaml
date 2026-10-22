@@ -1,0 +1,17 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Что делает предикат `function isCircle(s: Shape): s is Extract<Shape, {
+  kind: 'circle' }>`?"
+options:
+  - id: a
+    text: В `if (isCircle(s))` компилятор сужает `s` до circle
+    correct: true
+  - id: b
+    text: Меняет значение `s` в runtime на круг
+  - id: c
+    text: Запрещает switch
+  - id: d
+    text: Превращает Shape в `any`
+explain: Type predicate — подсказка компилятору о результате проверки. Саму
+  проверку пишете вы.

@@ -1,0 +1,18 @@
+id: L091-qa-sourcemaps-env
+order: 91
+title: Source maps, env и разбор падения сборки
+titleEn: Source Maps, Env, and Reading Build Failures
+essence: Source map связывает минифицированный код с исходником. Переменная с
+  префиксом клиента попадает в бандл. Ошибку сборки читают по модулю, не по
+  первой строке стека.
+depth: debug
+required: true
+insights:
+  - insights/01-map.md
+  - insights/02-env.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

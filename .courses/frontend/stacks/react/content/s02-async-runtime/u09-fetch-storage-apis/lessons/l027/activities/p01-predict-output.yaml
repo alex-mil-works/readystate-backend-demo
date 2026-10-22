@@ -1,0 +1,20 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |
+  localStorage.setItem('n', 1);
+  console.log(localStorage.getItem('n') === 1);
+  console.log(localStorage.getItem('n') === '1');
+question: Что напечатается?
+choices:
+  - id: a
+    text: '`false`, затем `true`'
+    correct: true
+  - id: b
+    text: '`true`, затем `false`'
+  - id: c
+    text: '`true`, затем `true`'
+  - id: d
+    text: Оба `false` — число в storage не пишется
+explain: |
+  Storage приводит значение к строке. Обратно приходит `'1'`, строгое сравнение с числом ложно.

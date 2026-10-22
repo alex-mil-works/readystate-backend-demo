@@ -1,0 +1,9 @@
+id: U23
+stageId: S05
+title: Каскад и коробка
+titleEn: Cascade and Box Model
+lessons:
+  - lessons/l068
+  - lessons/l069
+  - lessons/l070
+activities: activities

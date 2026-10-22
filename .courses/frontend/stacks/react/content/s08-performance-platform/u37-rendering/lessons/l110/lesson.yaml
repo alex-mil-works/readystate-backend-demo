@@ -1,0 +1,18 @@
+id: L110-render-csr-ssr
+order: 110
+title: CSR, SSR и гидрация
+titleEn: CSR, SSR, and Hydration
+essence: Клиентский рендер рисует пустой документ скриптом. Серверный отдаёт
+  HTML сразу. Гидрация вешает события на уже существующую разметку и обязана с
+  ней совпасть.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-two.md
+  - insights/02-hydrate.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

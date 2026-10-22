@@ -1,0 +1,17 @@
+id: L077-css-transitions
+order: 77
+title: Переходы и анимации
+titleEn: Transitions and Animations
+essence: Transition связывает два состояния свойства. Keyframes нужны, когда
+  шагов больше двух. Анимируют конкретное свойство, не all.
+depth: application
+required: true
+insights:
+  - insights/01-transition.md
+  - insights/02-keyframes.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

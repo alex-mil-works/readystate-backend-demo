@@ -1,0 +1,13 @@
+# U09 — manifest юнита (порядок уроков).
+
+id: U09
+stageId: S02
+title: Fetch, storage и Browser APIs
+titleEn: Fetch, Storage & Browser APIs
+
+lessons:
+  - lessons/l026
+  - lessons/l027
+  - lessons/l028
+
+activities: activities

@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему localStorage плох для большого JSON и для секрета?
+options:
+  - id: a
+    text: Он синхронный и маленький, а скрипт страницы его читает
+    correct: true
+  - id: b
+    text: Он зашифрован HttpOnly
+  - id: c
+    text: Он общий для всех сайтов интернета
+  - id: d
+    text: Он не переживает перезагрузку никогда
+explain: Секрет, который нельзя читать скрипту, сюда не кладут.

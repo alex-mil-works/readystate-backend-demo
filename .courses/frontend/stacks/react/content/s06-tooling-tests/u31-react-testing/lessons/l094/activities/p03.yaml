@@ -1,0 +1,19 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  await page.goto('/courses/frontend/react');
+  await page.getByRole('link', { name: 'Ориентиры' }).click();
+  await expect(page).toHaveURL(/landmarks/);
+question: Какую границу это пересекает, в отличие от юнита?
+choices:
+  - id: a
+    text: Настоящий адрес и клик в браузере
+    correct: true
+  - id: b
+    text: Только вызов функции без DOM
+  - id: c
+    text: Только формат Prettier
+  - id: d
+    text: Только локфайл
+explain: Роутер, сборка страницы и ссылка здесь настоящие.

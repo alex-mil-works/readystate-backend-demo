@@ -1,0 +1,18 @@
+id: L101-auth-cookie-csrf
+order: 101
+title: Cookie, сессия и межсайтовый запрос
+titleEn: Cookies, Sessions, and Cross-Site Requests
+essence: Сессионная cookie уходит сама на свой сайт. HttpOnly прячет её от
+  скрипта. Чужой сайт может заставить браузер её послать, поэтому меняющие
+  запросы подтверждают намерением.
+depth: security
+required: true
+insights:
+  - insights/01-cookie.md
+  - insights/02-csrf.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

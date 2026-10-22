@@ -1,0 +1,24 @@
+id: r-u08-closest-row
+kind: single_choice
+phase: revision
+tags: [events, delegation]
+reinforces: ['L024-js-events-delegation']
+source: original
+prompt: |
+  Слушатель на `ul`, клик по `svg` внутри `li`. Как получить строку?
+options:
+  - id: a
+    text: '`event.target.closest("li")`'
+    correct: true
+  - id: b
+    text: Считать, что `event.target` уже `li`
+  - id: c
+    text: '`event.currentTarget` и есть строка'
+  - id: d
+    text: '`event.target.parentElement` всегда равно `li`'
+explain: |
+  `target` — самый глубокий узел. `currentTarget` в этом слушателе — `ul`. До строки поднимаются через `closest`.
+hints:
+  - title: target
+    markdown: |
+      Делегирование ломается, если ждать, что target всегда равен элементу с `data-id`. Между ними бывают иконки и спаны.

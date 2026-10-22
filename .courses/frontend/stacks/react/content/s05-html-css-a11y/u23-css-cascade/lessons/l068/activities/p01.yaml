@@ -1,0 +1,18 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |-
+  p { color: blue; }
+  p { color: green; }
+question: Какой цвет у абзаца, если правила одной специфичности?
+choices:
+  - id: a
+    text: "green: позже в том же слое"
+    correct: true
+  - id: b
+    text: blue
+  - id: c
+    text: оба сразу
+  - id: d
+    text: чёрный браузера всегда
+explain: При равном весе побеждает порядок.

@@ -1,0 +1,14 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Когда вы берёте `type`, а когда `interface`, и что ловит excess property check?
+rubric: |-
+  Ожидаемые пункты:
+  - оба описывают форму
+  - interface сливается
+  - union через type
+  - лишнее поле у свежего литерала — ошибка
+sampleAnswer: Форму объекта можно описать и type, и interface. Interface с одним
+  именем сливается, поэтому прикладные модели я фиксирую type. Union тоже только
+  type. Если в литерал, который сразу типизирован как User, попало лишнее поле,
+  компилятор считает это опечаткой.

@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: "Set-Cookie: sid=abc; Secure; HttpOnly; SameSite=Lax"
+question: Что из этого не даст скрипту на вашей странице прочитать sid?
+choices:
+  - id: a
+    text: HttpOnly
+    correct: true
+  - id: b
+    text: Secure само по себе
+  - id: c
+    text: имя sid
+  - id: d
+    text: путь запроса
+explain: Secure ограничивает схему. HttpOnly ограничивает доступ из документа.

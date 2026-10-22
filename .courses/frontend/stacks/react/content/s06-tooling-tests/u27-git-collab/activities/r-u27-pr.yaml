@@ -1,0 +1,24 @@
+id: r-u27-pr
+kind: single_choice
+phase: revision
+prompt: Зачем PR, если ветка уже запушена?
+options:
+  - id: a
+    text: Чтобы diff и проверки прошли до общей ветки
+    correct: true
+  - id: b
+    text: Он заменяет локфайл
+  - id: c
+    text: Без него коммиты не хранятся
+  - id: d
+    text: Он нужен только при revert
+explain: Маленький сюжет проще слить и откатить.
+hints:
+  - title: Сообщение
+    markdown: В сообщении причина снимка, не список файлов.
+tags:
+  - git
+reinforces:
+  - L081-git-pr-conflicts
+  - L080-git-commits-branches
+source: original

@@ -1,0 +1,18 @@
+id: L114-pwa-install-update
+order: 114
+title: Установка, офлайн и стратегия обновления
+titleEn: Install, Offline, and Update Strategy
+essence: Манифест описывает приложение для установки. Офлайн — выбранный
+  запасной путь, не случайный побочный эффект кэша. Обновление не сбрасывают
+  посреди ввода.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-install.md
+  - insights/02-update.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

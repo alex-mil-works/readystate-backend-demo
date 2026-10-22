@@ -1,0 +1,24 @@
+id: r-u29-build
+kind: single_choice
+phase: revision
+prompt: Дев зелёный, yarn build красный. Что из этого следует?
+options:
+  - id: a
+    text: Поставку проверяют сборкой, дев её не заменяет
+    correct: true
+  - id: b
+    text: build можно не чинить
+  - id: c
+    text: HMR уже задеплоил прод
+  - id: d
+    text: Так падает только Prettier
+explain: Режимы разные.
+hints:
+  - title: Чанк
+    markdown: Редкий экран уводят в import(), чтобы первый заход его не качал.
+tags:
+  - build
+reinforces:
+  - L087-mod-vite
+  - L086-mod-esm-splitting
+source: original

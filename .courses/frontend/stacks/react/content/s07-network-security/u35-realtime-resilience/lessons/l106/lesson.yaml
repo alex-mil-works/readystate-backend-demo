@@ -1,0 +1,17 @@
+id: L106-rt-error-recovery
+order: 106
+title: Ошибки API и восстановление в интерфейсе
+titleEn: API Errors and Recovery in the UI
+essence: Разные статусы — разные действия. Экран показывает, что случилось и что
+  сделать, а не стек и не одну надпись «ошибка» на все случаи.
+depth: application
+required: true
+insights:
+  - insights/01-map.md
+  - insights/02-human.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

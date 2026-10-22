@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Зачем `satisfies` вместо аннотации `Record<string, string>` на объекте
+  маршрутов?
+options:
+  - id: a
+    text: Проверка формы остаётся, ключи не расширяются до string
+    correct: true
+  - id: b
+    text: "`satisfies` включает runtime-валидацию URL"
+  - id: c
+    text: Аннотация и satisfies всегда дают один тип
+  - id: d
+    text: "`satisfies` стирает ключи"
+explain: Переменная сохраняет конкретные ключи `home` и `lesson`.

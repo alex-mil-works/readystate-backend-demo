@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Почему `div` с обработчиком клика плохая замена кнопке «Сохранить»?
+options:
+  - id: a
+    text: Нет роли кнопки, нет клавиатуры, нет места в списке кнопок
+    correct: true
+  - id: b
+    text: div нельзя стилизовать
+  - id: c
+    text: клик на div не всплывает
+  - id: d
+    text: кнопка не может стоять в форме
+explain: Нативный button уже в tab и активируется Enter/Space.
+hints:
+  - title: Картинка
+    markdown: Декор — пустой alt. Смысл — короткий alt. Длинное описание — рядом
+      текстом или figcaption, не простыня в alt.

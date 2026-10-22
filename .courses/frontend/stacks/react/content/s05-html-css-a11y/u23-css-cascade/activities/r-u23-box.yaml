@@ -1,0 +1,24 @@
+id: r-u23-box
+kind: single_choice
+phase: revision
+prompt: width 200px, padding 20px с двух сторон, border-box. Внешняя ширина
+  контентной коробки?
+options:
+  - id: a
+    text: 200px, padding внутри
+    correct: true
+  - id: b
+    text: 240px
+  - id: c
+    text: 200 плюс margin
+  - id: d
+    text: 100px
+explain: content-box как раз добавил бы padding сверху.
+hints:
+  - title: Схлопывание
+    markdown: Вертикальные margin соседей в обычном потоке схлопываются.
+tags:
+  - css
+reinforces:
+  - L069-css-box-model
+source: original

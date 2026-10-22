@@ -1,0 +1,24 @@
+id: r-u37-hydrate
+kind: single_choice
+phase: revision
+prompt: Дата, по-разному посчитанная на сервере и клиенте, ломает…
+options:
+  - id: a
+    text: гидрацию
+    correct: true
+  - id: b
+    text: DNS
+  - id: c
+    text: манифест установки
+  - id: d
+    text: SemVer
+explain: Одна разметка на обеих сторонах.
+hints:
+  - title: Режим
+    markdown: Личное считают на запрос или честно живут со старым HTML.
+tags:
+  - render
+reinforces:
+  - L110-render-csr-ssr
+  - L111-render-ssg-islands
+source: original

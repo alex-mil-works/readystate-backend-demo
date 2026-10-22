@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему CI должен звать yarn test:run, а не свой самодельный набор флагов?
+options:
+  - id: a
+    text: Автор и сервер тогда доказывают одно и то же
+    correct: true
+  - id: b
+    text: Флаги в CI всегда быстрее и точнее
+  - id: c
+    text: Скрипты package.json в CI не видны
+  - id: d
+    text: Так отменяется ревью
+explain: Расхождение флагов даёт «у меня работает».

@@ -1,0 +1,17 @@
+id: L085-pkg-lock-supply
+order: 85
+title: Локфайл, цепочка поставок и воспроизводимость
+titleEn: Lockfiles, Supply Chain, and Reproducibility
+essence: Локфайл фиксирует конкретное дерево. CI ставит из него. Чужой пакет —
+  это код, который выполнится у вас, не просто версия.
+depth: security
+required: true
+insights:
+  - insights/01-lock.md
+  - insights/02-supply.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

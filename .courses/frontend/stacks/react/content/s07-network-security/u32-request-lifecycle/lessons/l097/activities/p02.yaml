@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Почему нельзя кэшировать HTML кабинета как общий публичный ответ?
+options:
+  - id: a
+    text: В нём чужие данные, их увидит следующий человек на том же кэше
+    correct: true
+  - id: b
+    text: HTML нельзя передавать по HTTPS
+  - id: c
+    text: Cache-Control работает только для картинок
+  - id: d
+    text: Иначе сломается DNS
+explain: Персональное помечают private или не кэшируют.

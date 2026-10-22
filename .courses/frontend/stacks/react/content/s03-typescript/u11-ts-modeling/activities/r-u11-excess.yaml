@@ -1,0 +1,23 @@
+id: r-u11-excess
+kind: single_choice
+phase: revision
+prompt: Куда excess property check смотрит в первую очередь?
+options:
+  - id: a
+    text: На свежий объектный литерал в типизированной позиции
+    correct: true
+  - id: b
+    text: На любое значение в runtime
+  - id: c
+    text: Только на `interface`
+  - id: d
+    text: На `keyof`
+explain: Литерал с лишним полем — частая опечатка.
+hints:
+  - title: Переменная
+    markdown: Уже присвоенный более широкий объект структурно подходит.
+tags:
+  - objects
+reinforces:
+  - L032-ts-object-types
+source: original

@@ -1,0 +1,11 @@
+id: S04
+title: Framework core
+titleEn: Framework Core
+units:
+  - u15-react-mental-model
+  - u16-react-state-rendering
+  - u17-react-hooks-effects
+  - u18-react-forms-composition
+  - u19-react-failure-modes
+  - u20-react-routing-data
+activities: activities

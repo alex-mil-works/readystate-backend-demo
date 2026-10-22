@@ -1,0 +1,23 @@
+id: r-u40-ask
+kind: single_choice
+phase: revision
+prompt: Разрешение камеры просят…
+options:
+  - id: a
+    text: когда человек выбрал действие, которому она нужна
+    correct: true
+  - id: b
+    text: на каждом заходе, пока не согласятся
+  - id: c
+    text: до первой кнопки всегда
+  - id: d
+    text: только по http
+explain: Отказ не лечат циклом. Рядом есть путь без камеры.
+hints:
+  - title: Контекст
+    markdown: Без HTTPS многих API нет.
+tags:
+  - platform
+reinforces:
+  - L120-device-permissions
+source: original

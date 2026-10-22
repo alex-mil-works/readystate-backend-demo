@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Что утилита вроде p-4 гарантирует лучше, чем разовый style?
+options:
+  - id: a
+    text: Отступ из общей шкалы, а не случайное число
+    correct: true
+  - id: b
+    text: Роль кнопки для скринридера
+  - id: c
+    text: Отмену каскада
+  - id: d
+    text: Семантический landmark
+explain: Шкала — про согласованность. Доступное имя утилита не даёт.

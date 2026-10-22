@@ -1,0 +1,19 @@
+id: L017-js-promise-states
+order: 17
+title: Состояния Promise, resolution и chaining
+titleEn: Promise States, Resolution & Chaining
+essence: >-
+  Promise фиксирует один исход и возвращает новый промис на каждом then — исходный объект не переписывается.
+depth: mechanism
+required: true
+
+insights:
+  - insights/01-states-and-settling.md
+  - insights/02-chaining-and-flattening.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-predict-output.yaml
+  - activities/p03-predict-output.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

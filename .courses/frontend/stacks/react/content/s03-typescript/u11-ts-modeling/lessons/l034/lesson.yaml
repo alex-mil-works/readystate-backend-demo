@@ -1,0 +1,17 @@
+id: L034-ts-unions-narrowing
+order: 34
+title: Unions, intersections и narrowing
+titleEn: Unions, Intersections, and Narrowing
+essence: Union — значение одного из типов. Intersection — все сразу. После
+  `typeof` или проверки поля тип в ветке сужается.
+depth: trace
+required: true
+insights:
+  - insights/01-union-and.md
+  - insights/02-control-flow.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

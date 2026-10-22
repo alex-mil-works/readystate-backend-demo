@@ -1,0 +1,21 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  <<<<<<< HEAD
+  const delay = 200;
+  =======
+  const delay = 160;
+  >>>>>>> feature
+question: Что нужно сделать с файлом перед коммитом слияния?
+choices:
+  - id: a
+    text: Оставить одно осмысленное значение и убрать маркеры
+    correct: true
+  - id: b
+    text: Закоммитить маркеры как есть
+  - id: c
+    text: Удалить файл
+  - id: d
+    text: Оставить оба числа через запятую всегда
+explain: Маркеры — черновик спора. В дереве их быть не должно.

@@ -1,0 +1,22 @@
+id: p02
+kind: predict_output
+phase: practice
+code: >-
+  type FieldProps = { onChange: (event: React.ChangeEvent<HTMLInputElement>) =>
+  void };
+
+  function Field({ onChange }: FieldProps) {
+    return <input onChange={onChange} />;
+  }
+question: Что можно прочитать в `onChange` без `any`?
+choices:
+  - id: a
+    text: "`event.currentTarget.value` как string"
+    correct: true
+  - id: b
+    text: Только `event` целиком как `unknown`
+  - id: c
+    text: "`event.currentTarget` как `HTMLButtonElement`"
+  - id: d
+    text: "Ничего: ChangeEvent запрещает value"
+explain: Параметр типа указывает на input, у него есть `value`.

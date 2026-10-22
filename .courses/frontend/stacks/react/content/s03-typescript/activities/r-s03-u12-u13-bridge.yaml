@@ -1,0 +1,26 @@
+id: r-s03-u12-u13-bridge
+kind: single_choice
+phase: revision
+prompt: "`Pick<User, 'id'>` и свежий литерал `{ id: '1', extra: true }` в эту
+  проекцию. Что произойдёт?"
+options:
+  - id: a
+    text: Excess property check увидит лишний ключ у литерала
+    correct: true
+  - id: b
+    text: Pick удалит extra в runtime
+  - id: c
+    text: Лишний ключ всегда молча проходит в Pick
+  - id: d
+    text: Pick превращает значение в `any`
+explain: Утилита задаёт форму. Свежий литерал в этой форме проверяется на лишние поля.
+hints:
+  - title: U12 → U13
+    markdown: Pick не копия полей. Excess check относится к литералу, не к более
+      широкой переменной.
+tags:
+  - typescript
+reinforces:
+  - L037-ts-utility-types
+  - L038-ts-structural-excess
+source: original

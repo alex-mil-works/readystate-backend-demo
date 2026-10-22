@@ -1,0 +1,17 @@
+id: L070-css-display-stacking
+order: 70
+title: Display, контексты и stacking
+titleEn: Display, Formatting Contexts, and Stacking
+essence: display решает, как блок участвует в потоке. z-index работает только
+  внутри своего контекста наложения, а не «поверх всей страницы» сам по себе.
+depth: mechanism
+required: true
+insights:
+  - insights/01-display.md
+  - insights/02-stack.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

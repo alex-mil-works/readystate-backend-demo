@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "Почему `onChange: Function` в props — слабый контракт?"
+options:
+  - id: a
+    text: Неизвестно, сколько аргументов и какого они типа
+    correct: true
+  - id: b
+    text: "`Function` включает проверку числа аргументов"
+  - id: c
+    text: "Это синоним `(event: Event) => void`"
+  - id: d
+    text: "`Function` запрещает `any`"
+explain: Узкий тип колбэка ловит забытый аргумент у вызывающего.
+hints:
+  - title: Один union или overload
+    markdown: Если варианты — это разные формы данных, чаще честнее union аргумента,
+      чем стопка перегрузок.

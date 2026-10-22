@@ -1,0 +1,17 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Начальное `useState(props.seed)` потом не меняется, когда родитель
+  передал другой seed. Почему?
+options:
+  - id: a
+    text: Аргумент useState — только первый рендер, не синхронизация с props
+    correct: true
+  - id: b
+    text: props после маунта заморожены
+  - id: c
+    text: Нужен второй useState
+  - id: d
+    text: React копирует seed в каждый рендер сам
+explain: Чтобы подхватить новый seed, нужен key на компоненте или явная логика,
+  а не надежда на начальное значение.

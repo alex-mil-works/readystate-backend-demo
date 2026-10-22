@@ -1,0 +1,17 @@
+id: L033-ts-function-types
+order: 33
+title: Function types, optionality и overloads
+titleEn: Function Types, Optionality, and Overloads
+essence: Тип функции — это параметры и возврат. Необязательный параметр и
+  перегрузки описывают вызов, а не «любой any».
+depth: application
+required: true
+insights:
+  - insights/01-call-shape.md
+  - insights/02-overloads.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,17 @@
+id: L084-pkg-installers
+order: 84
+title: "npm, pnpm и Yarn: разные модели установки"
+titleEn: npm, pnpm, and Yarn Install Models
+essence: Менеджеры ставят один и тот же манифест по-разному. Смешивать их в
+  одном репозитории значит получать разные деревья.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-layout.md
+  - insights/02-one-tool.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

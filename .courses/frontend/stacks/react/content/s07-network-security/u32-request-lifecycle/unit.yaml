@@ -1,0 +1,9 @@
+id: U32
+stageId: S07
+title: Путь запроса
+titleEn: Request Lifecycle
+lessons:
+  - lessons/l095
+  - lessons/l096
+  - lessons/l097
+activities: activities

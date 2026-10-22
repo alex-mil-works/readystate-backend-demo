@@ -1,0 +1,24 @@
+id: r-u32-404
+kind: single_choice
+phase: revision
+prompt: Чем 404 отличается от падения fetch без ответа?
+options:
+  - id: a
+    text: сервер ответил статусом, связи при обрыве не было
+    correct: true
+  - id: b
+    text: ничем
+  - id: c
+    text: 404 бывает только у картинок
+  - id: d
+    text: обрыв всегда 200
+explain: В интерфейсе это разные состояния.
+hints:
+  - title: Повтор
+    markdown: POST сам по себе не обещает, что второй запрос безвреден.
+tags:
+  - http
+reinforces:
+  - L096-net-http
+  - L095-net-url-to-server
+source: original

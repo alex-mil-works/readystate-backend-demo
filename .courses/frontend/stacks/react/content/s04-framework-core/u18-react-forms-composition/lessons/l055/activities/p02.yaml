@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Двум соседним полям нужен общий флаг «форма грязная». Куда его положить?
+options:
+  - id: a
+    text: В ближайшего родителя, который рендерит оба поля
+    correct: true
+  - id: b
+    text: В Context всего приложения
+  - id: c
+    text: В каждый input своим useState
+  - id: d
+    text: В key формы случайным числом
+explain: Ближний владелец ограничивает рендер и делает поток данных очевидным.

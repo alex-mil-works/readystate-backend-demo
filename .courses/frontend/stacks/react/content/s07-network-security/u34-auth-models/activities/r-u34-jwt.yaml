@@ -1,0 +1,23 @@
+id: r-u34-jwt
+kind: single_choice
+phase: revision
+prompt: Подпись JWT защищает от…
+options:
+  - id: a
+    text: тихой подмены утверждений, но не от чтения
+    correct: true
+  - id: b
+    text: любого чтения токена
+  - id: c
+    text: необходимости сервера
+  - id: d
+    text: XSS целиком
+explain: Пароль в нагрузку не кладут. localStorage скрипт читает.
+hints:
+  - title: Срок
+    markdown: Короткий доступ ограничивает кражу. Проверяет подпись сервер.
+tags:
+  - auth
+reinforces:
+  - L102-auth-jwt
+source: original

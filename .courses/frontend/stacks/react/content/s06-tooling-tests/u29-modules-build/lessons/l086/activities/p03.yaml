@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Два модуля импортируют друг друга, и значение ещё undefined. Что случилось?
+options:
+  - id: a
+    text: "Цикл: второй модуль прочитал экспорт до конца первого"
+    correct: true
+  - id: b
+    text: Так работает tree-shaking
+  - id: c
+    text: SemVer запретил экспорт
+  - id: d
+    text: Нужен второй package.json
+explain: Цикл разрывают третьим модулем или ленивым чтением.

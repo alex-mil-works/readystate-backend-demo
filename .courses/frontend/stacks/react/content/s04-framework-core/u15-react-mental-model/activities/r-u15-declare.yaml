@@ -1,0 +1,23 @@
+id: r-u15-declare
+kind: single_choice
+phase: revision
+prompt: Где должен решаться текст «Saving» или «Saved»?
+options:
+  - id: a
+    text: В JSX от флага состояния
+    correct: true
+  - id: b
+    text: В textContent после каждого клика
+  - id: c
+    text: "В двух местах сразу: DOM и JSX"
+  - id: d
+    text: Только в ref
+explain: Один источник. Ручной DOM разъедется со следующим рендером.
+hints:
+  - title: Край
+    markdown: Фокус и чужой виджет можно вызывать императивно. Текст экрана — нет.
+tags:
+  - react
+reinforces:
+  - L046-react-declarative-ui
+source: original

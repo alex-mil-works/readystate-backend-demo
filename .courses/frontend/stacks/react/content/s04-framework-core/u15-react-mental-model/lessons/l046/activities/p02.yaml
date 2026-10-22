@@ -1,0 +1,21 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function Counter({ n }) {
+    if (n > 0) document.getElementById('out').textContent = String(n);
+    return <output id="out">{n}</output>;
+  }
+question: Что не так с этим рендером при `n === 0` после ненулевого значения?
+choices:
+  - id: a
+    text: Ручная запись и JSX спорят, а при нуле императивная ветка молчит
+    correct: true
+  - id: b
+    text: JSX не умеет выводить число
+  - id: c
+    text: getElementById во время рендера всегда безопасен
+  - id: d
+    text: output нельзя описать декларативно
+explain: Узел мог ещё не существовать, а при n === 0 старый textContent никто не
+  откатывает к описанию.

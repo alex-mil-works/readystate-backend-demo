@@ -1,0 +1,13 @@
+id: i01
+kind: interview_phrasing
+phase: phrasing
+prompt: Как связаны `keyof`, доступ по индексу и mapped type?
+rubric: |-
+  Ожидаемые пункты:
+  - keyof это имена полей
+  - T[K] тип конкретного поля
+  - K extends keyof T не даёт чужой ключ
+  - mapped type строит новый объект по ключам
+sampleAnswer: keyof User — union имён полей. Если ключ ограничен keyof T,
+  результат чтения это T[K], тип именно этого поля. Mapped type проходит по тем
+  же ключам и собирает новую форму, например все поля boolean.

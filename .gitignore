@@ -1,0 +1,37 @@
+# Dependencies
+node_modules
+
+# Build / compiled output (source of truth is committed .courses/)
+dist
+artifacts
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Test / coverage
+coverage
+*.tsbuildinfo
+
+# Logs / OS / editor
+logs
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+.cache
+
+# Local platform metadata
+.vercel

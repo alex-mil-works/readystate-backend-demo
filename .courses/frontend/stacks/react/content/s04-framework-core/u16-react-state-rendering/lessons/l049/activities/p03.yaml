@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Как заменить имя урока в массиве, не мутируя старый массив?
+options:
+  - id: a
+    text: "`lessons.map`, и для нужного id вернуть новый объект"
+    correct: true
+  - id: b
+    text: "`lessons.find` и присвоить поле"
+  - id: c
+    text: "`lessons.push` копии"
+  - id: d
+    text: Поменять key и оставить тот же массив
+explain: map возвращает новый массив. Вложенный объект урока тоже новый,
+  остальные можно переиспользовать.

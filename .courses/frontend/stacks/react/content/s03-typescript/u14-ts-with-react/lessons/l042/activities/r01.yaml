@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "В редьюсер добавили `{ type: 'reset' }`, но switch его не обрабатывает.
+  Как это поймать на сборке?"
+options:
+  - id: a
+    text: Action как discriminated union и default, который требует `never`
+    correct: true
+  - id: b
+    text: Тип action оставить `any`
+  - id: c
+    text: Проверять `type` только в тесте браузера
+  - id: d
+    text: "`useReducer` не принимает union"
+explain: Забытая ветка перестаёт компилироваться, если остаток присвоен в `never`.
+hints:
+  - title: Ref не рендерит
+    markdown: Запись в `useRef(0).current` не запускает рендер. То, что должно
+      попасть на экран, кладут в state.

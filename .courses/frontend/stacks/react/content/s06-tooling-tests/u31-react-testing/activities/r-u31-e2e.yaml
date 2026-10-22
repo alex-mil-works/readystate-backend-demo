@@ -1,0 +1,23 @@
+id: r-u31-e2e
+kind: single_choice
+phase: revision
+prompt: Какой сценарий оставить Playwright?
+options:
+  - id: a
+    text: URL, клик и состояние после перезагрузки
+    correct: true
+  - id: b
+    text: Все ветки чистой функции
+  - id: c
+    text: Проверку каретки SemVer
+  - id: d
+    text: Спор ESLint и Prettier
+explain: Ждут условие, не sleep. Данные сценария не делят с соседом.
+hints:
+  - title: Мало
+    markdown: Короткий критичный путь. Остальное закрывают юнитом и тестом компонента.
+tags:
+  - test
+reinforces:
+  - L094-test-e2e-playwright
+source: original

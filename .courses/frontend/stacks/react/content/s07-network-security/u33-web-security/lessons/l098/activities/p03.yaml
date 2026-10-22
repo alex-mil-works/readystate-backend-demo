@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Credentials: true
+question: Почему так нельзя отдать cookie чужому скрипту?
+choices:
+  - id: a
+    text: Звезда и учётные данные вместе браузер не примет
+    correct: true
+  - id: b
+    text: Звезда как раз включает все cookie интернета
+  - id: c
+    text: Credentials запрещены только для GET
+  - id: d
+    text: Так устроен DNS
+explain: Для cookie сервер называет конкретный origin, не всех сразу.

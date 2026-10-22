@@ -1,0 +1,19 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  const [user, setUser] = useState(null);
+  const [modal, setModal] = useState(false);
+  useEffect(() => { loadUser().then(setUser); }, []);
+question: Что здесь смешано в одном компоненте-корне?
+choices:
+  - id: a
+    text: Кэш запроса пользователя и локальный UI-флаг модалки
+    correct: true
+  - id: b
+    text: Только URL state
+  - id: c
+    text: Два ref
+  - id: d
+    text: "Ничего: любой корень обязан грузить всё"
+explain: Модалку можно опустить. Запрос — кэш со статусами, не соседний boolean.

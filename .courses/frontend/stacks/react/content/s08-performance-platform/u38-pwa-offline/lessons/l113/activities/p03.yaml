@@ -1,0 +1,20 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  self.addEventListener('fetch', () => {
+    // отвечаем кэшем и не зовём сеть
+  });
+question: Сервер уже отдал исправление, вкладку контролирует этот worker. Что
+  увидит человек?
+choices:
+  - id: a
+    text: Старый кэш, пока стратегия сама не спросит сеть
+    correct: true
+  - id: b
+    text: Всегда свежий HTML
+  - id: c
+    text: Ошибку TLS
+  - id: d
+    text: Пустой источник
+explain: Воркер стоит между страницей и сетью. Молчаливый кэш не выпускает фикс.

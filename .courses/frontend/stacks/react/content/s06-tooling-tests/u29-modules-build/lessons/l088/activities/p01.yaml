@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: TypeScript стал обычным JS, но браузер всё ещё тянет сто файлов по
+  одному. Чего не хватило?
+options:
+  - id: a
+    text: "Бандлера: транспилятор граф не склеил"
+    correct: true
+  - id: b
+    text: Ещё одного tsconfig
+  - id: c
+    text: Локфайла вместо бандла
+  - id: d
+    text: Только Prettier
+explain: Синтаксис и поставка — разные шаги.

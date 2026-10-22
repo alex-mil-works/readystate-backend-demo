@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  https://app.example
+  <script src="http://cdn.example/lib.js"></script>
+question: Почему активный скрипт по http на https-странице опасен?
+choices:
+  - id: a
+    text: Его могли подменить по дороге, и он исполнится в вашем источнике
+    correct: true
+  - id: b
+    text: Браузер всегда повысит его до https сам и забудет
+  - id: c
+    text: http-скрипт не исполняется никогда, даже если тег есть
+  - id: d
+    text: Так устроен только CSS
+explain: Смешанный активный контент ломает обещание канала.

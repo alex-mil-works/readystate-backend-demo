@@ -1,0 +1,23 @@
+id: r-u26-transform
+kind: single_choice
+phase: revision
+prompt: Сдвиг карточки на ховере дешевле сделать…
+options:
+  - id: a
+    text: transform
+    correct: true
+  - id: b
+    text: анимацией top и height каждого соседа
+  - id: c
+    text: display none на каждом кадре
+  - id: d
+    text: чтением offsetHeight в цикле
+explain: top запускает layout. Чтение геометрии после записи стиля — thrashing.
+hints:
+  - title: Слой
+    markdown: will-change не вешают на сотни статичных блоков.
+tags:
+  - css
+reinforces:
+  - L078-css-paint-cost
+source: original

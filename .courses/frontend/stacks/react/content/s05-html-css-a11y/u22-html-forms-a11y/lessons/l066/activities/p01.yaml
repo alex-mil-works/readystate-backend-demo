@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Подпись поля сделана только placeholder. Что не так?
+options:
+  - id: a
+    text: После ввода имя пропадает, и это слабый контраст
+    correct: true
+  - id: b
+    text: placeholder всегда становится label
+  - id: c
+    text: for тогда не нужен никогда
+  - id: d
+    text: input нельзя фокусировать
+explain: Placeholder — подсказка. Имя поля остаётся в label, когда текст уже введён.

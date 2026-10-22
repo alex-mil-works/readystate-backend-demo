@@ -1,0 +1,23 @@
+id: r-u11-narrow
+kind: single_choice
+phase: revision
+prompt: Когда у `string | number` можно вызвать `toUpperCase`?
+options:
+  - id: a
+    text: После `typeof value === 'string'` в этой ветке
+    correct: true
+  - id: b
+    text: Сразу, union включает методы обеих сторон
+  - id: c
+    text: После intersection
+  - id: d
+    text: Только через `any`
+explain: До сужения доступно только общее.
+hints:
+  - title: Intersection
+    markdown: "`A & B` требует поля обоих типов сразу."
+tags:
+  - narrowing
+reinforces:
+  - L034-ts-unions-narrowing
+source: original

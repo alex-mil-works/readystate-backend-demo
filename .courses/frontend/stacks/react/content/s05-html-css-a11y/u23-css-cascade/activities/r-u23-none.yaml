@@ -1,0 +1,24 @@
+id: r-u23-none
+kind: single_choice
+phase: revision
+prompt: Чем display:none отличается от opacity:0 для кнопки?
+options:
+  - id: a
+    text: none убирает её из дерева доступности и из Tab
+    correct: true
+  - id: b
+    text: opacity тоже всегда убирает из Tab
+  - id: c
+    text: разницы нет
+  - id: d
+    text: none оставляет дырку в вёрстке
+explain: Нулевая непрозрачность элемент не выключает.
+hints:
+  - title: z-index
+    markdown: Он сравнивает соседей внутри stacking context. transform родителя
+      запирает меню.
+tags:
+  - css
+reinforces:
+  - L070-css-display-stacking
+source: original

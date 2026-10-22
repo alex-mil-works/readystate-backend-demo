@@ -1,0 +1,15 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Длинное слово раздувает колонку 1fr. Что поставить вместо голого 1fr?
+options:
+  - id: a
+    text: minmax(0, 1fr)
+    correct: true
+  - id: b
+    text: "display: none"
+  - id: c
+    text: "float: right"
+  - id: d
+    text: "z-index: 1fr"
+explain: Минимум 0 позволяет дорожке сжаться и отдать переполнение тексту.

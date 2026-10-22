@@ -1,0 +1,17 @@
+id: L052-react-custom-hooks
+order: 52
+title: Custom hooks и переиспользуемая логика
+titleEn: Custom Hooks and Reusable Logic
+essence: Свой хук прячет связку state и эффектов за именем use*. Каждый вызов —
+  свои слоты, не общий синглтон.
+depth: application
+required: true
+insights:
+  - insights/01-extract.md
+  - insights/02-instances.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

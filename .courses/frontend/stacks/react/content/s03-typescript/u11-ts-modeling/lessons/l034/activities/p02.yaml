@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: "Тип `WithId & WithName` означает:"
+options:
+  - id: a
+    text: Значение должно иметь и id, и name
+    correct: true
+  - id: b
+    text: Достаточно одного из полей
+  - id: c
+    text: Поля взаимоисключающие
+  - id: d
+    text: Это alias для `any`
+explain: Intersection требует обе формы одновременно.

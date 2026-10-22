@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: ".card .btn span { color: red; }"
+question: Кнопка внутри карточки сменила разметку и убрала span. Что произойдёт?
+choices:
+  - id: a
+    text: "Красный цвет пропадёт: селектор залезал во внутренности"
+    correct: true
+  - id: b
+    text: Цвет останется на .btn
+  - id: c
+    text: CSS Module починит путь сам
+  - id: d
+    text: specificity станет нулём
+explain: Стилизуйте публичный класс кнопки, не её частный span.

@@ -1,0 +1,18 @@
+id: L111-render-ssg-islands
+order: 111
+title: SSG, острова и цена мета-фреймворка
+titleEn: SSG, Islands, and Meta-Framework Trade-offs
+essence: Страницу, которая одинакова для всех, можно собрать заранее. Остров
+  гидратирует только интерактивный кусок. Свежесть и персонализация этому
+  мешают.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-ssg.md
+  - insights/02-islands.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

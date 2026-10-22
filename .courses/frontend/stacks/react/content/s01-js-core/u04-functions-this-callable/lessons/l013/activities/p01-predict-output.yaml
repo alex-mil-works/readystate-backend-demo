@@ -1,0 +1,22 @@
+id: p01
+kind: predict_output
+phase: practice
+code: |
+  const obj = {
+    name: 'X',
+    getName: () => this.name,
+  };
+  console.log(obj.getName());
+question: Что выведет (в модуле / strict mode)?
+choices:
+  - id: a
+    text: "'X'"
+  - id: b
+    text: undefined
+  - id: c
+    text: "''"
+  - id: d
+    text: TypeError
+    correct: true
+explain: |
+  Arrow function берёт `this` из лексического scope. В модуле / strict mode этот `this` — `undefined`, а чтение `undefined.name` бросает TypeError. Это не `obj.name`.

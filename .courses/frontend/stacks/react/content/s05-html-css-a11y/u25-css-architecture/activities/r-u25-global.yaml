@@ -1,0 +1,23 @@
+id: r-u25-global
+kind: single_choice
+phase: revision
+prompt: Глобальный селектор h2. В чём риск?
+options:
+  - id: a
+    text: Он заденет заголовки, которым нужен другой вид
+    correct: true
+  - id: b
+    text: h2 не стилизуется
+  - id: c
+    text: так изолирует CSS Module
+  - id: d
+    text: он понижает специфичность до нуля
+explain: Вид блока — его класс. Модуль делает класс локальным.
+hints:
+  - title: Внутренности
+    markdown: Не пишите .card .btn span. Стилизуйте публичный класс кнопки.
+tags:
+  - css
+reinforces:
+  - L074-css-bem-modules
+source: original

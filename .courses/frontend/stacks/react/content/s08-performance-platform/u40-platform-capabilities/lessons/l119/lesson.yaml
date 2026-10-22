@@ -1,0 +1,17 @@
+id: L119-web-components
+order: 119
+title: Custom Elements, Shadow DOM и шаблоны
+titleEn: Custom Elements, Shadow DOM, and Templates
+essence: Свой элемент и теневое дерево изолируют разметку и стили. Это граница
+  виджета для разных страниц, не повод переписать приложение.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-element.md
+  - insights/02-shadow.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

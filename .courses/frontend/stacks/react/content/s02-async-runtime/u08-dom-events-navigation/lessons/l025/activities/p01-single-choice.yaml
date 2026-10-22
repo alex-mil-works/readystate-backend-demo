@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: |
+  Что делает `history.pushState` с документом?
+options:
+  - id: a
+    text: Добавляет запись истории и меняет URL без загрузки новой страницы и без `popstate`
+    correct: true
+  - id: b
+    text: Сразу стреляет `popstate` и перезапрашивает документ
+  - id: c
+    text: То же самое, что присваивание `location.href`
+  - id: d
+    text: Удаляет текущую запись
+explain: |
+  `popstate` — про назад/вперёд. `pushState` только кладёт новую запись. Сеть при этом молчит.

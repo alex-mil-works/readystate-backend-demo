@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Зачем не ставить `key={Math.random()}`?
+options:
+  - id: a
+    text: Каждый рендер считает строку новой и сбрасывает её state
+    correct: true
+  - id: b
+    text: Random быстрее индекса
+  - id: c
+    text: Так ключи гарантированно уникальны между списками
+  - id: d
+    text: React сам запоминает random
+explain: Key должен совпасть в следующем дереве. Иначе reconciliation не узнает строку.

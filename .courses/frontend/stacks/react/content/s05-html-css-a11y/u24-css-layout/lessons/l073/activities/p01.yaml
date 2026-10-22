@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Как писать запрос, если база — одна колонка?
+options:
+  - id: a
+    text: "@media (min-width: …) добавляет вторую колонку"
+    correct: true
+  - id: b
+    text: Сначала две колонки, max-width всё отменяет
+  - id: c
+    text: Только px под один телефон
+  - id: d
+    text: Запретить зум, чтобы влезло
+explain: Mobile first меньше переопределяет то, что уже написано.

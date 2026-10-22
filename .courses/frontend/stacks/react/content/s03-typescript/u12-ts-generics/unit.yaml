@@ -1,0 +1,9 @@
+id: U12
+stageId: S03
+title: Generics и переиспользуемые типы
+titleEn: Generics and Reusable Types
+lessons:
+  - lessons/l035
+  - lessons/l036
+  - lessons/l037
+activities: activities

@@ -1,0 +1,23 @@
+id: r-u25-token
+kind: single_choice
+phase: revision
+prompt: Откуда компоненту брать цвет текста?
+options:
+  - id: a
+    text: Из токена темы
+    correct: true
+  - id: b
+    text: Из нового hex в этом файле
+  - id: c
+    text: Из z-index родителя
+  - id: d
+    text: Из placeholder
+explain: Рантайм CSS-in-JS имеет цену. Вариант кнопки — её API, не селектор родителя.
+hints:
+  - title: Граница
+    markdown: Родитель не красит внутренний span чужого компонента.
+tags:
+  - css
+reinforces:
+  - L076-css-tooling-boundaries
+source: original

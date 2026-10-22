@@ -1,0 +1,24 @@
+id: r-u14-null-user
+kind: single_choice
+phase: revision
+prompt: Как описать пользователя, которого ещё нет?
+options:
+  - id: a
+    text: "`useState<User | null>(null)`"
+    correct: true
+  - id: b
+    text: "`useState<User>(null as User)`"
+  - id: c
+    text: "`useRef<User>(null)` вместо state, чтобы сразу рендерить"
+  - id: d
+    text: "`useState<any>({})`"
+explain: Пустое состояние видно в типе и в JSX.
+hints:
+  - title: DOM ref
+    markdown: "`useRef<HTMLInputElement>(null)` до commit имеет current null."
+tags:
+  - react
+  - state
+reinforces:
+  - L042-ts-react-state-hooks
+source: original

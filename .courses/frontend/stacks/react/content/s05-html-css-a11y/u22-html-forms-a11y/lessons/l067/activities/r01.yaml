@@ -1,0 +1,16 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Вы поставили role=button на div, но Tab её не находит. Почему?
+options:
+  - id: a
+    text: Роль не делает элемент фокусируемым и не вешает клавиши
+    correct: true
+  - id: b
+    text: role заменяет tabindex автоматически всегда
+  - id: c
+    text: div с ролью равен button во всём, кроме имени
+  - id: d
+    text: Так работает только без CSS
+explain: Если уж виджет самодельный, нужны tabindex=0 и обработчики Enter/Space.
+  Проще взять button.

@@ -1,0 +1,23 @@
+id: r-u21-main
+kind: single_choice
+phase: revision
+prompt: Сколько main у документа и зачем он?
+options:
+  - id: a
+    text: "Один: это ориентир к основному содержимому"
+    correct: true
+  - id: b
+    text: По одному на каждую карточку
+  - id: c
+    text: Ноль, достаточно div
+  - id: d
+    text: Столько же, сколько h4
+explain: Шапка и подвал снаружи main.
+hints:
+  - title: Заголовки
+    markdown: Уровень заголовка — структура. Размер шрифта задаёт CSS.
+tags:
+  - html
+reinforces:
+  - L062-html-landmarks
+source: original

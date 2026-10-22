@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: У каждого урока один и тот же title «ReadyState». Что ломается?
+options:
+  - id: a
+    text: Вкладки, история и сниппет не отличают уроки
+    correct: true
+  - id: b
+    text: Ничего, title читается только один раз за сессию
+  - id: c
+    text: lang становится неверным
+  - id: d
+    text: main пропадает
+explain: Title — имя этого экрана снаружи. Общий заголовок склеивает уроки в
+  истории и поиске.

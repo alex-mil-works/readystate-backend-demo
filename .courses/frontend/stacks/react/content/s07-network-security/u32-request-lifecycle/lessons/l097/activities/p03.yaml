@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: <script src="/app.js"></script>
+question: Скрипт стоит в head без async и defer. Что с разбором HTML?
+choices:
+  - id: a
+    text: Разбор останавливается, пока скрипт не скачается и не выполнится
+    correct: true
+  - id: b
+    text: HTML дочитывается всегда раньше любого скрипта
+  - id: c
+    text: Скрипт не входит в критический путь
+  - id: d
+    text: Браузер пропускает такой тег
+explain: Блокирующий скрипт отодвигает первый кадр.

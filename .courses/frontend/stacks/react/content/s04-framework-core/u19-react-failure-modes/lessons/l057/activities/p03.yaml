@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Пользователь нажал «Сохранить», а запрос уехал дважды. Какая схема это
+  провоцирует?
+options:
+  - id: a
+    text: Флаг в state и эффект, который шлёт запрос, пока флаг true
+    correct: true
+  - id: b
+    text: Один вызов fetch внутри onSubmit
+  - id: c
+    text: derived count в рендере
+  - id: d
+    text: key по id урока
+explain: Событие уже одно. Флаг легко оставить включённым на лишний проход.

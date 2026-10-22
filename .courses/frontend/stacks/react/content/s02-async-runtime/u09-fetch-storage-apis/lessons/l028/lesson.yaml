@@ -1,0 +1,19 @@
+id: L028-js-capability-apis
+order: 28
+title: Permissions, Visibility и Capability APIs
+titleEn: Permissions, Visibility & Capability APIs
+essence: >-
+  Запрос разрешения и проверка возможности — разные шаги. Скрытая вкладка не должна крутить ту же работу, что видимая.
+depth: tradeoff
+required: true
+
+insights:
+  - insights/01-permissions.md
+  - insights/02-visibility.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-single-choice.yaml
+  - activities/p03-predict-output.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

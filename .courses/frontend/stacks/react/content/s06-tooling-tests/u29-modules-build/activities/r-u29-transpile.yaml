@@ -1,0 +1,23 @@
+id: r-u29-transpile
+kind: single_choice
+phase: revision
+prompt: TypeScript уже стал JS, а поставка всё ещё сотня файлов. Не хватает…
+options:
+  - id: a
+    text: бандлера
+    correct: true
+  - id: b
+    text: ещё одного форматтера
+  - id: c
+    text: revert
+  - id: d
+    text: только peerDependency
+explain: Транспилятор меняет синтаксис. Бандлер склеивает граф.
+hints:
+  - title: Shake
+    markdown: Экспорт, до которого нет импорта, можно не класть в бандл приложения.
+tags:
+  - build
+reinforces:
+  - L088-mod-bundlers
+source: original

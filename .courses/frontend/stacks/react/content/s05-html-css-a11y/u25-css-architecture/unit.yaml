@@ -1,0 +1,9 @@
+id: U25
+stageId: S05
+title: Архитектура CSS
+titleEn: CSS Architecture
+lessons:
+  - lessons/l074
+  - lessons/l075
+  - lessons/l076
+activities: activities

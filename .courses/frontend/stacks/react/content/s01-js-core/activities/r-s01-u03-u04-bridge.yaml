@@ -1,0 +1,24 @@
+id: r-s01-u03-u04-bridge
+kind: single_choice
+phase: revision
+tags: [closures, this, arrow]
+reinforces: ['L009-js-closures', 'L013-js-arrow-call-bind']
+source: original
+prompt: |
+  Метод объявлен как arrow внутри объекта и замыкает `this` модуля. Что увидит вызов `obj.method()` в ES-модуле?
+options:
+  - id: a
+    text: Лексический `this` модуля (`undefined`), а не объект слева от вызова — чтение поля бросит TypeError
+    correct: true
+  - id: b
+    text: '`obj`, потому что вызов через точку всегда ставит `this`'
+  - id: c
+    text: Замыкание копирует объект в момент создания
+  - id: d
+    text: '`globalThis`, даже в strict mode'
+explain: |
+  Связка U03 (замыкание фиксирует лексический binding) и U04 (arrow не имеет своего `this`): точка вызова не перебивает уже захваченный `this`.
+hints:
+  - title: U03 → U04
+    markdown: |
+      Замыкание держит ссылку на binding внешнего scope. У arrow `this` — такой же лексический binding, его не меняют `call` и вызов через точку.

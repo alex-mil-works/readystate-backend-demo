@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Как описать обработчик, которому передают id строки?
+options:
+  - id: a
+    text: "`(id: string) => void`"
+    correct: true
+  - id: b
+    text: "`Function`"
+  - id: c
+    text: "`() => any`"
+  - id: d
+    text: "`(id: any) => any`"
+explain: "`Function` и `any` стирают контракт. Вызывающий код перестаёт проверяться."

@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "Почему `style={{ padding: 8 }}` в JSX ломает memo ребёнка?"
+options:
+  - id: a
+    text: Каждый рендер создаёт новый объект, Object.is видит другое props
+    correct: true
+  - id: b
+    text: padding нельзя задавать объектом
+  - id: c
+    text: memo сравнивает стили глубоко и всё равно пропускает рендер
+  - id: d
+    text: Так устроен key
+explain: Литерал объекта не живёт между рендерами.
+hints:
+  - title: Не по умолчанию
+    markdown: useCallback без измеренной проблемы и без memo-потребителя — шум.
+      Зависимости при этом всё равно должны быть честными.

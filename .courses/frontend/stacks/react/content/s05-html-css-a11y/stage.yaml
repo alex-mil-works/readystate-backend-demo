@@ -1,0 +1,11 @@
+id: S05
+title: HTML, CSS и accessible UI
+titleEn: HTML, CSS & Accessible UI
+units:
+  - u21-html-semantics
+  - u22-html-forms-a11y
+  - u23-css-cascade
+  - u24-css-layout
+  - u25-css-architecture
+  - u26-css-motion
+activities: activities

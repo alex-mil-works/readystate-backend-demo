@@ -1,0 +1,17 @@
+id: L100-sec-https-supply
+order: 100
+title: HTTPS, типичные риски и чужой код
+titleEn: HTTPS, Common Risks, and Third-Party Code
+essence: HTTPS защищает канал, не логику приложения. Секрет не кладут в клиент.
+  Зависимость — это код, который вы поставляете пользователю.
+depth: security
+required: true
+insights:
+  - insights/01-channel.md
+  - insights/02-risks.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

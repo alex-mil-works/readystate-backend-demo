@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Правило `p { color }` стоит ниже, чем `.lead { color }`. Что победит у
+  `<p class="lead">`?
+options:
+  - id: a
+    text: "Класс: специфичность выше, чем у элемента"
+    correct: true
+  - id: b
+    text: Элемент, потому что он ниже
+  - id: c
+    text: Всегда !important
+  - id: d
+    text: Никакое, нужен id
+explain: Класс перевешивает селектор тега. Порядок смотрят после специфичности.

@@ -1,0 +1,17 @@
+id: L109-perf-budgets
+order: 109
+title: Бюджеты, модели RAIL и PRPL, регрессии
+titleEn: Budgets, RAIL, PRPL, and Regressions
+essence: Бюджет — заранее названный предел байт или метрики. Его проверяют в CI.
+  Аббревиатуры полезны как памятка порядка работ, не как ритуал.
+depth: perf
+required: true
+insights:
+  - insights/01-budget.md
+  - insights/02-models.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

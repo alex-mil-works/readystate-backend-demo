@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Как отличить первую загрузку от ошибки, если оба раза данных ещё нет?
+options:
+  - id: a
+    text: Отдельным status, а не одним null
+    correct: true
+  - id: b
+    text: По длине JSX
+  - id: c
+    text: По key маршрута
+  - id: d
+    text: "Никак: null всегда значит ошибку"
+explain: Один пустой слот склеивает три разных смысла.

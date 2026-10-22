@@ -1,0 +1,10 @@
+id: S06
+title: Tooling, VCS и тесты
+titleEn: Tooling, VCS & Testing
+units:
+  - u27-git-collab
+  - u28-packages
+  - u29-modules-build
+  - u30-quality-gates
+  - u31-react-testing
+activities: activities

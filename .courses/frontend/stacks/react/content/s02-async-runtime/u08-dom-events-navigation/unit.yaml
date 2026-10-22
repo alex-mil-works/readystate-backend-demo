@@ -1,0 +1,13 @@
+# U08 — manifest юнита (порядок уроков).
+
+id: U08
+stageId: S02
+title: DOM, события и навигация
+titleEn: DOM, Events & Navigation
+
+lessons:
+  - lessons/l023
+  - lessons/l024
+  - lessons/l025
+
+activities: activities

@@ -1,0 +1,24 @@
+id: r-u12-pick
+kind: single_choice
+phase: revision
+prompt: Как не скопировать `User` руками ради двух полей?
+options:
+  - id: a
+    text: "`Pick<User, 'id' | 'name'>`"
+    correct: true
+  - id: b
+    text: "`Partial<User>` если нужны ровно эти обязательные поля"
+  - id: c
+    text: "`keyof User` как тип объекта"
+  - id: d
+    text: "`ReturnType<User>`"
+explain: Pick ссылается на ключи исходного типа.
+hints:
+  - title: Awaited
+    markdown: У async-функции ReturnType — Promise. Значение достают Awaited.
+tags:
+  - utilities
+reinforces:
+  - L036-ts-keyof-mapped
+  - L037-ts-utility-types
+source: original

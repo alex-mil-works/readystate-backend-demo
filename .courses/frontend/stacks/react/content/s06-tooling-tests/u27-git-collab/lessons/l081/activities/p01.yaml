@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Чем fetch отличается от pull?
+options:
+  - id: a
+    text: fetch только приносит объекты, pull ещё сливает их в текущую ветку
+    correct: true
+  - id: b
+    text: это синонимы
+  - id: c
+    text: fetch сразу пушит ваши коммиты
+  - id: d
+    text: pull не трогает сеть
+explain: После fetch можно посмотреть origin/main и решить, merge или rebase.

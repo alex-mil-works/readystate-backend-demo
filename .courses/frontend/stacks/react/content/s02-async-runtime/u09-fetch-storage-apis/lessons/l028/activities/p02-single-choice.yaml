@@ -1,0 +1,17 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: |
+  `'Notification' in window` истинно, а разрешение `denied`. Что из этого следует?
+options:
+  - id: a
+    text: API есть, но пользователь отказал — снова показывать запрос не нужно
+    correct: true
+  - id: b
+    text: Можно вызвать `requestPermission`, диалог обязательно появится
+  - id: c
+    text: Уведомления уже разрешены, `denied` значит «ещё не спрашивали»
+  - id: d
+    text: Проверка `in` читает то же самое, что Permissions API
+explain: |
+  Feature detection и permission — разные оси. `denied` не лечится повторным запросом в том же визите.

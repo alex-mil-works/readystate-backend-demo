@@ -1,0 +1,17 @@
+id: L068-css-cascade-specificity
+order: 68
+title: Каскад, наследование и специфичность
+titleEn: Cascade, Inheritance, and Specificity
+essence: Побеждает не «последний файл», а источник, важность, специфичность и
+  уже потом порядок. Наследуются не все свойства.
+depth: mechanism
+required: true
+insights:
+  - insights/01-cascade.md
+  - insights/02-inherit.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

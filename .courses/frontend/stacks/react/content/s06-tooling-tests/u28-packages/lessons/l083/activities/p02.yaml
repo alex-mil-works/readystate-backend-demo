@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Библиотека компонентов требует React, но не должна тащить свою копию.
+  Какое поле?
+options:
+  - id: a
+    text: peerDependencies
+    correct: true
+  - id: b
+    text: scripts
+  - id: c
+    text: только description
+  - id: d
+    text: git reflog
+explain: Хозяин приложения ставит одну React. Иначе в бандле две копии и ломаются хуки.

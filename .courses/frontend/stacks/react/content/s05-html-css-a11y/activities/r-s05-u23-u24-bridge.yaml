@@ -1,0 +1,27 @@
+id: r-s05-u23-u24-bridge
+kind: single_choice
+phase: revision
+prompt: "Инпут с flex: 1 не сжимается в узкой карточке и раздвигает её вместе с
+  padding. Что смотреть?"
+options:
+  - id: a
+    text: min-width у flex-элемента и box-sizing ширины карточки
+    correct: true
+  - id: b
+    text: только z-index инпута
+  - id: c
+    text: lang документа
+  - id: d
+    text: отключить зум
+explain: Минимум контента и модель коробки вместе решают, влезает ли поле.
+hints:
+  - title: U23 → U24
+    markdown: "border-box держит padding внутри width. min-width: 0 позволяет
+      flex-ребёнку стать уже текста."
+tags:
+  - html
+  - css
+reinforces:
+  - L069-css-box-model
+  - L071-css-flexbox
+source: original

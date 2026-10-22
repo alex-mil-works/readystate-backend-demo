@@ -1,0 +1,16 @@
+stackId: react
+title: React Frontend
+titleEn: React Frontend
+description: Основной курс MVP — готовность к frontend-интервью.
+status: preview
+statusLabel: Preview
+
+stages:
+  - s01-js-core
+  - s02-async-runtime
+  - s03-typescript
+  - s04-framework-core
+  - s05-html-css-a11y
+  - s06-tooling-tests
+  - s07-network-security
+  - s08-performance-platform

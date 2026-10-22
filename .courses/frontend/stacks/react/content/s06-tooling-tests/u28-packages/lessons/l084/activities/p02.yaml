@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: В репозитории есть yarn.lock и поле packageManager на Yarn. Что сделать
+  новому человеку?
+options:
+  - id: a
+    text: Ставить зависимости Yarn, не npm
+    correct: true
+  - id: b
+    text: Удалить лок и поставить npm
+  - id: c
+    text: Запустить все три менеджера подряд
+  - id: d
+    text: Коммитить node_modules
+explain: Один локфайл — один установщик.

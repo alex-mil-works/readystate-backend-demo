@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: "Почему после `if (typeof user === 'string') return` параметр `user:
+  string | Box` внизу функции уже `Box`?"
+options:
+  - id: a
+    text: Строковая ветка вышла, в оставшемся коде string исключён
+    correct: true
+  - id: b
+    text: "`return` не влияет на типы"
+  - id: c
+    text: Тип стал `never`
+  - id: d
+    text: TypeScript сужает только `switch`
+explain: Ранний выход убирает вариант из union в последующем коде.

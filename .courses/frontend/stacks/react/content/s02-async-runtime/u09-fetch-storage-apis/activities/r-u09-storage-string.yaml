@@ -1,0 +1,25 @@
+id: r-u09-storage-string
+kind: single_choice
+phase: revision
+tags: [storage]
+reinforces: ['L027-js-storage-blobs']
+source: original
+prompt: |
+  `localStorage.getItem` после `setItem('flag', false)` вернёт…
+options:
+  - id: a
+    text: Строку `'false'`, не булево `false`
+    correct: true
+  - id: b
+    text: Булево `false`
+  - id: c
+    text: '`null`, потому что `false` не пишется'
+  - id: d
+    text: Число `0`
+explain: |
+  В storage лежат строки. `false` приводится к `'false'`, и это не пустое значение.
+hints:
+  - title: Не сейф
+    markdown: |
+      Строки origin читает любой скрипт страницы. Токены туда не кладут.
+      `sessionStorage` не общий для вкладок, но тоже строковый и синхронный.

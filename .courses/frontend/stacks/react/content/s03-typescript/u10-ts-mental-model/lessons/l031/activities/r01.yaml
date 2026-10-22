@@ -1,0 +1,20 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: В коде много `any`, сборка зелёная, баги в проде. Что меняют первым?
+options:
+  - id: a
+    text: Границы переводят на `unknown` и сужают перед использованием
+    correct: true
+  - id: b
+    text: Выключают `strictNullChecks`, чтобы `null` проходил везде
+  - id: c
+    text: Заменяют `any` на `never`
+  - id: d
+    text: Оставляют `any`, но добавляют больше `as`
+explain: "`as` и `any` оба выключают спор с компилятором. `unknown` включает его
+  обратно."
+hints:
+  - title: Три слова
+    markdown: "`any` — доверяй. `unknown` — проверь. `never` — сюда выполнение не
+      доходит."

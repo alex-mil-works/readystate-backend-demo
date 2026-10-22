@@ -1,0 +1,23 @@
+id: r-u37-csr
+kind: single_choice
+phase: revision
+prompt: Пустой документ, интерфейс после скрипта. Это…
+options:
+  - id: a
+    text: клиентский рендер
+    correct: true
+  - id: b
+    text: гарантированная гидрация готового текста
+  - id: c
+    text: SSG
+  - id: d
+    text: passkey
+explain: SSR отдаёт HTML раньше, но клики всё равно ждут скрипт.
+hints:
+  - title: Совпадение
+    markdown: Гидрация ломается, если клиент построил другое дерево, чем сервер.
+tags:
+  - render
+reinforces:
+  - L110-render-csr-ssr
+source: original

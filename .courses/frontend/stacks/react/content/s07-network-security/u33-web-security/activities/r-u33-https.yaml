@@ -1,0 +1,23 @@
+id: r-u33-https
+kind: single_choice
+phase: revision
+prompt: HTTPS гарантирует…
+options:
+  - id: a
+    text: закрытый канал и имя сервера, не права пользователя
+    correct: true
+  - id: b
+    text: что любой запрос авторизован
+  - id: c
+    text: что в бандле нет секретов само собой
+  - id: d
+    text: что зависимости проверены реестром
+explain: Секрет подписи в клиент не кладут.
+hints:
+  - title: Пакет
+    markdown: Зависимость исполняется у пользователя. Это часть поставки.
+tags:
+  - security
+reinforces:
+  - L100-sec-https-supply
+source: original

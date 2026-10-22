@@ -1,0 +1,24 @@
+id: r-u31-unit
+kind: single_choice
+phase: revision
+prompt: Что лучше проверить юнитом, а не браузером?
+options:
+  - id: a
+    text: Чистую функцию на фиксированном входе
+    correct: true
+  - id: b
+    text: Переход по живому URL
+  - id: c
+    text: Обновление страницы
+  - id: d
+    text: Настоящую раскладку CSS в Chrome
+explain: Часы и сеть в юните подменяют.
+hints:
+  - title: Мок
+    markdown: "Мокают границу. Внутренний хелпер мокать не нужно: тест привяжется к
+      устройству."
+tags:
+  - test
+reinforces:
+  - L092-test-unit-vitest
+source: original

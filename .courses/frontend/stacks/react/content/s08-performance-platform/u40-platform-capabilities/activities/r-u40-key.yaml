@@ -1,0 +1,23 @@
+id: r-u40-key
+kind: single_choice
+phase: revision
+prompt: Закрытый ключ passkey лежит…
+options:
+  - id: a
+    text: у платформы, не в JavaScript сайта
+    correct: true
+  - id: b
+    text: в localStorage
+  - id: c
+    text: в репозитории
+  - id: d
+    text: в CLS
+explain: Подпись проверяет сервер. Номер карты в state не кладут.
+hints:
+  - title: Запас
+    markdown: Нет API — уже нарисованный другой путь, не тупик.
+tags:
+  - platform
+reinforces:
+  - L121-credentials-payments
+source: original

@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Нужно сдвинуть карточку на 8px при наведении. Какое свойство обычно дешевле?
+options:
+  - id: a
+    text: transform
+    correct: true
+  - id: b
+    text: top вместе с пересчётом соседей
+  - id: c
+    text: width
+  - id: d
+    text: display
+explain: Transform остаётся на композите. top запускает layout.

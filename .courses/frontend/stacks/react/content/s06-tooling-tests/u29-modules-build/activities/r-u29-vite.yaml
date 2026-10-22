@@ -1,0 +1,23 @@
+id: r-u29-vite
+kind: single_choice
+phase: revision
+prompt: Почему сейв в Vite не собирает всё приложение заново?
+options:
+  - id: a
+    text: Браузер забирает изменённый ESM-модуль
+    correct: true
+  - id: b
+    text: Прод-сборка и дев — один и тот же полный бандл
+  - id: c
+    text: HMR отключает граф
+  - id: d
+    text: Локфайл кэширует UI
+explain: Зависимости из node_modules предсобирают отдельно.
+hints:
+  - title: Вход
+    markdown: Корень графа — скрипт из index.html.
+tags:
+  - build
+reinforces:
+  - L087-mod-vite
+source: original

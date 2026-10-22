@@ -1,0 +1,18 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  const onPick = useCallback(() => pick(id), []);
+  <Row onPick={onPick} />
+question: id сменился, а зависимость пустая. Какой id увидит клик?
+choices:
+  - id: a
+    text: id первого рендера
+    correct: true
+  - id: b
+    text: всегда текущий id
+  - id: c
+    text: undefined, useCallback запрещает замыкание
+  - id: d
+    text: id из key строки
+explain: Стабильная ссылка ценой устаревшего снимка. id должен быть в зависимостях.

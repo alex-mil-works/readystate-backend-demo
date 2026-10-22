@@ -1,0 +1,24 @@
+id: r-u09-http-not-reject
+kind: single_choice
+phase: revision
+tags: [fetch]
+reinforces: ['L026-js-fetch-abort']
+source: original
+prompt: |
+  Как обработать ответ `404`, если промис `fetch` выполнился?
+options:
+  - id: a
+    text: Проверить `response.ok` или `status` и решить, бросать ли свою ошибку
+    correct: true
+  - id: b
+    text: Никак — 404 всегда приходит в `catch`
+  - id: c
+    text: Повторить `fetch` без проверки, тело уже содержит исключение
+  - id: d
+    text: Статус доступен только в `response.json()`
+explain: |
+  Код статуса лежит на `Response`. `catch` у голого `fetch` ловит сеть и abort, не 404.
+hints:
+  - title: Два шага
+    markdown: |
+      Сначала `response.ok`, потом `response.json()`. Второе — отдельный промис, и тело читается один раз.

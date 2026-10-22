@@ -1,0 +1,18 @@
+id: p03
+kind: predict_output
+phase: practice
+code: |-
+  // сервер пишет клиенту ленту событий
+  // клиент почти не пишет обратно
+question: Какой транспорт не избыточен?
+choices:
+  - id: a
+    text: SSE
+    correct: true
+  - id: b
+    text: Только двусторонний сокет, потому что «так живое»
+  - id: c
+    text: Фрагмент URL
+  - id: d
+    text: Заголовок Cache-Control вместо потока
+explain: Переподключение для SSE браузер умеет сам. Для сокета его пишут.

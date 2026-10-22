@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Нужна кнопка «Сохранить». Что выбрать?
+options:
+  - id: a
+    text: button без ARIA
+    correct: true
+  - id: b
+    text: div role=button и надежда, что клик достаточен
+  - id: c
+    text: span role=link без href
+  - id: d
+    text: aria-hidden на всей форме
+explain: Нативная кнопка уже имеет роль и клавиатуру.

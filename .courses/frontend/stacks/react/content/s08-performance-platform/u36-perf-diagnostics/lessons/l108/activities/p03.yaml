@@ -1,0 +1,16 @@
+id: p03
+kind: predict_output
+phase: practice
+code: длинная задача 400 мс на клике «фильтр»
+question: Какая панель это покажет яснее, чем общий балл?
+choices:
+  - id: a
+    text: "Запись производительности: главный поток и кадры"
+    correct: true
+  - id: b
+    text: Только список зависимостей package.json
+  - id: c
+    text: Вкладка Application без записи
+  - id: d
+    text: Такой задачи в инструментах не видно
+explain: INP без трейса не говорит, какая функция съела время.

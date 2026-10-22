@@ -1,0 +1,26 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  Чем `sessionStorage` отличается от `localStorage`?
+options:
+  - id: a
+    text: Оба хранят строки origin, но session живёт в этой вкладке, local — между визитами и вкладками
+    correct: true
+  - id: b
+    text: '`sessionStorage` умеет объекты, `localStorage` только строки'
+  - id: c
+    text: '`localStorage` асинхронный, session — нет'
+  - id: d
+    text: '`sessionStorage` общий для всех вкладок origin'
+explain: |
+  Разница в сроке жизни и области вкладки, не в типах. Оба API синхронные и строковые.
+hints:
+  - title: Строка
+    markdown: |
+      `setItem` приводит значение к строке. Число `1` читается как `'1'`.
+      Объекты — только через `JSON.parse` после `JSON.stringify`.
+  - title: Blob URL
+    markdown: |
+      `File` — это `Blob` с именем. `createObjectURL` нужно гасить `revokeObjectURL`.
+      Содержимое файла не безопаснее любой другой непроверенной строки.

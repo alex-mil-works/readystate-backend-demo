@@ -1,0 +1,17 @@
+id: p03
+kind: predict_output
+phase: practice
+code: <meta name="viewport" content="width=device-width, initial-scale=1,
+  user-scalable=no">
+question: Что ломает user-scalable=no?
+choices:
+  - id: a
+    text: "Жест зума: слабовидящий не увеличит страницу"
+    correct: true
+  - id: b
+    text: Только grid
+  - id: c
+    text: lang документа
+  - id: d
+    text: Ничего, это рекомендуют для адаптива
+explain: Вьюпорт нужен, чтобы ширина совпала с устройством. Запрет масштаба — нет.

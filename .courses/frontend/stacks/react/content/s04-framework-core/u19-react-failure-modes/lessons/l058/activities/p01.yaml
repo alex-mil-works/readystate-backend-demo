@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Поиск в шапке перерисовывает карту курса на каждый символ. Что смотреть первым?
+options:
+  - id: a
+    text: Не лежит ли query в родителе, который рендерит и шапку, и карту
+    correct: true
+  - id: b
+    text: Сразу обернуть каждый урок в memo
+  - id: c
+    text: Убрать key у уроков
+  - id: d
+    text: Перенести query в document.title
+explain: Профайлер подтвердит широкий коммит. Лечение — опустить state или
+  вынести карту так, чтобы она не видела query.

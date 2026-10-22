@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Статья курса одинакова для всех и меняется раз в день. Какой режим ближе?
+options:
+  - id: a
+    text: Сборка HTML заранее
+    correct: true
+  - id: b
+    text: Пустой CSR на каждый заход
+  - id: c
+    text: Персональный SSR с сессией на каждый абзац
+  - id: d
+    text: Только сокет
+explain: Общий документ не обязан считаться на запросе.

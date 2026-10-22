@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Панель фильтра открывается кнопкой. Какое состояние объявить?
+options:
+  - id: a
+    text: aria-expanded true или false на кнопке
+    correct: true
+  - id: b
+    text: aria-hidden на кнопке, когда панель открыта
+  - id: c
+    text: role=button на уже существующем button
+  - id: d
+    text: placeholder на панели
+explain: expanded совпадает с тем, раскрыта ли область.

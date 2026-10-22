@@ -1,0 +1,23 @@
+id: r-u12-extends
+kind: single_choice
+phase: revision
+prompt: "Что ограничивает `T extends { id: string }`?"
+options:
+  - id: a
+    text: Аргумент должен иметь строковый `id`, внутри его можно читать
+    correct: true
+  - id: b
+    text: Поле `id` проверяется в runtime само
+  - id: c
+    text: "`T` становится `string`"
+  - id: d
+    text: Constraint равен `any`
+explain: Это компиляторное ограничение формы.
+hints:
+  - title: Не any
+    markdown: Замена constraint на any снова пускает объект без id.
+tags:
+  - constraints
+reinforces:
+  - L035-ts-generics-constraints
+source: original

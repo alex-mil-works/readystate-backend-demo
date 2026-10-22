@@ -1,0 +1,17 @@
+id: L062-html-landmarks
+order: 62
+title: Landmarks и структура документа
+titleEn: Landmarks and Document Structure
+essence: Страница — это ориентиры и заголовки, а не ровная каша из div. У
+  документа один main и понятный контур h1–h2.
+depth: application
+required: true
+insights:
+  - insights/01-landmarks.md
+  - insights/02-outline.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

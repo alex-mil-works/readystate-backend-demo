@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Какая пара — один источник?
+options:
+  - id: a
+    text: https://app.example/a и https://app.example/b
+    correct: true
+  - id: b
+    text: https://app.example и http://app.example
+  - id: c
+    text: https://app.example и https://api.example
+  - id: d
+    text: https://app.example и https://app.example:8443
+explain: Путь не входит в источник. Схема, хост и порт входят.

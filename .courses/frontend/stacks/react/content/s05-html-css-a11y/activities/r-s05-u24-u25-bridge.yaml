@@ -1,0 +1,29 @@
+id: r-s05-u24-u25-bridge
+kind: single_choice
+phase: revision
+prompt: Две колонки заданы и grid-ом, и длинной пачкой утилит, и глобальным h2.
+  Где оставить закон раскладки?
+options:
+  - id: a
+    text: "В одном месте: сетка компонента, токены из темы, без глобального тега"
+    correct: true
+  - id: b
+    text: В трёх копиях, чтобы каскад сам выбрал
+  - id: c
+    text: Только в user-scalable
+  - id: d
+    text: В alt картинки
+explain: Один источник правды для колонок. Утилиты берут шаги из темы, не спорят
+  второй сеткой.
+hints:
+  - title: U24 → U25
+    markdown: Grid описывает каркас. Классы компонента его не перебивают глобальным
+      селектором тега.
+tags:
+  - html
+  - css
+reinforces:
+  - L072-css-grid
+  - L074-css-bem-modules
+  - L075-css-tailwind
+source: original

@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Иконка «показать пароль» стоит в форме входа. Какой у неё type?
+options:
+  - id: a
+    text: button, иначе клик отправит форму
+    correct: true
+  - id: b
+    text: submit
+  - id: c
+    text: можно не указывать, div надёжнее
+  - id: d
+    text: reset всегда
+explain: Кнопка без type внутри form — это submit.

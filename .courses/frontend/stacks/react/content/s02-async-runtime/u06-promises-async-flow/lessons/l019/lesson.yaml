@@ -1,0 +1,19 @@
+id: L019-js-promise-combinators
+order: 19
+title: Promise combinators и concurrency
+titleEn: Promise Combinators & Concurrency
+essence: >-
+  all, allSettled, race и any по-разному ждут уже запущенные промисы. Параллельность начинается в момент создания, не внутри combinator.
+depth: application
+required: true
+
+insights:
+  - insights/01-combinators.md
+  - insights/02-concurrency.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-predict-output.yaml
+  - activities/p03-single-choice.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

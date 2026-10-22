@@ -1,0 +1,15 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Что стоит выносить в custom hook в первую очередь?
+options:
+  - id: a
+    text: Повторяющиеся state, подписку и cleanup
+    correct: true
+  - id: b
+    text: Каждую кнопку в проекте
+  - id: c
+    text: Константу заголовка
+  - id: d
+    text: Разметку, в которой нет хуков
+explain: Разметку без состояния проще оставить компонентом. Хук окупается на поведении.

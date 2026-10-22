@@ -1,0 +1,30 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: |
+  `async function f() { return 1; }` — что получит вызывающий в ту же синхронную строку?
+options:
+  - id: a
+    text: Промис, который выполнится со значением `1`
+    correct: true
+  - id: b
+    text: Число `1`
+  - id: c
+    text: '`undefined`, пока кто-нибудь не вызовет `await f()`'
+  - id: d
+    text: Ошибку, потому что `return` в async запрещён
+explain: |
+  `async` всегда возвращает промис. Число `1` становится его value, но наружу сразу отдаётся объект Promise.
+hints:
+  - title: throw и await
+    markdown: |
+      `throw` в async — это rejection, не синхронное исключение у вызывающего.
+
+      ```js
+      async function f() { throw new Error('x'); }
+      f(); // не бросает здесь
+      ```
+  - title: try/catch
+    markdown: |
+      `try/catch` видит rejection только если внутри есть `await` (или вы сами бросаете синхронно).
+      Забытый `await` оставляет вам объект Promise, и методы значения (`toFixed`, поля ответа) к нему не относятся.

@@ -1,0 +1,23 @@
+id: p01
+kind: predict_output
+phase: practice
+code: >-
+  type Shape = { kind: 'circle'; r: number } | { kind: 'rect'; w: number; h:
+  number };
+
+  function area(shape: Shape) {
+    if (shape.kind === 'circle') return shape.r;
+    return shape.w * shape.h;
+  }
+question: В ветке `else` какое поле точно есть?
+choices:
+  - id: a
+    text: "`w` и `h`, вариант circle уже исключён"
+    correct: true
+  - id: b
+    text: "`r`, тег не сужает"
+  - id: c
+    text: "Никакое: else это `any`"
+  - id: d
+    text: Все поля обоих вариантов сразу
+explain: Проверка `kind` выкидывает circle. Остаётся rect.

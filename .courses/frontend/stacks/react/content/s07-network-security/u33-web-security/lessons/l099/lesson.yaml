@@ -1,0 +1,17 @@
+id: L099-sec-xss-csp
+order: 99
+title: XSS, CSP и граница DOM
+titleEn: XSS, CSP, and the DOM Boundary
+essence: Чужой текст вставляют как текст, не как HTML. CSP сужает, откуда вообще
+  может взяться скрипт, но не лечит уже вставленную разметку.
+depth: security
+required: true
+insights:
+  - insights/01-text.md
+  - insights/02-csp.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

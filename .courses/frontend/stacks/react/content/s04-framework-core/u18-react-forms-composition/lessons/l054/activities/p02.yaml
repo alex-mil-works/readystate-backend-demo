@@ -1,0 +1,19 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  const paints = useRef(0);
+  paints.current += 1;
+  return <p>{paints.current}</p>;
+question: Почему число на экране может отставать от записей в ref?
+choices:
+  - id: a
+    text: Запись в ref не планирует рендер, абзац обновится только по другой причине
+    correct: true
+  - id: b
+    text: ref всегда равен props
+  - id: c
+    text: current пересоздаётся каждый рендер и сбрасывается в 0
+  - id: d
+    text: p нельзя описывать числом
+explain: Счётчик рендеров в ref имеет смысл для отладки, не как источник текста.

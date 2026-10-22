@@ -1,0 +1,17 @@
+id: L050-react-state-hooks
+order: 50
+title: State hooks и функциональные обновления
+titleEn: State Hooks and Functional Updates
+essence: useState хранит снимок между рендерами. Несколько вызовов хуков идут в
+  одном порядке. Шаг от прошлого значения — через функцию.
+depth: application
+required: true
+insights:
+  - insights/01-usestate.md
+  - insights/02-updater.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

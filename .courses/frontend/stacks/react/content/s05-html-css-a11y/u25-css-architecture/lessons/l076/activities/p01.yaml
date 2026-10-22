@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Карточке нужен «почти как текст, но чуть синее». Откуда брать цвет?
+options:
+  - id: a
+    text: Из токена темы или не брать, если токена нет
+    correct: true
+  - id: b
+    text: Из нового hex только в этом файле
+  - id: c
+    text: Из z-index
+  - id: d
+    text: Из alt картинки
+explain: Разовый hex разъезжает палитру и тёмную тему.

@@ -1,0 +1,25 @@
+id: r-s05-u21-u22-bridge
+kind: single_choice
+phase: revision
+prompt: Кнопка «показать пароль» внутри формы логина. Какой элемент и type?
+options:
+  - id: a
+    text: "button type=button: действие, но не отправка формы"
+    correct: true
+  - id: b
+    text: ссылка с href на ту же страницу
+  - id: c
+    text: div, потому что это иконка
+  - id: d
+    text: submit
+explain: Команда на странице — кнопка. Внутри form тип обязателен.
+hints:
+  - title: U21 → U22
+    markdown: Ссылка ведёт по адресу. Кнопка в форме без type станет submit.
+tags:
+  - html
+  - css
+reinforces:
+  - L063-html-links-media
+  - L065-html-native-forms
+source: original

@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  <div class="card">
+    <div class="title">Настройки</div>
+    <div class="body">…</div>
+  </div>
+question: Попадёт ли «Настройки» в оглавление заголовков?
+choices:
+  - id: a
+    text: "Нет: это div, не h1–h6"
+    correct: true
+  - id: b
+    text: Да, класс title браузер считает h2
+  - id: c
+    text: Да, если внутри есть кнопка
+  - id: d
+    text: Только в Firefox
+explain: Оглавление собирается из элементов заголовков, не из классов.

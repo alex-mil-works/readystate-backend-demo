@@ -1,0 +1,26 @@
+id: r-s06-u29-u30-bridge
+kind: single_choice
+phase: revision
+prompt: Дев-сервер зелёный. Какой шаг контура всё равно обязателен перед поставкой?
+options:
+  - id: a
+    text: Прод-сборка тем же скриптом, что в CI
+    correct: true
+  - id: b
+    text: Только форматтер
+  - id: c
+    text: reset --hard
+  - id: d
+    text: Отключение source map и всё
+explain: Build ловит то, что ленивый дев не собирал целиком.
+hints:
+  - title: U29 → U30
+    markdown: Сборка — отдельный вопрос контура, рядом с типами и тестами. Ошибку
+      читают по модулю.
+tags:
+  - tooling
+reinforces:
+  - L087-mod-vite
+  - L090-qa-check-loop
+  - L091-qa-sourcemaps-env
+source: original

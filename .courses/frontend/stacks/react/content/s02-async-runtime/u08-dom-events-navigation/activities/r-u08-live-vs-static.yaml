@@ -1,0 +1,24 @@
+id: r-u08-live-vs-static
+kind: single_choice
+phase: revision
+tags: [dom]
+reinforces: ['L023-js-dom-model']
+source: original
+prompt: |
+  Какая коллекция увидит элемент, добавленный в дерево после вызова API?
+options:
+  - id: a
+    text: Живая, например `getElementsByTagName`
+    correct: true
+  - id: b
+    text: Результат `querySelectorAll`
+  - id: c
+    text: Обе всегда статические
+  - id: d
+    text: Обе всегда живые
+explain: |
+  `querySelectorAll` — снимок. HTMLCollection от `getElementsBy*` обновляется вместе с деревом.
+hints:
+  - title: Снимок
+    markdown: |
+      Обход живой коллекции, в который вы ещё и добавляете узлы, легко зацикливается. Для снимка берите `querySelectorAll`.

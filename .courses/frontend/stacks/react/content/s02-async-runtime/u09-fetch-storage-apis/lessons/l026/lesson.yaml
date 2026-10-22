@@ -1,0 +1,19 @@
+id: L026-js-fetch-abort
+order: 26
+title: Семантика Fetch, HTTP errors и Abort
+titleEn: Fetch Semantics, HTTP Errors & Abort
+essence: >-
+  fetch отклоняет промис на сбое сети, не на статусе 404 или 500. Отмена — отдельный signal, а не игнор опоздавшего then.
+depth: application
+required: true
+
+insights:
+  - insights/01-fetch-status.md
+  - insights/02-abort.md
+
+activities:
+  - activities/p01-single-choice.yaml
+  - activities/p02-predict-output.yaml
+  - activities/p03-single-choice.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

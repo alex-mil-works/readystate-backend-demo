@@ -1,0 +1,24 @@
+id: r-u30-vite-env
+kind: single_choice
+phase: revision
+prompt: Куда попадёт переменная с префиксом VITE_?
+options:
+  - id: a
+    text: В клиентский бандл
+    correct: true
+  - id: b
+    text: Только в память закрытого сервера
+  - id: c
+    text: Никуда, префикс её прячет
+  - id: d
+    text: В reflog
+explain: Секрет в браузерном бандле уже не секрет.
+hints:
+  - title: Карта
+    markdown: Source map ведёт стек к исходнику. Её можно отдать системе ошибок, а
+      не всему интернету.
+tags:
+  - quality
+reinforces:
+  - L091-qa-sourcemaps-env
+source: original

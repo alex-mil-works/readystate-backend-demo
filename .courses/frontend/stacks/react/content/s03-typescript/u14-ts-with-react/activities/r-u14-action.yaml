@@ -1,0 +1,25 @@
+id: r-u14-action
+kind: single_choice
+phase: revision
+prompt: Как поймать забытую ветку нового action на сборке?
+options:
+  - id: a
+    text: Discriminated union и присваивание остатка в `never`
+    correct: true
+  - id: b
+    text: Тип action `any`
+  - id: c
+    text: Только console.log в default
+  - id: d
+    text: "`satisfies` на useState"
+explain: Новый тег перестаёт помещаться в never.
+hints:
+  - title: Хук
+    markdown: Два возврата — кортеж `[boolean, () => void]`, не `any[]`.
+tags:
+  - react
+  - reducers
+reinforces:
+  - L042-ts-react-state-hooks
+  - L039-ts-discriminated-satisfies
+source: original

@@ -1,0 +1,24 @@
+id: r-u13-partial-id
+kind: single_choice
+phase: revision
+prompt: Черновик PATCH не должен терять обязательный id. Какой тип ближе?
+options:
+  - id: a
+    text: "`Partial<User> & { id: string }`"
+    correct: true
+  - id: b
+    text: "`Partial<User>` и надежда, что id на месте"
+  - id: c
+    text: "`Pick<User, 'id'>` только id, без остальных полей даже опционально"
+  - id: d
+    text: "`keyof User`"
+explain: Partial гасит обязательность всех полей. Id возвращают пересечением.
+hints:
+  - title: Один источник
+    markdown: Утилита ссылается на User, ручная копия разъедется при переименовании.
+tags:
+  - utilities
+reinforces:
+  - L037-ts-utility-types
+  - L038-ts-structural-excess
+source: original

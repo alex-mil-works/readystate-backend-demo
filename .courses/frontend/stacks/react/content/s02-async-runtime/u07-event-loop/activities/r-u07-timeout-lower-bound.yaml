@@ -1,0 +1,24 @@
+id: r-u07-timeout-lower-bound
+kind: single_choice
+phase: revision
+tags: [timer]
+reinforces: ['L021-js-timers-microtasks-rendering']
+source: original
+prompt: |
+  Что обещает `setTimeout(fn, 50)`, если главный поток занят 200 мс?
+options:
+  - id: a
+    text: Колбэк запустится не раньше 50 мс и только когда стек освободится — опоздание нормально
+    correct: true
+  - id: b
+    text: Ровно через 50 мс, вытеснив текущую функцию
+  - id: c
+    text: Таймер отменяется, если опоздал больше чем вдвое
+  - id: d
+    text: Колбэк становится микрозадачей и обгоняет цикл
+explain: |
+  Задержка — нижняя граница. Занятый стек сдвигает task ещё сильнее.
+hints:
+  - title: Не часы
+    markdown: |
+      Таймер ставит task. Пока крутится синхронный код, очередь не начинается.

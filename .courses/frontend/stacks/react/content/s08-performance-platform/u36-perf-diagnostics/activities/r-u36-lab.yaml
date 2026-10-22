@@ -1,0 +1,23 @@
+id: r-u36-lab
+kind: single_choice
+phase: revision
+prompt: Локальный Lighthouse высокий, полевой LCP плохой. Чему верить?
+options:
+  - id: a
+    text: Полю
+    correct: true
+  - id: b
+    text: Только локальному баллу
+  - id: c
+    text: Имени фреймворка
+  - id: d
+    text: Количеству хуков
+explain: Запись сети и главного потока объясняет причину лучше голого балла.
+hints:
+  - title: Трейс
+    markdown: Длинная задача на клике видна в панели производительности.
+tags:
+  - perf
+reinforces:
+  - L108-perf-devtools
+source: original

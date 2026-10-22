@@ -1,0 +1,17 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: |
+  Как отличить отмену `fetch` от сетевой ошибки?
+options:
+  - id: a
+    text: У исключения отмены `name` равен `AbortError`
+    correct: true
+  - id: b
+    text: Отмена даёт `response.status === 0` и промис fulfilled
+  - id: c
+    text: Отмена не отклоняет промис
+  - id: d
+    text: Сетевая ошибка приходит как статус 499
+explain: |
+  `abort()` reject'ит промис. Имя исключения — `AbortError`. Это не HTTP-статус.

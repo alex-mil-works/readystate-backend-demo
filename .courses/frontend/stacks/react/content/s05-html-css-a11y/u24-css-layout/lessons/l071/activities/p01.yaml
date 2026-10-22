@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: "Кнопки в шапке: одна слева, одна справа, по вертикали по центру. Что
+  задать контейнеру?"
+options:
+  - id: a
+    text: "flex, space-between и align-items: center"
+    correct: true
+  - id: b
+    text: block и float на обеих
+  - id: c
+    text: inline без ширины
+  - id: d
+    text: только z-index
+explain: Один ряд — flex. Края главной оси — space-between.

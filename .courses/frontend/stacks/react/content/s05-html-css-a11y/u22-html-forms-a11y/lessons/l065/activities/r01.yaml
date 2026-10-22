@@ -1,0 +1,15 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Почему свой div вместо input ломает и отправку, и доступность?
+options:
+  - id: a
+    text: Нет имени в форме, нет роли поля и нет нативной проверки
+    correct: true
+  - id: b
+    text: div нельзя красить
+  - id: c
+    text: input запрещён в main
+  - id: d
+    text: required работает только на div
+explain: Библиотека форм должна рисовать настоящие контролы, а не заменять их.

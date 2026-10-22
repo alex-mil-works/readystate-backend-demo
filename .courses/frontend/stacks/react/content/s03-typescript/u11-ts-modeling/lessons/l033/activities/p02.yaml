@@ -1,0 +1,20 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  function greet(name: string, title?: string) {
+    return title ? title + ' ' + name : name;
+  }
+  greet('Ann');
+question: Этот вызов законен?
+choices:
+  - id: a
+    text: "Да: второй параметр необязателен, внутри `title` — `string | undefined`"
+    correct: true
+  - id: b
+    text: "Нет: все параметры обязательны"
+  - id: c
+    text: Да, и `title` внутри точно `null`
+  - id: d
+    text: Нет, пока нет overload
+explain: "`title?` разрешает вызов с одним аргументом. В теле тип включает undefined."

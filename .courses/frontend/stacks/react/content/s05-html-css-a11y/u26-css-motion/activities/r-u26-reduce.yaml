@@ -1,0 +1,24 @@
+id: r-u26-reduce
+kind: single_choice
+phase: revision
+prompt: У пользователя prefers-reduced-motion. Что убрать в первую очередь?
+options:
+  - id: a
+    text: Декоративный пролёт, оставив саму смену экрана и текст
+    correct: true
+  - id: b
+    text: Весь текст тоста, оставив только keyframes
+  - id: c
+    text: Кнопки
+  - id: d
+    text: lang
+explain: Скриптовый цикл тоже смотрит matchMedia.
+hints:
+  - title: Сигнал
+    markdown: Статус нельзя сообщать только движением.
+tags:
+  - a11y
+  - css
+reinforces:
+  - L079-css-reduced-motion
+source: original

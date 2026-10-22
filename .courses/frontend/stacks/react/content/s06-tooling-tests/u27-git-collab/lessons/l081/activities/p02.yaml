@@ -1,0 +1,15 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Зачем pull request, если можно запушить сразу в main?
+options:
+  - id: a
+    text: Просмотр diff и проверки до того, как снимок станет общим
+    correct: true
+  - id: b
+    text: PR заменяет сообщение коммита
+  - id: c
+    text: Без PR Git не хранит ветки
+  - id: d
+    text: PR нужен только для конфликтов
+explain: Вливание в общую ветку — решение, не побочный эффект push.

@@ -1,0 +1,9 @@
+id: U11
+stageId: S03
+title: Моделирование объектов и функций
+titleEn: Modeling Objects and Functions
+lessons:
+  - lessons/l032
+  - lessons/l033
+  - lessons/l034
+activities: activities

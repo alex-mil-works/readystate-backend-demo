@@ -1,0 +1,17 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: |
+  Что делает `navigator.permissions.query`, если браузер знает это разрешение?
+options:
+  - id: a
+    text: Возвращает текущее состояние и не показывает диалог сам по себе
+    correct: true
+  - id: b
+    text: Всегда открывает системный запрос
+  - id: c
+    text: Включает разрешение, если оно было `prompt`
+  - id: d
+    text: Синхронно возвращает `true` или `false`
+explain: |
+  `query` — чтение. Диалог открывает уже метод вроде `requestPermission` или `getUserMedia`, обычно с жеста.

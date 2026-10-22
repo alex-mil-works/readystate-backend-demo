@@ -1,0 +1,17 @@
+id: L061-react-state-placement
+order: 61
+title: "Где держать state: local, Context, store"
+titleEn: "Where State Lives: Local, Context, Store"
+essence: Локально — если владелец один. Context — для редких данных на всё
+  дерево. Store и кэш сервера — когда обновления частые или данные не про UI.
+depth: tradeoff
+required: true
+insights:
+  - insights/01-local-context.md
+  - insights/02-server-store.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Чем `main` полезнее `div class="main"` для скринридера?
+options:
+  - id: a
+    text: Это landmark, к нему можно перейти, не читая всё подряд
+    correct: true
+  - id: b
+    text: Он быстрее грузится
+  - id: c
+    text: Он запрещает CSS
+  - id: d
+    text: Он заменяет h1
+explain: Имя области есть в дереве доступности только у настоящего landmark.

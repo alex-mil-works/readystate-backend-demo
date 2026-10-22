@@ -1,0 +1,17 @@
+id: L066-html-labels-focus
+order: 66
+title: Подписи, фокус, клавиатура и доступное имя
+titleEn: Labels, Focus, Keyboard, and Accessible Names
+essence: У каждого поля есть имя, у интерактива есть видимый фокус и порядок
+  Tab. placeholder именем не является.
+depth: application
+required: true
+insights:
+  - insights/01-name.md
+  - insights/02-focus.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

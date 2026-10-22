@@ -1,0 +1,24 @@
+id: r-u26-thrash
+kind: single_choice
+phase: revision
+prompt: В цикле пишут style.height и сразу читают offsetHeight. Что происходит?
+options:
+  - id: a
+    text: Синхронный layout на каждой итерации
+    correct: true
+  - id: b
+    text: Браузер откладывает все чтения бесплатно
+  - id: c
+    text: Это composite-only путь
+  - id: d
+    text: Так уважают reduced motion
+explain: Сначала чтения, потом записи.
+hints:
+  - title: Движение
+    markdown: Transform вместо top. Декор выключают медиазапросом reduce.
+tags:
+  - css
+reinforces:
+  - L078-css-paint-cost
+  - L079-css-reduced-motion
+source: original

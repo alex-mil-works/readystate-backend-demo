@@ -1,0 +1,17 @@
+id: L095-net-url-to-server
+order: 95
+title: От URL до сервера
+titleEn: From URL to Server
+essence: Имя хоста ещё не адрес машины. DNS находит IP, TCP открывает
+  соединение, TLS проверяет, с кем говорите. Фрагмент URL на сервер не уходит.
+depth: mechanism
+required: true
+insights:
+  - insights/01-url.md
+  - insights/02-path.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

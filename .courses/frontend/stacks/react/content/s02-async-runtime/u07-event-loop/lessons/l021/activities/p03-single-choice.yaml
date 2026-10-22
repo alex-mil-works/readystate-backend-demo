@@ -1,0 +1,17 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: |
+  Куда попадает колбэк `requestAnimationFrame` относительно `setTimeout(fn, 0)`?
+options:
+  - id: a
+    text: В шаг отрисовки перед кадром, а не в очередь таймеров
+    correct: true
+  - id: b
+    text: В ту же task-очередь, сразу после нулевого таймера
+  - id: c
+    text: В микрозадачи, вместе с `then`
+  - id: d
+    text: Он выполняется синхронно в момент вызова `requestAnimationFrame`
+explain: |
+  rAF связан с кадром. Таймер — отдельная task и не привязан к vsync.

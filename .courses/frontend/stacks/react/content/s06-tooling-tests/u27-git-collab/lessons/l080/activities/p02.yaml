@@ -1,0 +1,19 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  git checkout -b lesson-keyboard
+  # правка, затем
+  git commit -m "feat: стрелки в плеере урока"
+question: Где окажется новый коммит?
+choices:
+  - id: a
+    text: На ветке lesson-keyboard, main его ещё не содержит
+    correct: true
+  - id: b
+    text: Сразу в main и на сервере
+  - id: c
+    text: Только в рабочей копии без истории
+  - id: d
+    text: В reflog, но не в ветке
+explain: Новая ветка стартует от текущего коммита. Коммит двигает её, не main.

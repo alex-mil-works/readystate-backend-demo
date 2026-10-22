@@ -1,0 +1,25 @@
+id: r-u34-csrf
+kind: single_choice
+phase: revision
+prompt: Сессия в cookie. Что ещё нужно меняющему запросу?
+options:
+  - id: a
+    text: подтверждение, которое чужой сайт не прочитает
+    correct: true
+  - id: b
+    text: только красивая кнопка
+  - id: c
+    text: публичный кэш ответа
+  - id: d
+    text: фрагмент URL с ролью
+explain: SameSite режет часть случаев и не заменяет права на сервере.
+hints:
+  - title: Хранение
+    markdown: Токен доступа в localStorage читается скриптом. Долгое обновление туда
+      не кладут.
+tags:
+  - auth
+reinforces:
+  - L101-auth-cookie-csrf
+  - L102-auth-jwt
+source: original

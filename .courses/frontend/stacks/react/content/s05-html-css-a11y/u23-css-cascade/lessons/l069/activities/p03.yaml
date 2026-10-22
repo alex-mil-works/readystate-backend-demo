@@ -1,0 +1,16 @@
+id: p03
+kind: single_choice
+phase: practice
+prompt: Длинное слово раздвигает колонку. Что сделать, не пряча фокус соседей навсегда?
+options:
+  - id: a
+    text: "overflow-wrap или min-width: 0 у flex-ребёнка, не overflow: hidden на всю
+      страницу"
+    correct: true
+  - id: b
+    text: "overflow: hidden на body всегда"
+  - id: c
+    text: убрать box-sizing
+  - id: d
+    text: отрицательный margin на html
+explain: hidden на большом контейнере обрежет и выпадашки, и кольцо фокуса.

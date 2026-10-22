@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Почему `const role = 'admin'` и `let role = 'admin'` ведут себя по-разному?
+options:
+  - id: a
+    text: "`const` сохраняет литерал, `let` расширяет до `string`"
+    correct: true
+  - id: b
+    text: Разницы нет, оба становятся `string`
+  - id: c
+    text: "`let` всегда `any`"
+  - id: d
+    text: "`const` запрещает строковые литералы"
+explain: Компилятор смотрит, может ли binding измениться.
+hints:
+  - title: Узкий набор
+    markdown: Нужны только два статуса — аннотация `'open' | 'closed'`, а не надежда
+      на вывод из `let`.

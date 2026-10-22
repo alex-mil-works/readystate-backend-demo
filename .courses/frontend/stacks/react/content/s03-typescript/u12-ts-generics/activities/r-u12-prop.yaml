@@ -1,0 +1,23 @@
+id: r-u12-prop
+kind: single_choice
+phase: revision
+prompt: "`prop(user, 'age')` возвращает number, хотя у user есть и string. Почему?"
+options:
+  - id: a
+    text: Ключ связан с `keyof`, возврат — `T[K]` этого ключа
+    correct: true
+  - id: b
+    text: Всегда возвращается union всех полей
+  - id: c
+    text: Ключ типизирован как `string`
+  - id: d
+    text: "`age` это mapped type"
+explain: Независимый `string` не знает, какое поле читают.
+hints:
+  - title: Mapped
+    markdown: "`{ [K in keyof T]: boolean }` сохраняет ключи и меняет значения."
+tags:
+  - keyof
+reinforces:
+  - L036-ts-keyof-mapped
+source: original

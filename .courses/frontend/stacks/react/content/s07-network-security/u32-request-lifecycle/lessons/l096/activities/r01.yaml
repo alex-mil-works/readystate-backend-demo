@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Чем 404 отличается от «не удалось fetch» без ответа?
+options:
+  - id: a
+    text: 404 — полученный статус, обрыв — ответа не было
+    correct: true
+  - id: b
+    text: это синонимы
+  - id: c
+    text: 404 бывает только у POST
+  - id: d
+    text: обрыв всегда приходит как 200
+explain: В UI это разные тексты и разные действия.
+hints:
+  - title: Тип
+    markdown: Content-Type говорит, JSON это или HTML. Не угадывайте по первой букве
+      тела.

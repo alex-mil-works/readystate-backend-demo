@@ -1,0 +1,16 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Поле с `value={query}` не даёт печатать. Чего не хватает?
+options:
+  - id: a
+    text: onChange, который записывает новое value в state
+    correct: true
+  - id: b
+    text: defaultValue рядом с value
+  - id: c
+    text: key={query}
+  - id: d
+    text: useEffect, который читает DOM
+explain: React каждый рендер ставит старый query. Без записи в state новое
+  значение отбрасывается.

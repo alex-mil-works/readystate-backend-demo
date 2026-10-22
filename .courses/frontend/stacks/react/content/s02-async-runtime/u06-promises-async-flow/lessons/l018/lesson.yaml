@@ -1,0 +1,19 @@
+id: L018-js-async-await-errors
+order: 18
+title: Rejection, ошибки и async/await
+titleEn: Rejection, Errors & async/await
+essence: >-
+  async-функция всегда возвращает промис. await пробрасывает rejection как throw, но только внутри этой функции.
+depth: mechanism
+required: true
+
+insights:
+  - insights/01-rejection-paths.md
+  - insights/02-async-await.md
+
+activities:
+  - activities/p01-predict-output.yaml
+  - activities/p02-single-choice.yaml
+  - activities/p03-predict-output.yaml
+  - activities/r01-revision.yaml
+  - activities/i01-phrasing.yaml

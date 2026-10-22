@@ -1,0 +1,16 @@
+id: p02
+kind: predict_output
+phase: practice
+code: const Chart = await import('./chart');
+question: Что это говорит сборщику по сравнению со статическим import?
+choices:
+  - id: a
+    text: Модуль можно положить в отдельный чанк и загрузить позже
+    correct: true
+  - id: b
+    text: Файл надо вставить в самый первый скрипт
+  - id: c
+    text: Импорт циклический по определению
+  - id: d
+    text: Типы попадут в браузер
+explain: Статический import склеивает с родителем. Динамический — точка разреза.

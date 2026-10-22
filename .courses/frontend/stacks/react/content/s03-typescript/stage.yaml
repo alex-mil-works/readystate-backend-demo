@@ -1,0 +1,10 @@
+id: S03
+title: TypeScript для frontend
+titleEn: TypeScript for Frontend
+units:
+  - u10-ts-mental-model
+  - u11-ts-modeling
+  - u12-ts-generics
+  - u13-ts-advanced
+  - u14-ts-with-react
+activities: activities

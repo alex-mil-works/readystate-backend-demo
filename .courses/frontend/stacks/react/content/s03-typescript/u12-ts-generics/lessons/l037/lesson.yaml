@@ -1,0 +1,17 @@
+id: L037-ts-utility-types
+order: 37
+title: Utility types и generic API
+titleEn: Utility Types and Generic APIs
+essence: "`Partial`, `Pick`, `Omit`, `ReturnType` собирают тип из уже
+  описанного, чтобы не копировать форму руками."
+depth: application
+required: true
+insights:
+  - insights/01-pick-partial.md
+  - insights/02-return-type.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

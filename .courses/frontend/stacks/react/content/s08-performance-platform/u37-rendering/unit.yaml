@@ -1,0 +1,9 @@
+id: U37
+stageId: S08
+title: Архитектуры рендера
+titleEn: Rendering Architectures
+lessons:
+  - lessons/l110
+  - lessons/l111
+  - lessons/l112
+activities: activities

@@ -1,0 +1,17 @@
+id: L064-html-metadata-enhancement
+order: 64
+title: Metadata, основы SEO и progressive enhancement
+titleEn: Metadata, SEO Basics, and Progressive Enhancement
+essence: "Документ называет себя: язык, title, описание. Базовое содержимое и
+  действия живут в HTML, а не появляются только после скрипта."
+depth: tradeoff
+required: true
+insights:
+  - insights/01-meta.md
+  - insights/02-enhance.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

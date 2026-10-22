@@ -1,0 +1,17 @@
+id: L057-react-effect-pitfalls
+order: 57
+title: Типичные ошибки Effects и State
+titleEn: Common Effect and State Mistakes
+essence: "Частые поломки: копия props в state, эффект вместо события, пустые
+  зависимости и цикл setState."
+depth: debug
+required: true
+insights:
+  - insights/01-mirror.md
+  - insights/02-event-vs-loop.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

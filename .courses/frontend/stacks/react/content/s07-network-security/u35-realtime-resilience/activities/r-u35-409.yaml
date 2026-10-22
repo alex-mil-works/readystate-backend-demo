@@ -1,0 +1,23 @@
+id: r-u35-409
+kind: single_choice
+phase: revision
+prompt: Ответ 409 при сохранении значит…
+options:
+  - id: a
+    text: версия устарела, надо показать актуальную
+    correct: true
+  - id: b
+    text: пора выйти из аккаунта
+  - id: c
+    text: список честно пуст
+  - id: d
+    text: можно молча перезаписать
+explain: 401 ведёт ко входу. 403 не повторяют. Обрыв — не 500.
+hints:
+  - title: Текст
+    markdown: Человеку — что случилось и что нажать. Стек остаётся в журнале.
+tags:
+  - realtime
+reinforces:
+  - L106-rt-error-recovery
+source: original

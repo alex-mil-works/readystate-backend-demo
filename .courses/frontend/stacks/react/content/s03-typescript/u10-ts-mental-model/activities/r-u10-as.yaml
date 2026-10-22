@@ -1,0 +1,24 @@
+id: r-u10-as
+kind: single_choice
+phase: revision
+prompt: Что делает `as User` с объектом из сети?
+options:
+  - id: a
+    text: Просит компилятор поверить, не проверяя поля
+    correct: true
+  - id: b
+    text: Запускает валидацию
+  - id: c
+    text: Удаляет лишние ключи
+  - id: d
+    text: Превращает значение в `unknown`
+explain: Assertion — не парсер.
+hints:
+  - title: Граница
+    markdown: Честный User возвращает функция, которая проверила unknown.
+tags:
+  - assertion
+reinforces:
+  - L029-ts-compile-boundary
+  - L031-ts-any-unknown-never
+source: original

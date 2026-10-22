@@ -1,0 +1,15 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: 100vh на телефоне выше видимого экрана. Чем это обычно вызвано?
+options:
+  - id: a
+    text: Панели браузера входят в vh, видимая область меньше
+    correct: true
+  - id: b
+    text: rem всегда больше vh
+  - id: c
+    text: min-width ломает высоту
+  - id: d
+    text: border-box умножает vh на 2
+explain: Для видимой высоты смотрят dvh или не прибивают герой к 100vh.

@@ -1,0 +1,25 @@
+id: r-u35-offline
+kind: single_choice
+phase: revision
+prompt: Ответа не было, сети нет. Что показать?
+options:
+  - id: a
+    text: отдельное состояние офлайна, не «сервер вернул 500»
+    correct: true
+  - id: b
+    text: пустой список как успех
+  - id: c
+    text: стек исключения
+  - id: d
+    text: "403"
+explain: Пустой успех, ошибка и офлайн — три экрана.
+hints:
+  - title: Канал
+    markdown: Редкое обновление не обязано быть сокетом. Повтор — только у
+      временного сбоя.
+tags:
+  - realtime
+reinforces:
+  - L106-rt-error-recovery
+  - L104-rt-ws-sse
+source: original

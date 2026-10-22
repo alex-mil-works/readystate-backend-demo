@@ -1,0 +1,18 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Чем revert отличается от reset на общей ветке?
+options:
+  - id: a
+    text: revert добавляет коммит, reset переписывает указатель
+    correct: true
+  - id: b
+    text: это одно и то же
+  - id: c
+    text: revert удаляет reflog у коллег
+  - id: d
+    text: reset всегда безопасен после push
+explain: Переписанный main заставляет других сшивать историю заново.
+hints:
+  - title: Локально
+    markdown: Свою ещё не отправленную ветку можно reset-ить. Чужой main — revert.

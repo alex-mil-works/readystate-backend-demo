@@ -1,0 +1,23 @@
+id: r-u30-loop
+kind: single_choice
+phase: revision
+prompt: Типы зелёные, сборка красная. Деплоить?
+options:
+  - id: a
+    text: Нет
+    correct: true
+  - id: b
+    text: Да, typecheck включает бандл
+  - id: c
+    text: Да, если нет PR
+  - id: d
+    text: Только после --no-verify
+explain: CI зовёт те же скрипты, что и автор.
+hints:
+  - title: Частота
+    markdown: Линт и юниты гоняют часто. Полный браузерный прогон — на границе поставки.
+tags:
+  - quality
+reinforces:
+  - L090-qa-check-loop
+source: original

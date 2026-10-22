@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Что появляется в JavaScript, когда вы пишете JSX-кнопку?
+options:
+  - id: a
+    text: Объект-описание, а не готовый DOM-узел
+    correct: true
+  - id: b
+    text: Сразу HTMLElement в документе
+  - id: c
+    text: CSS-правило
+  - id: d
+    text: Строка HTML, которую браузер парсит синхронно
+explain: JSX — синтаксис для объекта элемента. Вставку в документ делает React позже.

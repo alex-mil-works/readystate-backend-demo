@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Типы зелёные, сборка падает. Можно ли деплоить?
+options:
+  - id: a
+    text: "Нет: поставка не собралась, типы этого не гарантируют"
+    correct: true
+  - id: b
+    text: Да, typecheck заменяет build
+  - id: c
+    text: Да, если Prettier молчит
+  - id: d
+    text: Только без локфайла
+explain: Сборка проверяет граф и режим прода.

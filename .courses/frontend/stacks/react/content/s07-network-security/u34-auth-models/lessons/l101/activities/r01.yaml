@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: Где должна жить запись «этот человек — админ»?
+options:
+  - id: a
+    text: На сервере, а в cookie только идентификатор сессии
+    correct: true
+  - id: b
+    text: В значении cookie, которое клиент сам обновляет
+  - id: c
+    text: В фрагменте URL
+  - id: d
+    text: В публичном кэше HTML
+explain: Клиент не назначает себе права правкой хранилища.
+hints:
+  - title: Lax
+    markdown: SameSite=Lax не шлёт cookie с чужого сайта на типичный POST. Это не
+      замена проверки прав.

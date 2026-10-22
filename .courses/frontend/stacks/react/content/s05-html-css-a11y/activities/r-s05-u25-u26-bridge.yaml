@@ -1,0 +1,27 @@
+id: r-s05-u25-u26-bridge
+kind: single_choice
+phase: revision
+prompt: Кнопка дизайн-системы анимирует width и игнорирует reduced motion. Что
+  поправить в её контракте?
+options:
+  - id: a
+    text: Двигать transform или opacity и выключать декор при reduce
+    correct: true
+  - id: b
+    text: Покрасить внутренний span снаружи и оставить width
+  - id: c
+    text: Запретить токены
+  - id: d
+    text: Сделать её div
+explain: Публичный компонент сам соблюдает дешёвое движение и системную настройку.
+hints:
+  - title: U25 → U26
+    markdown: Вариант кнопки — её API. Анимация не через layout и не единственный сигнал.
+tags:
+  - html
+  - css
+reinforces:
+  - L076-css-tooling-boundaries
+  - L078-css-paint-cost
+  - L079-css-reduced-motion
+source: original

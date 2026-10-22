@@ -1,0 +1,16 @@
+id: p02
+kind: single_choice
+phase: practice
+prompt: Кастомное кольцо фокуса. Куда его вешать?
+options:
+  - id: a
+    text: На :focus-visible и не снимать обводку в никуда
+    correct: true
+  - id: b
+    text: "outline: none на всё и больше ничего"
+  - id: c
+    text: Только :hover
+  - id: d
+    text: tabindex=5 на каждом поле
+explain: Клавиатура должна видеть место. Мышиный клик может обойтись без
+  толстого кольца.

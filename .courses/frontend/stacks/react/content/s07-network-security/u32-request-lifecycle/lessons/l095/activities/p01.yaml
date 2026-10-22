@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Что из URL не отправляется на сервер?
+options:
+  - id: a
+    text: "Фрагмент после #"
+    correct: true
+  - id: b
+    text: Путь
+  - id: c
+    text: Query
+  - id: d
+    text: Имя хоста
+explain: Якорь нужен браузеру для прокрутки и клиентского роутера. Сервер его не видит.

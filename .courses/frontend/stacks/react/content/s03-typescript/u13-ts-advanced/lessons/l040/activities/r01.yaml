@@ -1,0 +1,19 @@
+id: r01
+kind: single_choice
+phase: revision
+prompt: "`fetch` вернул 200 и JSON без поля `id`. Где ошибка должна стать видимой?"
+options:
+  - id: a
+    text: В парсере до записи в state
+    correct: true
+  - id: b
+    text: В аннотации `useState<User>`
+  - id: c
+    text: TypeScript обязан упасть в браузере сам
+  - id: d
+    text: Только в тесте типов, в приложении молчать
+explain: Состояние типизировано как User только после успешного разбора.
+hints:
+  - title: Два шва
+    markdown: Сначала `response.ok`, потом разбор тела из unknown. Статус и форма —
+      разные отказы.

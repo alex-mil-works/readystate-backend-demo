@@ -1,0 +1,17 @@
+id: L046-react-declarative-ui
+order: 46
+title: Декларативный UI против императивного DOM
+titleEn: Declarative UI versus Imperative DOM
+essence: "UI — функция состояния. Императивные команды уместны на краю: фокус,
+  измерение, виджет без React."
+depth: tradeoff
+required: true
+insights:
+  - insights/01-function-of-state.md
+  - insights/02-edges.md
+activities:
+  - activities/p01.yaml
+  - activities/p02.yaml
+  - activities/p03.yaml
+  - activities/r01.yaml
+  - activities/i01-phrasing.yaml

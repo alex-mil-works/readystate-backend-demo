@@ -1,0 +1,19 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  type User = { id: string; name: string };
+  type Draft = Partial<User>;
+  const draft: Draft = {};
+question: Почему пустой объект подходит под `Draft`?
+choices:
+  - id: a
+    text: "`Partial` делает каждое поле необязательным"
+    correct: true
+  - id: b
+    text: "`Draft` это `any`"
+  - id: c
+    text: Пустой объект подходит под любой object type
+  - id: d
+    text: "`Partial` удаляет поля в runtime"
+explain: Оба ключа стали optional, поэтому литерал без полей законен.

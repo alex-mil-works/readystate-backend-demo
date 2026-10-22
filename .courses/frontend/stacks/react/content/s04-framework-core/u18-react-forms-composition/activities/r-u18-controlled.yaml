@@ -1,0 +1,24 @@
+id: r-u18-controlled
+kind: single_choice
+phase: revision
+prompt: Поле с value и без onChange…
+options:
+  - id: a
+    text: "не принимает ввод: рендер возвращает старое значение"
+    correct: true
+  - id: b
+    text: ведёт себя как defaultValue
+  - id: c
+    text: само пишет в state
+  - id: d
+    text: запрещено только для checkbox
+explain: Controlled-поле обязано записывать изменение обратно.
+hints:
+  - title: Submit
+    markdown: onSubmit на form и preventDefault, не только click по div.
+tags:
+  - react
+  - forms
+reinforces:
+  - L053-react-controlled-inputs
+source: original

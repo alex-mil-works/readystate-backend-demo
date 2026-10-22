@@ -1,0 +1,22 @@
+id: p02
+kind: predict_output
+phase: practice
+code: |-
+  {items.map((item, index) => (
+    <input key={index} defaultValue={item.name} />
+  ))}
+question: Удаляют элемент 0. Что произойдёт с текстом, который пользователь
+  набрал во втором поле?
+choices:
+  - id: a
+    text: Поле с key 1 останется, но это уже другой item на той же позиции —
+      черновик может прилипнуть не к той строке
+    correct: true
+  - id: b
+    text: React по id поймёт, какую строку удалили
+  - id: c
+    text: Все input размонтируются всегда
+  - id: d
+    text: defaultValue перечитает DOM
+explain: Индекс 1 после удаления занят бывшим третьим элементом, а state узла с
+  key=1 сохранился.

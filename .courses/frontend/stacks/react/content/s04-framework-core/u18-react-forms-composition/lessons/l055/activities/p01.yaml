@@ -1,0 +1,15 @@
+id: p01
+kind: single_choice
+phase: practice
+prompt: Диалог в десяти экранах показывает разные кнопки. Как не раздувать его props?
+options:
+  - id: a
+    text: Принять готовые actions снаружи
+    correct: true
+  - id: b
+    text: Добавить enum из всех кнопок продукта
+  - id: c
+    text: Хранить кнопки в ref диалога
+  - id: d
+    text: Наследовать Dialog для каждого экрана
+explain: Содержимое подвала — слот. Диалог не знает имён команд.
